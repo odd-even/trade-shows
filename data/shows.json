@@ -1,0 +1,4763 @@
+{
+  "lastUpdated": "2026-06-30",
+  "year": 2026,
+  "source": "Trade Show Master 2026.xlsx (Trade Show Master 2026.xlsx)",
+  "teams": {
+    "Graphics": "Booth setup, design, COI, electric, accessories, freight admin, artroom & booth graphics",
+    "Debbie": "Personnel registration, hotels, flights, transport, petty cash & credit cards (Karen), travel insurance",
+    "Michael": "Truck shipping \u2014 departure, arrival, pickup",
+    "Peter": "Sales staff assignments, plant booking, post-show review",
+    "Mailroom": "Contact books, pack literature"
+  },
+  "ownerLegend": {
+    "ownerSpreadsheet": "Original owner from spreadsheet (legacy Elisabeth assignments)",
+    "owner": "Current responsible person/team after June 2026 handoff"
+  },
+  "shows": [
+    {
+      "id": "cultivate",
+      "name": "Cultivate",
+      "year": 2026,
+      "dates": {
+        "start": "2026-07-12",
+        "end": "2026-07-14"
+      },
+      "location": "Greater Columbus Convention Ctr\n400 N High Street\nColumbus OH 43215",
+      "boothSize": "10x20",
+      "booth": null,
+      "exhibitorPortal": "https://cultivate26.exh.mapyourshow.com\nAmerican Hort - username pdarrow@jollyfarmer.com\npw: JollyFarmer123",
+      "productFocus": "Plugs & Cuttings",
+      "status": "upcoming",
+      "tasks": [
+        {
+          "id": "cultivate-15",
+          "task": "Plants",
+          "section": "literature",
+          "ownerSpreadsheet": null,
+          "owner": "Graphics",
+          "status": "pending",
+          "source": "spreadsheet:CULTIVATE",
+          "info": "JF Truck",
+          "notes": "Show P&C booked for 7/6/26-BL-Em`d MJ to mark Racktnb"
+        },
+        {
+          "id": "cultivate-19",
+          "task": "Register for Show",
+          "section": "show_purchase",
+          "ownerSpreadsheet": "Elisabeth",
+          "owner": "Graphics",
+          "status": "completed",
+          "source": "spreadsheet:CULTIVATE"
+        },
+        {
+          "id": "cultivate-20",
+          "task": "Down Payment Due",
+          "section": "show_purchase",
+          "ownerSpreadsheet": "Elisabeth",
+          "owner": "Graphics",
+          "status": "completed",
+          "source": "spreadsheet:CULTIVATE",
+          "info": "Paid 50% of the booth payment",
+          "notes": "paid 7/14/25"
+        },
+        {
+          "id": "cultivate-21",
+          "task": "Final Payment Due",
+          "section": "show_purchase",
+          "ownerSpreadsheet": "Elisabeth",
+          "owner": "Graphics",
+          "status": "pending",
+          "source": "spreadsheet:CULTIVATE",
+          "info": "Remaining 50% due by 3/27/26",
+          "notes": "paid 2/24/26",
+          "priority": "high"
+        },
+        {
+          "id": "cultivate-22",
+          "task": "Booth Number(s)",
+          "section": "show_purchase",
+          "ownerSpreadsheet": "Elisabeth",
+          "owner": "Graphics",
+          "status": "pending",
+          "source": "spreadsheet:CULTIVATE",
+          "info": "2216",
+          "priority": "high"
+        },
+        {
+          "id": "cultivate-23",
+          "task": "Liability Insurance",
+          "section": "show_purchase",
+          "ownerSpreadsheet": "Elisabeth",
+          "owner": "Graphics",
+          "status": "completed",
+          "source": "spreadsheet:CULTIVATE",
+          "info": "Needs to be uploaded by 6/30/26\nEmailed Lindsay (insurance agent) 2/25",
+          "notes": "Uploaded on Cultivate's exhibitor directory profile pg\n3/2/26",
+          "priority": "critical"
+        },
+        {
+          "id": "cultivate-25",
+          "task": "Who is going",
+          "section": "personnel",
+          "ownerSpreadsheet": "Peter",
+          "owner": "Peter",
+          "status": "pending",
+          "source": "spreadsheet:CULTIVATE",
+          "info": "From Sales - Peter, Mandy, Cindy, Angella\nPurchasing - Debbie Hood\nGrower - Roberto\nMaintenance - Jeffrey",
+          "priority": "high"
+        },
+        {
+          "id": "cultivate-26",
+          "task": "Register personnel",
+          "section": "personnel",
+          "ownerSpreadsheet": "Elisabeth",
+          "owner": "Debbie",
+          "status": "completed",
+          "source": "spreadsheet:CULTIVATE",
+          "info": "All-access passes - Debbie Hood, Roberto\nComplimentary passes - Peter, Mandy, Cindy, Angella, Jeffrey\nBus tour - Peter, Mandy, Cindy, Angella, Roberto",
+          "notes": "Pre-registration open Feb 9-20 Have to have this complete by the 20th to be assigned a date to book hotel.\nDone 2/19/26"
+        },
+        {
+          "id": "cultivate-27",
+          "task": "Book hotel",
+          "section": "personnel",
+          "ownerSpreadsheet": "Elisabeth",
+          "owner": "Debbie",
+          "status": "pending",
+          "source": "spreadsheet:CULTIVATE",
+          "info": "Renaissance Columbus Downtown\n50 N St\nColumbus, OH  43215 \nPh# 614-228-5050\nPeter, Mandy, Cindy, Angella, Debbie H, Roberto - arriving Fri July 10\nJeffrey arriving Sunday, July 12\nDebbie H, Roberto & Jeffrey checking out Tues, July 14\nPeter, Mandy, Cindy, Angella - checking out\nWed July 15",
+          "notes": "Peter staying in AC Hotel Columbus Downtown\n517 Park Street\nPH#614-227-6100\n\nNot enough rooms available at the Renaissance. The Maritz housing team will move him to the Renaissance if it becomes available.As of 6/18 it was still not available for some of the nights. We could book directly with the hotel if they have availability, but would pay full rate plus a cancellation fee on cancelling the AC Hotel.",
+          "priority": "high"
+        },
+        {
+          "id": "cultivate-28",
+          "task": "Hotel in Bangor",
+          "section": "personnel",
+          "ownerSpreadsheet": "Elisabeth",
+          "owner": "Debbie",
+          "status": "completed",
+          "source": "spreadsheet:CULTIVATE",
+          "info": "Bangor Aviator Hotel\n308 Godfrey Blvd\nBangor, ME  04401 \nPH# 207-947-6721\nRooms are reserved under Debbie Hood's name with the individual names added to each room. Conf#704782444",
+          "notes": "Booked 6 rooms for Thurs night July 9th\nPeter, Mandy, Cindy, Angella, Debbie H, Roberto"
+        },
+        {
+          "id": "cultivate-29",
+          "task": "Book airline tickets",
+          "section": "personnel",
+          "ownerSpreadsheet": "Elisabeth",
+          "owner": "Debbie",
+          "status": "completed",
+          "source": "spreadsheet:CULTIVATE",
+          "info": "Peter, Mandy, Cindy, Angella - flying to Columbus Fri 7/10, flying to Toronto for Sawaya trials Wed 7/15, flying from Toronto to Fredericton Fri 7/17\nDebbie H, Roberto - flying to Columbus Fri 7/10, returning Tues, 7/14\nCindy returning home Wed 7/15\nJeffrey - flying to Columbus Sun 7/12, returning Tues, 7/14"
+        },
+        {
+          "id": "cultivate-30",
+          "task": "Travel insurance",
+          "section": "personnel",
+          "ownerSpreadsheet": "Elisabeth",
+          "owner": "Debbie",
+          "status": "pending",
+          "source": "spreadsheet:CULTIVATE",
+          "info": "Karen caring for",
+          "priority": "high"
+        },
+        {
+          "id": "cultivate-31",
+          "task": "Reserve cars",
+          "section": "personnel",
+          "ownerSpreadsheet": "Elisabeth",
+          "owner": "Debbie",
+          "status": "pending",
+          "source": "spreadsheet:CULTIVATE",
+          "info": "Van for Peter and sales staff going to Cultivate - Cindy return in this van on Wed 7/15\nVehicle for Debbie and Roberto\nVehicle for Jeffrey\nVan for Amanda & Paula - Sawaya Trials\nPeter and staff will return in this van",
+          "priority": "high"
+        },
+        {
+          "id": "cultivate-32",
+          "task": "GPS",
+          "section": "personnel",
+          "ownerSpreadsheet": "Elisabeth",
+          "owner": "Debbie",
+          "status": "pending",
+          "source": "spreadsheet:CULTIVATE",
+          "priority": "high"
+        },
+        {
+          "id": "cultivate-33",
+          "task": "Ground transport at destination",
+          "section": "personnel",
+          "ownerSpreadsheet": "Elisabeth",
+          "owner": "Debbie",
+          "status": "pending",
+          "source": "spreadsheet:CULTIVATE",
+          "info": "Will arrange on arrival",
+          "priority": "high"
+        },
+        {
+          "id": "cultivate-34",
+          "task": "Petty cash",
+          "section": "personnel",
+          "ownerSpreadsheet": "Elisabeth",
+          "owner": "Debbie",
+          "status": "pending",
+          "source": "spreadsheet:CULTIVATE",
+          "info": "$100 USD per person - Peter, sales staff, Roberto, Jeffrey, and whatever Debbie needs\n$100 CDN for Peter and Amanda (for Sawaya Trials)",
+          "priority": "high"
+        },
+        {
+          "id": "cultivate-35",
+          "task": "Credit cards",
+          "section": "personnel",
+          "ownerSpreadsheet": "Elisabeth",
+          "owner": "Debbie",
+          "status": "pending",
+          "source": "spreadsheet:CULTIVATE",
+          "info": "Peter - all set\nUS card for Cindy\nUS card for Roberto\nUS card for Jeffrey (maybe check with him in case he already has one)\nCDN card for Amanda",
+          "priority": "high"
+        },
+        {
+          "id": "cultivate-37",
+          "task": "Design",
+          "section": "booth_setup",
+          "ownerSpreadsheet": "Artroom",
+          "owner": "Graphics",
+          "status": "pending",
+          "source": "spreadsheet:CULTIVATE",
+          "priority": "high"
+        },
+        {
+          "id": "cultivate-38",
+          "task": "Design Notes",
+          "section": "booth_setup",
+          "ownerSpreadsheet": "Artroom",
+          "owner": "Graphics",
+          "status": "pending",
+          "source": "spreadsheet:CULTIVATE",
+          "priority": "high"
+        },
+        {
+          "id": "cultivate-39",
+          "task": "Pack display",
+          "section": "booth_setup",
+          "ownerSpreadsheet": "Artroom",
+          "owner": "Graphics",
+          "status": "pending",
+          "source": "spreadsheet:CULTIVATE",
+          "priority": "high"
+        },
+        {
+          "id": "cultivate-40",
+          "task": "Book Plugs & Cuttings",
+          "section": "booth_setup",
+          "ownerSpreadsheet": "Peter",
+          "owner": "Peter",
+          "status": "completed",
+          "source": "spreadsheet:CULTIVATE",
+          "info": "Brenda Lee booked"
+        },
+        {
+          "id": "cultivate-41",
+          "task": "Book Finished Product",
+          "section": "booth_setup",
+          "ownerSpreadsheet": "Peter",
+          "owner": "Peter",
+          "status": "pending",
+          "source": "spreadsheet:CULTIVATE",
+          "priority": "high"
+        },
+        {
+          "id": "cultivate-42",
+          "task": "Book electricity",
+          "section": "booth_setup",
+          "ownerSpreadsheet": "Elisabeth",
+          "owner": "Graphics",
+          "status": "completed",
+          "source": "spreadsheet:CULTIVATE",
+          "info": "Done 5/14/26"
+        },
+        {
+          "id": "cultivate-46",
+          "task": "Carrier",
+          "section": "freight",
+          "ownerSpreadsheet": "Michael",
+          "owner": "Michael",
+          "status": "pending",
+          "source": "spreadsheet:CULTIVATE",
+          "info": "Our Truck",
+          "priority": "high"
+        },
+        {
+          "id": "cultivate-47",
+          "task": "Delivery location",
+          "section": "freight",
+          "ownerSpreadsheet": "Elisabeth",
+          "owner": "Graphics",
+          "status": "pending",
+          "source": "spreadsheet:CULTIVATE",
+          "priority": "high"
+        },
+        {
+          "id": "cultivate-50",
+          "task": "Show Site Arrival date #1 (if JFT)",
+          "section": "freight",
+          "ownerSpreadsheet": "Michael",
+          "owner": "Michael",
+          "status": "pending",
+          "source": "spreadsheet:CULTIVATE",
+          "info": "2026-07-10 00:00:00",
+          "notes": "The staff setting up the booth will arrive around noon so it would be great if the truck could be unloaded by then",
+          "priority": "high"
+        },
+        {
+          "id": "cultivate-51",
+          "task": "Show Site Arrival time #1 (if JFT)",
+          "section": "freight",
+          "ownerSpreadsheet": "Michael",
+          "owner": "Michael",
+          "status": "pending",
+          "source": "spreadsheet:CULTIVATE",
+          "priority": "high"
+        },
+        {
+          "id": "cultivate-52",
+          "task": "Marshalling Yard Address",
+          "section": "freight",
+          "ownerSpreadsheet": null,
+          "owner": "Graphics",
+          "status": "pending",
+          "source": "spreadsheet:CULTIVATE",
+          "info": "Marshalling Yard/East Lot\n80 East Nationwide Boulevard\nColumbus, OH  23215",
+          "notes": "Driver needs to check in and out with the Fern representative at the Marshalling Yard",
+          "priority": "high"
+        },
+        {
+          "id": "cultivate-56",
+          "task": "Freight departure date",
+          "section": "freight",
+          "ownerSpreadsheet": "Michael",
+          "owner": "Michael",
+          "status": "pending",
+          "source": "spreadsheet:CULTIVATE",
+          "info": "2026-07-08 00:00:00",
+          "priority": "critical"
+        },
+        {
+          "id": "cultivate-57",
+          "task": "End of show pick up (if JFT)",
+          "section": "freight",
+          "ownerSpreadsheet": "Michael",
+          "owner": "Michael",
+          "status": "pending",
+          "source": "spreadsheet:CULTIVATE",
+          "info": "2026-07-14 00:00:00",
+          "notes": "All vehicles must first go to the Marshalling Yard before they can gain access to the Convention Center loading docks.",
+          "priority": "high"
+        },
+        {
+          "id": "cultivate-58",
+          "task": "Order drayage",
+          "section": "freight",
+          "ownerSpreadsheet": null,
+          "owner": "Graphics",
+          "status": "pending",
+          "source": "spreadsheet:CULTIVATE",
+          "priority": "high"
+        },
+        {
+          "id": "cultivate-60",
+          "task": "Contact books",
+          "section": "literature",
+          "ownerSpreadsheet": "Mailroom",
+          "owner": "Mailroom",
+          "status": "pending",
+          "source": "spreadsheet:CULTIVATE"
+        },
+        {
+          "id": "cultivate-61",
+          "task": "Transportation",
+          "section": "literature",
+          "ownerSpreadsheet": "Michael",
+          "owner": "Michael",
+          "status": "pending",
+          "source": "spreadsheet:CULTIVATE",
+          "info": "Our truck"
+        },
+        {
+          "id": "cultivate-62",
+          "task": "Pack literature",
+          "section": "literature",
+          "ownerSpreadsheet": "Mailroom",
+          "owner": "Mailroom",
+          "status": "pending",
+          "source": "spreadsheet:CULTIVATE"
+        },
+        {
+          "id": "cultivate-64",
+          "task": "Cell phone",
+          "section": "on_site",
+          "ownerSpreadsheet": "Personnel",
+          "owner": "On-site reps",
+          "status": "pending",
+          "source": "spreadsheet:CULTIVATE",
+          "info": "Peter 506-323-0954"
+        },
+        {
+          "id": "cultivate-65",
+          "task": "Set up hours",
+          "section": "on_site",
+          "ownerSpreadsheet": "Elisabeth",
+          "owner": "Graphics",
+          "status": "pending",
+          "source": "spreadsheet:CULTIVATE",
+          "info": "Fri, July 10 - 8 am-5 pm\nSat, July 11- 8 am-5 pm"
+        },
+        {
+          "id": "cultivate-66",
+          "task": "Show hours",
+          "section": "on_site",
+          "ownerSpreadsheet": "Elisabeth",
+          "owner": "Graphics",
+          "status": "pending",
+          "source": "spreadsheet:CULTIVATE",
+          "info": "Sun, July 12 - 9:30 am-5 pm\nMon, July 13 - 9 am-5 pm\nTues, July 14 - 9 am-2 pm"
+        },
+        {
+          "id": "cultivate-67",
+          "task": "Take down hours",
+          "section": "on_site",
+          "ownerSpreadsheet": "Elisabeth",
+          "owner": "Graphics",
+          "status": "pending",
+          "source": "spreadsheet:CULTIVATE",
+          "info": "Tues, July 14 - 2 pm-10 pm"
+        },
+        {
+          "id": "cultivate-68",
+          "task": "Storage of empties",
+          "section": "on_site",
+          "ownerSpreadsheet": "Elisabeth",
+          "owner": "Graphics",
+          "status": "pending",
+          "source": "spreadsheet:CULTIVATE",
+          "info": "Need to arrange with FERN and pay for storage at show"
+        },
+        {
+          "id": "cultivate-69",
+          "task": "Parking",
+          "section": "on_site",
+          "ownerSpreadsheet": "Elisabeth",
+          "owner": "Graphics",
+          "status": "pending",
+          "source": "spreadsheet:CULTIVATE"
+        },
+        {
+          "id": "cultivate-71",
+          "task": "Number of leads",
+          "section": "post_show_review",
+          "ownerSpreadsheet": "Personnel",
+          "owner": "On-site reps",
+          "status": "pending",
+          "source": "spreadsheet:CULTIVATE"
+        },
+        {
+          "id": "cultivate-72",
+          "task": "Number of booths",
+          "section": "post_show_review",
+          "ownerSpreadsheet": "Peter",
+          "owner": "Peter",
+          "status": "pending",
+          "source": "spreadsheet:CULTIVATE"
+        },
+        {
+          "id": "cultivate-73",
+          "task": "Adequate staffing",
+          "section": "post_show_review",
+          "ownerSpreadsheet": "Peter",
+          "owner": "Peter",
+          "status": "pending",
+          "source": "spreadsheet:CULTIVATE"
+        },
+        {
+          "id": "cultivate-74",
+          "task": "Repairs",
+          "section": "post_show_review",
+          "ownerSpreadsheet": "Personnel",
+          "owner": "On-site reps",
+          "status": "pending",
+          "source": "spreadsheet:CULTIVATE"
+        },
+        {
+          "id": "cultivate-75",
+          "task": "Additional comments",
+          "section": "post_show_review",
+          "ownerSpreadsheet": "Personnel",
+          "owner": "On-site reps",
+          "status": "pending",
+          "source": "spreadsheet:CULTIVATE"
+        },
+        {
+          "id": "cultivate-76",
+          "task": "Confirm repeat attendance",
+          "section": "post_show_review",
+          "ownerSpreadsheet": "Peter",
+          "owner": "Peter",
+          "status": "pending",
+          "source": "spreadsheet:CULTIVATE"
+        }
+      ]
+    },
+    {
+      "id": "gcs",
+      "name": "GCS",
+      "year": 2026,
+      "dates": {
+        "start": "2026-08-11",
+        "end": "2026-08-12"
+      },
+      "location": "Donald E. Stephens Convention Center\n5555 N River Rd.\nRosemont, Illinois  60018",
+      "boothSize": "10x10",
+      "booth": null,
+      "exhibitorPortal": null,
+      "productFocus": "Plugs & Cuttings",
+      "status": "cancelled",
+      "tasks": [
+        {
+          "id": "gcs-18",
+          "task": "Register for Show",
+          "section": "show_purchase",
+          "ownerSpreadsheet": null,
+          "owner": "Graphics",
+          "status": "pending",
+          "source": "spreadsheet:GCS",
+          "info": "Sent email to Rob Bailey (show coordinator) on 2/26 and again 4/27, no response. Peter emailed 5/12 and found that Rob's email has been disconnected. Possibly they've gone out of business.\nNo email with a link for registering nor any invoice showing what is owed on booth.",
+          "priority": "high"
+        },
+        {
+          "id": "gcs-21",
+          "task": "Booth Number(s)",
+          "section": "show_purchase",
+          "ownerSpreadsheet": null,
+          "owner": "Graphics",
+          "status": "pending",
+          "source": "spreadsheet:GCS",
+          "info": "632",
+          "priority": "high"
+        },
+        {
+          "id": "gcs-24",
+          "task": "Who is going",
+          "section": "personnel",
+          "ownerSpreadsheet": null,
+          "owner": "Debbie",
+          "status": "pending",
+          "source": "spreadsheet:GCS",
+          "info": "Brenda Lee, Maxime",
+          "priority": "high"
+        },
+        {
+          "id": "gcs-29",
+          "task": "Travel insurance",
+          "section": "personnel",
+          "ownerSpreadsheet": null,
+          "owner": "Debbie",
+          "status": "pending",
+          "source": "spreadsheet:GCS",
+          "info": "Karen is caring for",
+          "priority": "high"
+        },
+        {
+          "id": "gcs-32",
+          "task": "Ground transport at destination",
+          "section": "personnel",
+          "ownerSpreadsheet": null,
+          "owner": "Debbie",
+          "status": "pending",
+          "source": "spreadsheet:GCS",
+          "priority": "high"
+        },
+        {
+          "id": "gcs-56",
+          "task": "Freight departure date",
+          "section": "freight",
+          "ownerSpreadsheet": "Michael",
+          "owner": "Michael",
+          "status": "pending",
+          "source": "spreadsheet:GCS",
+          "priority": "critical"
+        },
+        {
+          "id": "gcs-58",
+          "task": "Notes",
+          "section": "freight",
+          "ownerSpreadsheet": "Michael",
+          "owner": "Michael",
+          "status": "pending",
+          "source": "spreadsheet:GCS",
+          "priority": "high"
+        },
+        {
+          "id": "gcs-71",
+          "task": "Parking",
+          "section": "on_site",
+          "ownerSpreadsheet": null,
+          "owner": "Graphics",
+          "status": "pending",
+          "source": "spreadsheet:GCS"
+        }
+      ]
+    },
+    {
+      "id": "gcc-expo",
+      "name": "GCC & Expo",
+      "year": 2026,
+      "dates": {
+        "start": "2026-08-18",
+        "end": "2026-08-20"
+      },
+      "location": "Loews Vanderbilt Hotel\nNashville, TN",
+      "boothSize": "10x10",
+      "booth": null,
+      "exhibitorPortal": null,
+      "productFocus": null,
+      "status": "upcoming",
+      "tasks": [
+        {
+          "id": "gcc-expo-14",
+          "task": "Plants",
+          "section": "literature",
+          "ownerSpreadsheet": null,
+          "owner": "Graphics",
+          "status": "pending",
+          "source": "spreadsheet:GCC & Expo",
+          "info": "Plants booked"
+        },
+        {
+          "id": "gcc-expo-18",
+          "task": "Register for Show",
+          "section": "show_purchase",
+          "ownerSpreadsheet": null,
+          "owner": "Graphics",
+          "status": "completed",
+          "source": "spreadsheet:GCC & Expo"
+        },
+        {
+          "id": "gcc-expo-20",
+          "task": "Final Payment Due",
+          "section": "show_purchase",
+          "ownerSpreadsheet": null,
+          "owner": "Graphics",
+          "status": "pending",
+          "source": "spreadsheet:GCC & Expo",
+          "info": "Sent invoice to our office requesting that they pay it. Done 4/22/26",
+          "priority": "high"
+        },
+        {
+          "id": "gcc-expo-24",
+          "task": "Who is going",
+          "section": "personnel",
+          "ownerSpreadsheet": null,
+          "owner": "Debbie",
+          "status": "pending",
+          "source": "spreadsheet:GCC & Expo",
+          "info": "Amanda, Brenda Lee",
+          "priority": "high"
+        },
+        {
+          "id": "gcc-expo-25",
+          "task": "Register personnel",
+          "section": "personnel",
+          "ownerSpreadsheet": null,
+          "owner": "Debbie",
+          "status": "completed",
+          "source": "spreadsheet:GCC & Expo",
+          "info": "Done 4/22/26 \nConfirmation #XJNGWVMGBPF",
+          "notes": "CANCEL PETER\"S REGISTRATION;"
+        },
+        {
+          "id": "gcc-expo-56",
+          "task": "Freight departure date",
+          "section": "freight",
+          "ownerSpreadsheet": "Michael",
+          "owner": "Michael",
+          "status": "pending",
+          "source": "spreadsheet:GCC & Expo",
+          "priority": "critical"
+        },
+        {
+          "id": "gcc-expo-58",
+          "task": "Notes",
+          "section": "freight",
+          "ownerSpreadsheet": "Michael",
+          "owner": "Michael",
+          "status": "pending",
+          "source": "spreadsheet:GCC & Expo",
+          "priority": "high"
+        },
+        {
+          "id": "gcc-expo-71",
+          "task": "Parking",
+          "section": "on_site",
+          "ownerSpreadsheet": null,
+          "owner": "Graphics",
+          "status": "pending",
+          "source": "spreadsheet:GCC & Expo"
+        }
+      ]
+    },
+    {
+      "id": "cgc",
+      "name": "CGC",
+      "year": 2026,
+      "dates": {
+        "start": "2026-10-07",
+        "end": "2026-10-08"
+      },
+      "location": "Niagara Falls Convention Centre\n6815 Stanley Avenue\nNiagara Falls, Ontario  L2G 3Y9",
+      "boothSize": "10x10",
+      "booth": null,
+      "exhibitorPortal": null,
+      "productFocus": "Plugs & Cuttings",
+      "status": "upcoming",
+      "tasks": [
+        {
+          "id": "cgc-14",
+          "task": "Plants",
+          "section": "literature",
+          "ownerSpreadsheet": null,
+          "owner": "Graphics",
+          "status": "pending",
+          "source": "spreadsheet:CGC",
+          "info": "Plants all booked for 10/5/26- BL",
+          "notes": "The plants need to \narrive by Tuesday for set up, sent to the show address above. Label needs to include the following - exhibitor's name, booth #, and Canadian Greenhouse 2026"
+        },
+        {
+          "id": "cgc-16",
+          "task": "Special notes:",
+          "section": "personnel",
+          "ownerSpreadsheet": null,
+          "owner": "Debbie",
+          "status": "pending",
+          "source": "spreadsheet:CGC",
+          "info": "They only accept shipments direct to show on the day of set up between 8-5 pm",
+          "priority": "high"
+        },
+        {
+          "id": "cgc-18",
+          "task": "Register for Show",
+          "section": "show_purchase",
+          "ownerSpreadsheet": "Elisabeth",
+          "owner": "Graphics",
+          "status": "completed",
+          "source": "spreadsheet:CGC",
+          "info": "Booth renewed 2/26/26",
+          "notes": "Every year you have to fill out a new application online to renew the booth. We also list the companies that are direct competitors so the booth is not near them"
+        },
+        {
+          "id": "cgc-19",
+          "task": "Down Payment Due",
+          "section": "show_purchase",
+          "ownerSpreadsheet": "Elisabeth",
+          "owner": "Graphics",
+          "status": "completed",
+          "source": "spreadsheet:CGC",
+          "info": "Booth paid in full 2/26/26"
+        },
+        {
+          "id": "cgc-20",
+          "task": "Final Payment Due",
+          "section": "show_purchase",
+          "ownerSpreadsheet": "Elisabeth",
+          "owner": "Graphics",
+          "status": "completed",
+          "source": "spreadsheet:CGC"
+        },
+        {
+          "id": "cgc-21",
+          "task": "Booth Number(s)",
+          "section": "show_purchase",
+          "ownerSpreadsheet": "Elisabeth",
+          "owner": "Graphics",
+          "status": "pending",
+          "source": "spreadsheet:CGC",
+          "info": "635",
+          "priority": "high"
+        },
+        {
+          "id": "cgc-22",
+          "task": "Liability Insurance",
+          "section": "show_purchase",
+          "ownerSpreadsheet": "Elisabeth",
+          "owner": "Graphics",
+          "status": "pending",
+          "source": "spreadsheet:CGC",
+          "info": "Need to send an updated copy since our insurance renews in October. Email Lindsay to request this later in August or September, then send it to CGC",
+          "notes": "Have to send a copy of the insurance when you register for the show. Sent last year's copy. Send an updated one later.",
+          "priority": "critical"
+        },
+        {
+          "id": "cgc-24",
+          "task": "Who is going",
+          "section": "personnel",
+          "ownerSpreadsheet": "Peter",
+          "owner": "Peter",
+          "status": "pending",
+          "source": "spreadsheet:CGC",
+          "info": "Amanda, Marco",
+          "priority": "high"
+        },
+        {
+          "id": "cgc-25",
+          "task": "Register personnel",
+          "section": "personnel",
+          "ownerSpreadsheet": "Elisabeth",
+          "owner": "Debbie",
+          "status": "pending",
+          "source": "spreadsheet:CGC",
+          "info": "Deadline is September 5",
+          "priority": "high"
+        },
+        {
+          "id": "cgc-26",
+          "task": "Book hotel",
+          "section": "personnel",
+          "ownerSpreadsheet": "Elisabeth",
+          "owner": "Debbie",
+          "status": "pending",
+          "source": "spreadsheet:CGC",
+          "info": "Marriot on the Falls\n6755 Fallsview Blvd\nNiagara Falls, ON  L2G 3W7\nPh# 905-374-1077",
+          "priority": "high"
+        },
+        {
+          "id": "cgc-27",
+          "task": "Hotel for return trip",
+          "section": "personnel",
+          "ownerSpreadsheet": "Elisabeth",
+          "owner": "Debbie",
+          "status": "pending",
+          "source": "spreadsheet:CGC",
+          "priority": "high"
+        },
+        {
+          "id": "cgc-28",
+          "task": "Book airline tickets",
+          "section": "personnel",
+          "ownerSpreadsheet": "Elisabeth",
+          "owner": "Debbie",
+          "status": "pending",
+          "source": "spreadsheet:CGC",
+          "priority": "high"
+        },
+        {
+          "id": "cgc-29",
+          "task": "Travel insurance",
+          "section": "personnel",
+          "ownerSpreadsheet": "Elisabeth",
+          "owner": "Debbie",
+          "status": "pending",
+          "source": "spreadsheet:CGC",
+          "info": "Karen caring for",
+          "priority": "high"
+        },
+        {
+          "id": "cgc-30",
+          "task": "Reserve cars",
+          "section": "personnel",
+          "ownerSpreadsheet": "Elisabeth",
+          "owner": "Debbie",
+          "status": "pending",
+          "source": "spreadsheet:CGC",
+          "priority": "high"
+        },
+        {
+          "id": "cgc-31",
+          "task": "GPS",
+          "section": "personnel",
+          "ownerSpreadsheet": "Elisabeth",
+          "owner": "Debbie",
+          "status": "pending",
+          "source": "spreadsheet:CGC",
+          "priority": "high"
+        },
+        {
+          "id": "cgc-32",
+          "task": "Ground transport at destination",
+          "section": "personnel",
+          "ownerSpreadsheet": "Elisabeth",
+          "owner": "Debbie",
+          "status": "pending",
+          "source": "spreadsheet:CGC",
+          "priority": "high"
+        },
+        {
+          "id": "cgc-33",
+          "task": "Petty cash",
+          "section": "personnel",
+          "ownerSpreadsheet": "Elisabeth",
+          "owner": "Debbie",
+          "status": "pending",
+          "source": "spreadsheet:CGC",
+          "priority": "high"
+        },
+        {
+          "id": "cgc-34",
+          "task": "Credit cards",
+          "section": "personnel",
+          "ownerSpreadsheet": "Elisabeth",
+          "owner": "Debbie",
+          "status": "pending",
+          "source": "spreadsheet:CGC",
+          "priority": "high"
+        },
+        {
+          "id": "cgc-36",
+          "task": "Design",
+          "section": "booth_setup",
+          "ownerSpreadsheet": "Artroom",
+          "owner": "Graphics",
+          "status": "pending",
+          "source": "spreadsheet:CGC",
+          "priority": "high"
+        },
+        {
+          "id": "cgc-37",
+          "task": "Design Notes",
+          "section": "booth_setup",
+          "ownerSpreadsheet": "Artroom",
+          "owner": "Graphics",
+          "status": "pending",
+          "source": "spreadsheet:CGC",
+          "priority": "high"
+        },
+        {
+          "id": "cgc-38",
+          "task": "Pack display",
+          "section": "booth_setup",
+          "ownerSpreadsheet": "Artroom",
+          "owner": "Graphics",
+          "status": "pending",
+          "source": "spreadsheet:CGC",
+          "priority": "high"
+        },
+        {
+          "id": "cgc-39",
+          "task": "Book Plugs & Cuttings",
+          "section": "booth_setup",
+          "ownerSpreadsheet": "Peter",
+          "owner": "Peter",
+          "status": "pending",
+          "source": "spreadsheet:CGC",
+          "priority": "high"
+        },
+        {
+          "id": "cgc-40",
+          "task": "Book Finished Product",
+          "section": "booth_setup",
+          "ownerSpreadsheet": "Peter",
+          "owner": "Peter",
+          "status": "pending",
+          "source": "spreadsheet:CGC",
+          "priority": "high"
+        },
+        {
+          "id": "cgc-41",
+          "task": "Book electricity",
+          "section": "booth_setup",
+          "ownerSpreadsheet": "Elisabeth",
+          "owner": "Graphics",
+          "status": "pending",
+          "source": "spreadsheet:CGC",
+          "priority": "high"
+        },
+        {
+          "id": "cgc-42",
+          "task": "Book carpet",
+          "section": "booth_setup",
+          "ownerSpreadsheet": "Elisabeth",
+          "owner": "Graphics",
+          "status": "pending",
+          "source": "spreadsheet:CGC",
+          "info": "Black carpet provided in booth",
+          "priority": "high"
+        },
+        {
+          "id": "cgc-44",
+          "task": "Book tables/drapes/easle",
+          "section": "booth_setup",
+          "ownerSpreadsheet": "Elisabeth",
+          "owner": "Graphics",
+          "status": "pending",
+          "source": "spreadsheet:CGC",
+          "priority": "high"
+        },
+        {
+          "id": "cgc-46",
+          "task": "Carrier",
+          "section": "freight",
+          "ownerSpreadsheet": "Michael",
+          "owner": "Michael",
+          "status": "pending",
+          "source": "spreadsheet:CGC",
+          "priority": "high"
+        },
+        {
+          "id": "cgc-47",
+          "task": "Delivery location",
+          "section": "freight",
+          "ownerSpreadsheet": "Elisabeth",
+          "owner": "Graphics",
+          "status": "pending",
+          "source": "spreadsheet:CGC",
+          "info": "GES Advance Warehouse\nc/o North American Logistics Services Inc.\n49 Simpson Road\nBolton, ON  L7E 2R6",
+          "priority": "high"
+        },
+        {
+          "id": "cgc-48",
+          "task": "Advance shipping opens (date)",
+          "section": "freight",
+          "ownerSpreadsheet": "Elisabeth",
+          "owner": "Graphics",
+          "status": "pending",
+          "source": "spreadsheet:CGC",
+          "info": "2026-09-08 00:00:00",
+          "priority": "high"
+        },
+        {
+          "id": "cgc-49",
+          "task": "Advance shipping closes (date)",
+          "section": "freight",
+          "ownerSpreadsheet": "Elisabeth",
+          "owner": "Graphics",
+          "status": "pending",
+          "source": "spreadsheet:CGC",
+          "info": "2026-09-29 00:00:00",
+          "priority": "high"
+        },
+        {
+          "id": "cgc-50",
+          "task": "Show Site Arrival date #1 (if JFT)",
+          "section": "freight",
+          "ownerSpreadsheet": "Elisabeth",
+          "owner": "Michael",
+          "status": "pending",
+          "source": "spreadsheet:CGC",
+          "priority": "high"
+        },
+        {
+          "id": "cgc-51",
+          "task": "Show Site Arrival time #1 (if JFT)",
+          "section": "freight",
+          "ownerSpreadsheet": "Elisabeth",
+          "owner": "Michael",
+          "status": "pending",
+          "source": "spreadsheet:CGC",
+          "priority": "high"
+        },
+        {
+          "id": "cgc-52",
+          "task": "Freight departure date",
+          "section": "freight",
+          "ownerSpreadsheet": "Michael",
+          "owner": "Michael",
+          "status": "pending",
+          "source": "spreadsheet:CGC",
+          "priority": "critical"
+        },
+        {
+          "id": "cgc-53",
+          "task": "End of show pick up (if JFT)",
+          "section": "freight",
+          "ownerSpreadsheet": "Elisabeth",
+          "owner": "Michael",
+          "status": "pending",
+          "source": "spreadsheet:CGC",
+          "priority": "high"
+        },
+        {
+          "id": "cgc-54",
+          "task": "Order drayage",
+          "section": "freight",
+          "ownerSpreadsheet": "Elisabeth",
+          "owner": "Graphics",
+          "status": "completed",
+          "source": "spreadsheet:CGC"
+        },
+        {
+          "id": "cgc-56",
+          "task": "Contact books",
+          "section": "literature",
+          "ownerSpreadsheet": "Mailroom",
+          "owner": "Mailroom",
+          "status": "pending",
+          "source": "spreadsheet:CGC"
+        },
+        {
+          "id": "cgc-57",
+          "task": "Guest passes distributed",
+          "section": "literature",
+          "ownerSpreadsheet": "Elisabeth/Reps",
+          "owner": "Debbie",
+          "status": "pending",
+          "source": "spreadsheet:CGC"
+        },
+        {
+          "id": "cgc-58",
+          "task": "Lead retrieval/printer",
+          "section": "literature",
+          "ownerSpreadsheet": "Elisabeth",
+          "owner": "Graphics",
+          "status": "pending",
+          "source": "spreadsheet:CGC"
+        },
+        {
+          "id": "cgc-59",
+          "task": "Transportation",
+          "section": "literature",
+          "ownerSpreadsheet": "Michael",
+          "owner": "Michael",
+          "status": "pending",
+          "source": "spreadsheet:CGC"
+        },
+        {
+          "id": "cgc-60",
+          "task": "Pack literature",
+          "section": "literature",
+          "ownerSpreadsheet": "Mailroom",
+          "owner": "Mailroom",
+          "status": "pending",
+          "source": "spreadsheet:CGC"
+        },
+        {
+          "id": "cgc-62",
+          "task": "Cell phone",
+          "section": "on_site",
+          "ownerSpreadsheet": "Personnel",
+          "owner": "On-site reps",
+          "status": "pending",
+          "source": "spreadsheet:CGC"
+        },
+        {
+          "id": "cgc-63",
+          "task": "Set up hours",
+          "section": "on_site",
+          "ownerSpreadsheet": "Elisabeth",
+          "owner": "Graphics",
+          "status": "pending",
+          "source": "spreadsheet:CGC",
+          "info": "Tuesday, Oct 7 - 8 am-6 pm"
+        },
+        {
+          "id": "cgc-64",
+          "task": "Show hours",
+          "section": "on_site",
+          "ownerSpreadsheet": "Elisabeth",
+          "owner": "Graphics",
+          "status": "pending",
+          "source": "spreadsheet:CGC",
+          "info": "Wednesday, Oct 8 - 9 am-4 pm\nThursday, Oct 9 - 9 am-4 pm"
+        },
+        {
+          "id": "cgc-65",
+          "task": "Take down hours",
+          "section": "on_site",
+          "ownerSpreadsheet": "Elisabeth",
+          "owner": "Graphics",
+          "status": "pending",
+          "source": "spreadsheet:CGC",
+          "info": "Thursday, Oct 9 - 4:30-7:30 pm"
+        },
+        {
+          "id": "cgc-66",
+          "task": "Storage of empties",
+          "section": "on_site",
+          "ownerSpreadsheet": "Elisabeth",
+          "owner": "Graphics",
+          "status": "pending",
+          "source": "spreadsheet:CGC"
+        },
+        {
+          "id": "cgc-67",
+          "task": "Parking",
+          "section": "on_site",
+          "ownerSpreadsheet": "Elisabeth",
+          "owner": "Graphics",
+          "status": "pending",
+          "source": "spreadsheet:CGC"
+        },
+        {
+          "id": "cgc-69",
+          "task": "Number of leads",
+          "section": "post_show_review",
+          "ownerSpreadsheet": "Personnel",
+          "owner": "On-site reps",
+          "status": "pending",
+          "source": "spreadsheet:CGC"
+        },
+        {
+          "id": "cgc-70",
+          "task": "Number of booths",
+          "section": "post_show_review",
+          "ownerSpreadsheet": "Peter",
+          "owner": "Peter",
+          "status": "pending",
+          "source": "spreadsheet:CGC"
+        },
+        {
+          "id": "cgc-71",
+          "task": "Adequate staffing",
+          "section": "post_show_review",
+          "ownerSpreadsheet": "Peter",
+          "owner": "Peter",
+          "status": "pending",
+          "source": "spreadsheet:CGC"
+        },
+        {
+          "id": "cgc-72",
+          "task": "Repairs",
+          "section": "post_show_review",
+          "ownerSpreadsheet": "Personnel",
+          "owner": "On-site reps",
+          "status": "pending",
+          "source": "spreadsheet:CGC"
+        },
+        {
+          "id": "cgc-73",
+          "task": "Additional comments",
+          "section": "post_show_review",
+          "ownerSpreadsheet": "Personnel",
+          "owner": "On-site reps",
+          "status": "pending",
+          "source": "spreadsheet:CGC"
+        },
+        {
+          "id": "cgc-74",
+          "task": "Confirm repeat attendance",
+          "section": "post_show_review",
+          "ownerSpreadsheet": "Peter",
+          "owner": "Peter",
+          "status": "pending",
+          "source": "spreadsheet:CGC"
+        }
+      ]
+    },
+    {
+      "id": "green-industry",
+      "name": "Green Industry",
+      "year": 2026,
+      "dates": {
+        "start": "2026-11-18",
+        "end": "2026-11-19"
+      },
+      "location": "Green Industry Show & Conference\nWesterner Park\n4847A - 19 Street\nRed Deer, AB  T4R 2N7",
+      "boothSize": "10x10",
+      "booth": null,
+      "exhibitorPortal": null,
+      "productFocus": "Plugs & Cuttings",
+      "status": "upcoming",
+      "tasks": [
+        {
+          "id": "green-industry-14",
+          "task": "Plants",
+          "section": "literature",
+          "ownerSpreadsheet": "Michael",
+          "owner": "Michael",
+          "status": "pending",
+          "source": "spreadsheet:GRN IND AB"
+        },
+        {
+          "id": "green-industry-18",
+          "task": "Register for Show",
+          "section": "show_purchase",
+          "ownerSpreadsheet": "Elisabeth",
+          "owner": "Graphics",
+          "status": "completed",
+          "source": "spreadsheet:GRN IND AB",
+          "info": "This year we are paying for membership. Sent membership application 3/5/26",
+          "notes": "Registration completed 3/9/26"
+        },
+        {
+          "id": "green-industry-19",
+          "task": "Down Payment Due",
+          "section": "show_purchase",
+          "ownerSpreadsheet": "Elisabeth",
+          "owner": "Graphics",
+          "status": "pending",
+          "source": "spreadsheet:GRN IND AB",
+          "info": "50% due when registration is completed",
+          "priority": "high"
+        },
+        {
+          "id": "green-industry-20",
+          "task": "Final Payment Due",
+          "section": "show_purchase",
+          "ownerSpreadsheet": "Elisabeth",
+          "owner": "Graphics",
+          "status": "pending",
+          "source": "spreadsheet:GRN IND AB",
+          "info": "Final payment due by June 30",
+          "notes": "Paid in full 3/9/26",
+          "priority": "high"
+        },
+        {
+          "id": "green-industry-21",
+          "task": "Booth Number(s)",
+          "section": "show_purchase",
+          "ownerSpreadsheet": "Elisabeth",
+          "owner": "Graphics",
+          "status": "pending",
+          "source": "spreadsheet:GRN IND AB",
+          "info": "1117",
+          "priority": "high"
+        },
+        {
+          "id": "green-industry-22",
+          "task": "Liability Insurance",
+          "section": "show_purchase",
+          "ownerSpreadsheet": "Elisabeth",
+          "owner": "Graphics",
+          "status": "pending",
+          "source": "spreadsheet:GRN IND AB",
+          "priority": "critical"
+        },
+        {
+          "id": "green-industry-24",
+          "task": "Who is going",
+          "section": "personnel",
+          "ownerSpreadsheet": "Peter",
+          "owner": "Peter",
+          "status": "pending",
+          "source": "spreadsheet:GRN IND AB",
+          "info": "Amanda, Cindy",
+          "priority": "high"
+        },
+        {
+          "id": "green-industry-25",
+          "task": "Register personnel",
+          "section": "personnel",
+          "ownerSpreadsheet": "Elisabeth",
+          "owner": "Debbie",
+          "status": "pending",
+          "source": "spreadsheet:GRN IND AB",
+          "priority": "high"
+        },
+        {
+          "id": "green-industry-26",
+          "task": "Book hotel",
+          "section": "personnel",
+          "ownerSpreadsheet": "Elisabeth",
+          "owner": "Debbie",
+          "status": "pending",
+          "source": "spreadsheet:GRN IND AB",
+          "info": "Red Deer Resort\n3310 50th Ave\nRed Deer, AB  T4N 3X9\nPh# 403-346-2091",
+          "priority": "high"
+        },
+        {
+          "id": "green-industry-28",
+          "task": "Book airline tickets",
+          "section": "personnel",
+          "ownerSpreadsheet": "Elisabeth",
+          "owner": "Debbie",
+          "status": "pending",
+          "source": "spreadsheet:GRN IND AB",
+          "priority": "high"
+        },
+        {
+          "id": "green-industry-29",
+          "task": "Travel insurance",
+          "section": "personnel",
+          "ownerSpreadsheet": "Elisabeth",
+          "owner": "Debbie",
+          "status": "pending",
+          "source": "spreadsheet:GRN IND AB",
+          "priority": "high"
+        },
+        {
+          "id": "green-industry-30",
+          "task": "Reserve cars",
+          "section": "personnel",
+          "ownerSpreadsheet": "Elisabeth",
+          "owner": "Debbie",
+          "status": "pending",
+          "source": "spreadsheet:GRN IND AB",
+          "priority": "high"
+        },
+        {
+          "id": "green-industry-31",
+          "task": "GPS",
+          "section": "personnel",
+          "ownerSpreadsheet": "Elisabeth",
+          "owner": "Debbie",
+          "status": "pending",
+          "source": "spreadsheet:GRN IND AB",
+          "priority": "high"
+        },
+        {
+          "id": "green-industry-32",
+          "task": "Ground transport at destination",
+          "section": "personnel",
+          "ownerSpreadsheet": "Elisabeth",
+          "owner": "Debbie",
+          "status": "pending",
+          "source": "spreadsheet:GRN IND AB",
+          "priority": "high"
+        },
+        {
+          "id": "green-industry-33",
+          "task": "Petty cash",
+          "section": "personnel",
+          "ownerSpreadsheet": "Elisabeth",
+          "owner": "Debbie",
+          "status": "pending",
+          "source": "spreadsheet:GRN IND AB",
+          "priority": "high"
+        },
+        {
+          "id": "green-industry-34",
+          "task": "Credit cards",
+          "section": "personnel",
+          "ownerSpreadsheet": "Elisabeth",
+          "owner": "Debbie",
+          "status": "pending",
+          "source": "spreadsheet:GRN IND AB",
+          "priority": "high"
+        },
+        {
+          "id": "green-industry-36",
+          "task": "Design",
+          "section": "booth_setup",
+          "ownerSpreadsheet": "Artroom",
+          "owner": "Graphics",
+          "status": "pending",
+          "source": "spreadsheet:GRN IND AB",
+          "priority": "high"
+        },
+        {
+          "id": "green-industry-37",
+          "task": "Design Notes",
+          "section": "booth_setup",
+          "ownerSpreadsheet": "Artroom",
+          "owner": "Graphics",
+          "status": "pending",
+          "source": "spreadsheet:GRN IND AB",
+          "priority": "high"
+        },
+        {
+          "id": "green-industry-38",
+          "task": "Pack display",
+          "section": "booth_setup",
+          "ownerSpreadsheet": "Artroom",
+          "owner": "Graphics",
+          "status": "pending",
+          "source": "spreadsheet:GRN IND AB",
+          "priority": "high"
+        },
+        {
+          "id": "green-industry-39",
+          "task": "Book Plugs & Cuttings",
+          "section": "booth_setup",
+          "ownerSpreadsheet": "Peter",
+          "owner": "Peter",
+          "status": "pending",
+          "source": "spreadsheet:GRN IND AB",
+          "priority": "high"
+        },
+        {
+          "id": "green-industry-40",
+          "task": "Book Finished Product",
+          "section": "booth_setup",
+          "ownerSpreadsheet": "Peter",
+          "owner": "Peter",
+          "status": "pending",
+          "source": "spreadsheet:GRN IND AB",
+          "priority": "high"
+        },
+        {
+          "id": "green-industry-41",
+          "task": "Book electricity",
+          "section": "booth_setup",
+          "ownerSpreadsheet": "Elisabeth",
+          "owner": "Graphics",
+          "status": "pending",
+          "source": "spreadsheet:GRN IND AB",
+          "priority": "high"
+        },
+        {
+          "id": "green-industry-42",
+          "task": "Book carpet",
+          "section": "booth_setup",
+          "ownerSpreadsheet": "Elisabeth",
+          "owner": "Graphics",
+          "status": "pending",
+          "source": "spreadsheet:GRN IND AB",
+          "priority": "high"
+        },
+        {
+          "id": "green-industry-43",
+          "task": "Book tables/drapes/easle",
+          "section": "booth_setup",
+          "ownerSpreadsheet": "Elisabeth",
+          "owner": "Graphics",
+          "status": "pending",
+          "source": "spreadsheet:GRN IND AB",
+          "priority": "high"
+        },
+        {
+          "id": "green-industry-45",
+          "task": "Carrier",
+          "section": "freight",
+          "ownerSpreadsheet": "Michael",
+          "owner": "Michael",
+          "status": "pending",
+          "source": "spreadsheet:GRN IND AB",
+          "priority": "high"
+        },
+        {
+          "id": "green-industry-46",
+          "task": "Delivery location",
+          "section": "freight",
+          "ownerSpreadsheet": "Elisabeth",
+          "owner": "Graphics",
+          "status": "pending",
+          "source": "spreadsheet:GRN IND AB",
+          "info": "Green Industry Show 2025\nJolly Farmer Products - Booth#1117\nc/o Goodkey Show Services LTD.\n5506 - 48 St NW\nEdmonton, AB  T6B 2Z1",
+          "priority": "high"
+        },
+        {
+          "id": "green-industry-47",
+          "task": "Advance shipping opens (date)",
+          "section": "freight",
+          "ownerSpreadsheet": "Elisabeth",
+          "owner": "Graphics",
+          "status": "pending",
+          "source": "spreadsheet:GRN IND AB",
+          "priority": "high"
+        },
+        {
+          "id": "green-industry-48",
+          "task": "Advance shipping closes (date)",
+          "section": "freight",
+          "ownerSpreadsheet": "Elisabeth",
+          "owner": "Graphics",
+          "status": "pending",
+          "source": "spreadsheet:GRN IND AB",
+          "priority": "high"
+        },
+        {
+          "id": "green-industry-49",
+          "task": "Show Site Arrival date #1 (if JFT)",
+          "section": "freight",
+          "ownerSpreadsheet": "Elisabeth",
+          "owner": "Michael",
+          "status": "pending",
+          "source": "spreadsheet:GRN IND AB",
+          "priority": "high"
+        },
+        {
+          "id": "green-industry-50",
+          "task": "Show Site Arrival time #1 (if JFT)",
+          "section": "freight",
+          "ownerSpreadsheet": "Elisabeth",
+          "owner": "Michael",
+          "status": "pending",
+          "source": "spreadsheet:GRN IND AB",
+          "priority": "high"
+        },
+        {
+          "id": "green-industry-51",
+          "task": "Freight departure date",
+          "section": "freight",
+          "ownerSpreadsheet": "Michael",
+          "owner": "Michael",
+          "status": "pending",
+          "source": "spreadsheet:GRN IND AB",
+          "priority": "critical"
+        },
+        {
+          "id": "green-industry-52",
+          "task": "End of show pick up (if JFT)",
+          "section": "freight",
+          "ownerSpreadsheet": "Elisabeth",
+          "owner": "Michael",
+          "status": "pending",
+          "source": "spreadsheet:GRN IND AB",
+          "priority": "high"
+        },
+        {
+          "id": "green-industry-53",
+          "task": "Order drayage",
+          "section": "freight",
+          "ownerSpreadsheet": "Elisabeth",
+          "owner": "Graphics",
+          "status": "pending",
+          "source": "spreadsheet:GRN IND AB",
+          "priority": "high"
+        },
+        {
+          "id": "green-industry-55",
+          "task": "Contact books",
+          "section": "literature",
+          "ownerSpreadsheet": "Mailroom",
+          "owner": "Mailroom",
+          "status": "pending",
+          "source": "spreadsheet:GRN IND AB"
+        },
+        {
+          "id": "green-industry-56",
+          "task": "Guest passes distributed",
+          "section": "literature",
+          "ownerSpreadsheet": "Elisabeth/Reps",
+          "owner": "Debbie",
+          "status": "pending",
+          "source": "spreadsheet:GRN IND AB"
+        },
+        {
+          "id": "green-industry-57",
+          "task": "Lead retrieval/printer",
+          "section": "literature",
+          "ownerSpreadsheet": "Elisabeth",
+          "owner": "Graphics",
+          "status": "pending",
+          "source": "spreadsheet:GRN IND AB"
+        },
+        {
+          "id": "green-industry-58",
+          "task": "Transportation",
+          "section": "literature",
+          "ownerSpreadsheet": "Michael",
+          "owner": "Michael",
+          "status": "pending",
+          "source": "spreadsheet:GRN IND AB"
+        },
+        {
+          "id": "green-industry-59",
+          "task": "Pack literature",
+          "section": "literature",
+          "ownerSpreadsheet": "Mailroom",
+          "owner": "Mailroom",
+          "status": "pending",
+          "source": "spreadsheet:GRN IND AB"
+        },
+        {
+          "id": "green-industry-61",
+          "task": "Cell phone",
+          "section": "on_site",
+          "ownerSpreadsheet": "Personnel",
+          "owner": "On-site reps",
+          "status": "pending",
+          "source": "spreadsheet:GRN IND AB"
+        },
+        {
+          "id": "green-industry-62",
+          "task": "Set up hours",
+          "section": "on_site",
+          "ownerSpreadsheet": "Elisabeth",
+          "owner": "Graphics",
+          "status": "pending",
+          "source": "spreadsheet:GRN IND AB"
+        },
+        {
+          "id": "green-industry-63",
+          "task": "Show hours",
+          "section": "on_site",
+          "ownerSpreadsheet": "Elisabeth",
+          "owner": "Graphics",
+          "status": "pending",
+          "source": "spreadsheet:GRN IND AB"
+        },
+        {
+          "id": "green-industry-64",
+          "task": "Take down hours",
+          "section": "on_site",
+          "ownerSpreadsheet": "Elisabeth",
+          "owner": "Graphics",
+          "status": "pending",
+          "source": "spreadsheet:GRN IND AB"
+        },
+        {
+          "id": "green-industry-65",
+          "task": "Storage of empties",
+          "section": "on_site",
+          "ownerSpreadsheet": "Elisabeth",
+          "owner": "Graphics",
+          "status": "pending",
+          "source": "spreadsheet:GRN IND AB"
+        },
+        {
+          "id": "green-industry-66",
+          "task": "Parking",
+          "section": "on_site",
+          "ownerSpreadsheet": "Elisabeth",
+          "owner": "Graphics",
+          "status": "pending",
+          "source": "spreadsheet:GRN IND AB"
+        },
+        {
+          "id": "green-industry-68",
+          "task": "Number of leads",
+          "section": "post_show_review",
+          "ownerSpreadsheet": "Personnel",
+          "owner": "On-site reps",
+          "status": "pending",
+          "source": "spreadsheet:GRN IND AB"
+        },
+        {
+          "id": "green-industry-69",
+          "task": "Number of booths",
+          "section": "post_show_review",
+          "ownerSpreadsheet": "Peter",
+          "owner": "Peter",
+          "status": "pending",
+          "source": "spreadsheet:GRN IND AB"
+        },
+        {
+          "id": "green-industry-70",
+          "task": "Adequate staffing",
+          "section": "post_show_review",
+          "ownerSpreadsheet": "Peter",
+          "owner": "Peter",
+          "status": "pending",
+          "source": "spreadsheet:GRN IND AB"
+        },
+        {
+          "id": "green-industry-71",
+          "task": "Repairs",
+          "section": "post_show_review",
+          "ownerSpreadsheet": "Personnel",
+          "owner": "On-site reps",
+          "status": "pending",
+          "source": "spreadsheet:GRN IND AB"
+        },
+        {
+          "id": "green-industry-72",
+          "task": "Additional comments",
+          "section": "post_show_review",
+          "ownerSpreadsheet": "Personnel",
+          "owner": "On-site reps",
+          "status": "pending",
+          "source": "spreadsheet:GRN IND AB"
+        },
+        {
+          "id": "green-industry-73",
+          "task": "Confirm repeat attendance",
+          "section": "post_show_review",
+          "ownerSpreadsheet": "Peter",
+          "owner": "Peter",
+          "status": "pending",
+          "source": "spreadsheet:GRN IND AB"
+        }
+      ]
+    },
+    {
+      "id": "quebec-vert",
+      "name": "Quebec Vert",
+      "year": 2026,
+      "dates": {
+        "start": "2026-11-18",
+        "end": "2026-11-20"
+      },
+      "location": "l'Espace Saint-Hyacinthe\n2670 avenue Beauparlant\nSaint-Hyacinthe, QC  J2S 4M8",
+      "boothSize": "10x20",
+      "booth": null,
+      "exhibitorPortal": null,
+      "productFocus": "Plugs & Cuttings",
+      "status": "upcoming",
+      "tasks": [
+        {
+          "id": "quebec-vert-14",
+          "task": "Plants",
+          "section": "literature",
+          "ownerSpreadsheet": null,
+          "owner": "Graphics",
+          "status": "pending",
+          "source": "spreadsheet:QUEBEC",
+          "info": "JF Truck"
+        },
+        {
+          "id": "quebec-vert-18",
+          "task": "Register for Show",
+          "section": "show_purchase",
+          "ownerSpreadsheet": "Elisabeth",
+          "owner": "Graphics",
+          "status": "completed",
+          "source": "spreadsheet:QUEBEC"
+        },
+        {
+          "id": "quebec-vert-19",
+          "task": "Down Payment Due",
+          "section": "show_purchase",
+          "ownerSpreadsheet": "Elisabeth",
+          "owner": "Graphics",
+          "status": "completed",
+          "source": "spreadsheet:QUEBEC",
+          "info": "Paid by office in full 2/27/26\nThis included the registration fee, both booths, and electric"
+        },
+        {
+          "id": "quebec-vert-20",
+          "task": "Final Payment Due",
+          "section": "show_purchase",
+          "ownerSpreadsheet": "Elisabeth",
+          "owner": "Graphics",
+          "status": "completed",
+          "source": "spreadsheet:QUEBEC",
+          "info": "Final 50% due by August 1, paid in full 2/27/26"
+        },
+        {
+          "id": "quebec-vert-21",
+          "task": "Booth Number(s)",
+          "section": "show_purchase",
+          "ownerSpreadsheet": "Elisabeth",
+          "owner": "Graphics",
+          "status": "pending",
+          "source": "spreadsheet:QUEBEC",
+          "info": "1237",
+          "priority": "high"
+        },
+        {
+          "id": "quebec-vert-22",
+          "task": "Liability Insurance",
+          "section": "show_purchase",
+          "ownerSpreadsheet": "Elisabeth",
+          "owner": "Graphics",
+          "status": "pending",
+          "source": "spreadsheet:QUEBEC",
+          "dueDate": "2026-09-01",
+          "priority": "critical"
+        },
+        {
+          "id": "quebec-vert-24",
+          "task": "Who is going",
+          "section": "personnel",
+          "ownerSpreadsheet": "Peter",
+          "owner": "Peter",
+          "status": "pending",
+          "source": "spreadsheet:QUEBEC",
+          "info": "Francine, Mandy, Samantha",
+          "priority": "high"
+        },
+        {
+          "id": "quebec-vert-25",
+          "task": "Register personnel",
+          "section": "personnel",
+          "ownerSpreadsheet": "Elisabeth",
+          "owner": "Debbie",
+          "status": "pending",
+          "source": "spreadsheet:QUEBEC",
+          "dueDate": "2026-10-31",
+          "priority": "high"
+        },
+        {
+          "id": "quebec-vert-26",
+          "task": "Book hotel",
+          "section": "personnel",
+          "ownerSpreadsheet": "Elisabeth",
+          "owner": "Debbie",
+          "status": "pending",
+          "source": "spreadsheet:QUEBEC",
+          "info": "Holiday Inn Express & Suites\n1500 Daniel-Johnson St. East\nSaint Hyacinthe, QC  J2S 8W5\nph# 450-251-1111\n3 rooms - 5 nights\nSpecial rates only apply to 3 out of the 5 nights. There are 3 different confirmation number for each person.",
+          "notes": "Booked 4/8/26",
+          "priority": "high"
+        },
+        {
+          "id": "quebec-vert-27",
+          "task": "Hotel for return trip",
+          "section": "personnel",
+          "ownerSpreadsheet": null,
+          "owner": "Debbie",
+          "status": "pending",
+          "source": "spreadsheet:QUEBEC",
+          "priority": "high"
+        },
+        {
+          "id": "quebec-vert-28",
+          "task": "Book airline tickets",
+          "section": "personnel",
+          "ownerSpreadsheet": "Elisabeth",
+          "owner": "Debbie",
+          "status": "pending",
+          "source": "spreadsheet:QUEBEC",
+          "priority": "high"
+        },
+        {
+          "id": "quebec-vert-29",
+          "task": "Travel insurance",
+          "section": "personnel",
+          "ownerSpreadsheet": "Elisabeth",
+          "owner": "Debbie",
+          "status": "pending",
+          "source": "spreadsheet:QUEBEC",
+          "info": "Karen caring for",
+          "priority": "high"
+        },
+        {
+          "id": "quebec-vert-30",
+          "task": "Reserve cars",
+          "section": "personnel",
+          "ownerSpreadsheet": "Elisabeth",
+          "owner": "Debbie",
+          "status": "pending",
+          "source": "spreadsheet:QUEBEC",
+          "priority": "high"
+        },
+        {
+          "id": "quebec-vert-31",
+          "task": "GPS",
+          "section": "personnel",
+          "ownerSpreadsheet": "Elisabeth",
+          "owner": "Debbie",
+          "status": "pending",
+          "source": "spreadsheet:QUEBEC",
+          "priority": "high"
+        },
+        {
+          "id": "quebec-vert-32",
+          "task": "Ground transport at destination",
+          "section": "personnel",
+          "ownerSpreadsheet": "Elisabeth",
+          "owner": "Debbie",
+          "status": "pending",
+          "source": "spreadsheet:QUEBEC",
+          "priority": "high"
+        },
+        {
+          "id": "quebec-vert-33",
+          "task": "Petty cash",
+          "section": "personnel",
+          "ownerSpreadsheet": "Elisabeth",
+          "owner": "Debbie",
+          "status": "pending",
+          "source": "spreadsheet:QUEBEC",
+          "priority": "high"
+        },
+        {
+          "id": "quebec-vert-34",
+          "task": "Credit cards",
+          "section": "personnel",
+          "ownerSpreadsheet": "Elisabeth",
+          "owner": "Debbie",
+          "status": "pending",
+          "source": "spreadsheet:QUEBEC",
+          "priority": "high"
+        },
+        {
+          "id": "quebec-vert-36",
+          "task": "Design",
+          "section": "booth_setup",
+          "ownerSpreadsheet": "Artroom",
+          "owner": "Graphics",
+          "status": "pending",
+          "source": "spreadsheet:QUEBEC",
+          "priority": "high"
+        },
+        {
+          "id": "quebec-vert-37",
+          "task": "Design Notes",
+          "section": "booth_setup",
+          "ownerSpreadsheet": "Artroom",
+          "owner": "Graphics",
+          "status": "pending",
+          "source": "spreadsheet:QUEBEC",
+          "priority": "high"
+        },
+        {
+          "id": "quebec-vert-38",
+          "task": "Pack display",
+          "section": "booth_setup",
+          "ownerSpreadsheet": "Artroom",
+          "owner": "Graphics",
+          "status": "pending",
+          "source": "spreadsheet:QUEBEC",
+          "priority": "high"
+        },
+        {
+          "id": "quebec-vert-39",
+          "task": "Book Plugs & Cuttings",
+          "section": "booth_setup",
+          "ownerSpreadsheet": "Peter",
+          "owner": "Peter",
+          "status": "pending",
+          "source": "spreadsheet:QUEBEC",
+          "priority": "high"
+        },
+        {
+          "id": "quebec-vert-40",
+          "task": "Book Finished Product",
+          "section": "booth_setup",
+          "ownerSpreadsheet": "Peter",
+          "owner": "Peter",
+          "status": "pending",
+          "source": "spreadsheet:QUEBEC",
+          "priority": "high"
+        },
+        {
+          "id": "quebec-vert-41",
+          "task": "Book electricity",
+          "section": "booth_setup",
+          "ownerSpreadsheet": "Elisabeth",
+          "owner": "Graphics",
+          "status": "pending",
+          "source": "spreadsheet:QUEBEC",
+          "info": "Paid for along with booth payment 2/27/26",
+          "priority": "high"
+        },
+        {
+          "id": "quebec-vert-45",
+          "task": "Carrier",
+          "section": "freight",
+          "ownerSpreadsheet": "Michael",
+          "owner": "Michael",
+          "status": "pending",
+          "source": "spreadsheet:QUEBEC",
+          "info": "Our truck",
+          "priority": "high"
+        },
+        {
+          "id": "quebec-vert-46",
+          "task": "Delivery location",
+          "section": "freight",
+          "ownerSpreadsheet": "Elisabeth",
+          "owner": "Graphics",
+          "status": "pending",
+          "source": "spreadsheet:QUEBEC",
+          "priority": "high"
+        },
+        {
+          "id": "quebec-vert-47",
+          "task": "Advance shipping opens (date)",
+          "section": "freight",
+          "ownerSpreadsheet": "Elisabeth",
+          "owner": "Graphics",
+          "status": "pending",
+          "source": "spreadsheet:QUEBEC",
+          "priority": "high"
+        },
+        {
+          "id": "quebec-vert-48",
+          "task": "Advance shipping closes (date)",
+          "section": "freight",
+          "ownerSpreadsheet": "Elisabeth",
+          "owner": "Graphics",
+          "status": "pending",
+          "source": "spreadsheet:QUEBEC",
+          "priority": "high"
+        },
+        {
+          "id": "quebec-vert-49",
+          "task": "Show Site Arrival date #1 (if JFT)",
+          "section": "freight",
+          "ownerSpreadsheet": "Elisabeth",
+          "owner": "Michael",
+          "status": "pending",
+          "source": "spreadsheet:QUEBEC",
+          "priority": "high"
+        },
+        {
+          "id": "quebec-vert-50",
+          "task": "Show Site Arrival time #1 (if JFT)",
+          "section": "freight",
+          "ownerSpreadsheet": "Elisabeth",
+          "owner": "Michael",
+          "status": "pending",
+          "source": "spreadsheet:QUEBEC",
+          "priority": "high"
+        },
+        {
+          "id": "quebec-vert-51",
+          "task": "Freight departure date",
+          "section": "freight",
+          "ownerSpreadsheet": "Michael",
+          "owner": "Michael",
+          "status": "pending",
+          "source": "spreadsheet:QUEBEC",
+          "priority": "critical"
+        },
+        {
+          "id": "quebec-vert-52",
+          "task": "End of show pick up (if JFT)",
+          "section": "freight",
+          "ownerSpreadsheet": "Elisabeth",
+          "owner": "Michael",
+          "status": "pending",
+          "source": "spreadsheet:QUEBEC",
+          "priority": "high"
+        },
+        {
+          "id": "quebec-vert-53",
+          "task": "Order drayage",
+          "section": "freight",
+          "ownerSpreadsheet": "Elisabeth",
+          "owner": "Graphics",
+          "status": "pending",
+          "source": "spreadsheet:QUEBEC",
+          "priority": "high"
+        },
+        {
+          "id": "quebec-vert-55",
+          "task": "Contact books",
+          "section": "literature",
+          "ownerSpreadsheet": "Mailroom",
+          "owner": "Mailroom",
+          "status": "pending",
+          "source": "spreadsheet:QUEBEC"
+        },
+        {
+          "id": "quebec-vert-56",
+          "task": "Guest passes distributed",
+          "section": "literature",
+          "ownerSpreadsheet": "Elisabeth/Reps",
+          "owner": "Debbie",
+          "status": "pending",
+          "source": "spreadsheet:QUEBEC",
+          "dueDate": "2026-08-01"
+        },
+        {
+          "id": "quebec-vert-57",
+          "task": "Lead retrieval/printer",
+          "section": "literature",
+          "ownerSpreadsheet": "Elisabeth",
+          "owner": "Graphics",
+          "status": "pending",
+          "source": "spreadsheet:QUEBEC",
+          "info": "n/a"
+        },
+        {
+          "id": "quebec-vert-58",
+          "task": "Transportation",
+          "section": "literature",
+          "ownerSpreadsheet": "Michael",
+          "owner": "Michael",
+          "status": "pending",
+          "source": "spreadsheet:QUEBEC"
+        },
+        {
+          "id": "quebec-vert-59",
+          "task": "Pack literature",
+          "section": "literature",
+          "ownerSpreadsheet": "Mailroom",
+          "owner": "Mailroom",
+          "status": "pending",
+          "source": "spreadsheet:QUEBEC"
+        },
+        {
+          "id": "quebec-vert-61",
+          "task": "Cell phone",
+          "section": "on_site",
+          "ownerSpreadsheet": "Personnel",
+          "owner": "On-site reps",
+          "status": "pending",
+          "source": "spreadsheet:QUEBEC"
+        },
+        {
+          "id": "quebec-vert-62",
+          "task": "Set up hours",
+          "section": "on_site",
+          "ownerSpreadsheet": "Elisabeth",
+          "owner": "Graphics",
+          "status": "pending",
+          "source": "spreadsheet:QUEBEC",
+          "info": "Mon, Nov 16 - 7 am-9 pm\nTues, Nov 17 - 7 am-9 pm"
+        },
+        {
+          "id": "quebec-vert-63",
+          "task": "Show hours",
+          "section": "on_site",
+          "ownerSpreadsheet": "Elisabeth",
+          "owner": "Graphics",
+          "status": "pending",
+          "source": "spreadsheet:QUEBEC",
+          "info": "Wed, Nov 18 - 9 am-5 pm\nThurs, Nov 19 - 9 am-5 pm\nFri, Nov 20 - 9 am-3 pm"
+        },
+        {
+          "id": "quebec-vert-64",
+          "task": "Take down hours",
+          "section": "on_site",
+          "ownerSpreadsheet": "Elisabeth",
+          "owner": "Graphics",
+          "status": "pending",
+          "source": "spreadsheet:QUEBEC",
+          "info": "Fri, Nov 20 - 3 pm-9 pm"
+        },
+        {
+          "id": "quebec-vert-65",
+          "task": "Storage of empties",
+          "section": "on_site",
+          "ownerSpreadsheet": "Elisabeth",
+          "owner": "Graphics",
+          "status": "pending",
+          "source": "spreadsheet:QUEBEC"
+        },
+        {
+          "id": "quebec-vert-66",
+          "task": "Parking",
+          "section": "on_site",
+          "ownerSpreadsheet": "Elisabeth",
+          "owner": "Graphics",
+          "status": "pending",
+          "source": "spreadsheet:QUEBEC"
+        },
+        {
+          "id": "quebec-vert-68",
+          "task": "Number of leads",
+          "section": "post_show_review",
+          "ownerSpreadsheet": "Personnel",
+          "owner": "On-site reps",
+          "status": "pending",
+          "source": "spreadsheet:QUEBEC"
+        },
+        {
+          "id": "quebec-vert-69",
+          "task": "Number of booths",
+          "section": "post_show_review",
+          "ownerSpreadsheet": "Peter",
+          "owner": "Peter",
+          "status": "pending",
+          "source": "spreadsheet:QUEBEC"
+        },
+        {
+          "id": "quebec-vert-70",
+          "task": "Adequate staffing",
+          "section": "post_show_review",
+          "ownerSpreadsheet": "Peter",
+          "owner": "Peter",
+          "status": "pending",
+          "source": "spreadsheet:QUEBEC"
+        },
+        {
+          "id": "quebec-vert-71",
+          "task": "Repairs",
+          "section": "post_show_review",
+          "ownerSpreadsheet": "Personnel",
+          "owner": "On-site reps",
+          "status": "pending",
+          "source": "spreadsheet:QUEBEC"
+        },
+        {
+          "id": "quebec-vert-72",
+          "task": "Additional comments",
+          "section": "post_show_review",
+          "ownerSpreadsheet": "Personnel",
+          "owner": "On-site reps",
+          "status": "pending",
+          "source": "spreadsheet:QUEBEC"
+        },
+        {
+          "id": "quebec-vert-73",
+          "task": "Confirm repeat attendance",
+          "section": "post_show_review",
+          "ownerSpreadsheet": "Peter",
+          "owner": "Peter",
+          "status": "pending",
+          "source": "spreadsheet:QUEBEC"
+        }
+      ]
+    },
+    {
+      "id": "horteast",
+      "name": "HortEast",
+      "year": 2026,
+      "dates": {
+        "start": "2026-11-24",
+        "end": "2026-11-25"
+      },
+      "location": "Moncton Coliseum\n377 Killam Drive\nMoncton, NB  E1C 3T1",
+      "boothSize": "10x10",
+      "booth": null,
+      "exhibitorPortal": null,
+      "productFocus": "Plugs & Cuttings",
+      "status": "upcoming",
+      "tasks": [
+        {
+          "id": "horteast-14",
+          "task": "Plants",
+          "section": "literature",
+          "ownerSpreadsheet": null,
+          "owner": "Graphics",
+          "status": "pending",
+          "source": "spreadsheet:HORTEAST",
+          "info": "Car"
+        },
+        {
+          "id": "horteast-18",
+          "task": "Register for Show",
+          "section": "show_purchase",
+          "ownerSpreadsheet": "Elisabeth",
+          "owner": "Graphics",
+          "status": "pending",
+          "source": "spreadsheet:HORTEAST",
+          "info": "Signed up for membership for Landscape NB on 3/26/26. The membership is effective until 10/31/26. Next renewal date is Nov 1.\nWe signed up for membership with Landscape Alberta, but to become members we have to also be members in our home province association.",
+          "notes": "Membership paid for 3/26/26\nRegistered for show\n4/23/26",
+          "priority": "high"
+        },
+        {
+          "id": "horteast-19",
+          "task": "Down Payment Due",
+          "section": "show_purchase",
+          "ownerSpreadsheet": "Elisabeth",
+          "owner": "Graphics",
+          "status": "pending",
+          "source": "spreadsheet:HORTEAST",
+          "priority": "high"
+        },
+        {
+          "id": "horteast-20",
+          "task": "Final Payment Due",
+          "section": "show_purchase",
+          "ownerSpreadsheet": "Elisabeth",
+          "owner": "Graphics",
+          "status": "pending",
+          "source": "spreadsheet:HORTEAST",
+          "info": "Paid in full 4/27/26",
+          "priority": "high"
+        },
+        {
+          "id": "horteast-21",
+          "task": "Booth Number(s)",
+          "section": "show_purchase",
+          "ownerSpreadsheet": "Elisabeth",
+          "owner": "Graphics",
+          "status": "pending",
+          "source": "spreadsheet:HORTEAST",
+          "priority": "high"
+        },
+        {
+          "id": "horteast-22",
+          "task": "Liability Insurance",
+          "section": "show_purchase",
+          "ownerSpreadsheet": "Elisabeth",
+          "owner": "Graphics",
+          "status": "pending",
+          "source": "spreadsheet:HORTEAST",
+          "info": "Submitted 5/18/26",
+          "notes": "Will need to send an updated copy in the fall.",
+          "priority": "critical"
+        },
+        {
+          "id": "horteast-24",
+          "task": "Who is going",
+          "section": "personnel",
+          "ownerSpreadsheet": "Peter",
+          "owner": "Peter",
+          "status": "pending",
+          "source": "spreadsheet:HORTEAST",
+          "info": "Natasha",
+          "priority": "high"
+        },
+        {
+          "id": "horteast-25",
+          "task": "Register personnel",
+          "section": "personnel",
+          "ownerSpreadsheet": "Elisabeth",
+          "owner": "Debbie",
+          "status": "completed",
+          "source": "spreadsheet:HORTEAST",
+          "notes": "Done 4/23/26"
+        },
+        {
+          "id": "horteast-26",
+          "task": "Book hotel",
+          "section": "personnel",
+          "ownerSpreadsheet": "Elisabeth",
+          "owner": "Debbie",
+          "status": "pending",
+          "source": "spreadsheet:HORTEAST",
+          "priority": "high"
+        },
+        {
+          "id": "horteast-28",
+          "task": "Book airline tickets",
+          "section": "personnel",
+          "ownerSpreadsheet": "Elisabeth",
+          "owner": "Debbie",
+          "status": "pending",
+          "source": "spreadsheet:HORTEAST",
+          "priority": "high"
+        },
+        {
+          "id": "horteast-29",
+          "task": "Travel insurance",
+          "section": "personnel",
+          "ownerSpreadsheet": "Elisabeth",
+          "owner": "Debbie",
+          "status": "pending",
+          "source": "spreadsheet:HORTEAST",
+          "priority": "high"
+        },
+        {
+          "id": "horteast-30",
+          "task": "Reserve cars",
+          "section": "personnel",
+          "ownerSpreadsheet": "Elisabeth",
+          "owner": "Debbie",
+          "status": "pending",
+          "source": "spreadsheet:HORTEAST",
+          "priority": "high"
+        },
+        {
+          "id": "horteast-31",
+          "task": "GPS",
+          "section": "personnel",
+          "ownerSpreadsheet": "Elisabeth",
+          "owner": "Debbie",
+          "status": "pending",
+          "source": "spreadsheet:HORTEAST",
+          "priority": "high"
+        },
+        {
+          "id": "horteast-32",
+          "task": "Ground transport at destination",
+          "section": "personnel",
+          "ownerSpreadsheet": "Elisabeth",
+          "owner": "Debbie",
+          "status": "pending",
+          "source": "spreadsheet:HORTEAST",
+          "priority": "high"
+        },
+        {
+          "id": "horteast-33",
+          "task": "Petty cash",
+          "section": "personnel",
+          "ownerSpreadsheet": "Elisabeth",
+          "owner": "Debbie",
+          "status": "pending",
+          "source": "spreadsheet:HORTEAST",
+          "priority": "high"
+        },
+        {
+          "id": "horteast-34",
+          "task": "Credit cards",
+          "section": "personnel",
+          "ownerSpreadsheet": "Elisabeth",
+          "owner": "Debbie",
+          "status": "pending",
+          "source": "spreadsheet:HORTEAST",
+          "priority": "high"
+        },
+        {
+          "id": "horteast-36",
+          "task": "Design",
+          "section": "booth_setup",
+          "ownerSpreadsheet": "Artroom",
+          "owner": "Graphics",
+          "status": "pending",
+          "source": "spreadsheet:HORTEAST",
+          "priority": "high"
+        },
+        {
+          "id": "horteast-37",
+          "task": "Design Notes",
+          "section": "booth_setup",
+          "ownerSpreadsheet": "Artroom",
+          "owner": "Graphics",
+          "status": "pending",
+          "source": "spreadsheet:HORTEAST",
+          "priority": "high"
+        },
+        {
+          "id": "horteast-38",
+          "task": "Pack display",
+          "section": "booth_setup",
+          "ownerSpreadsheet": "Artroom",
+          "owner": "Graphics",
+          "status": "pending",
+          "source": "spreadsheet:HORTEAST",
+          "priority": "high"
+        },
+        {
+          "id": "horteast-39",
+          "task": "Book Plugs & Cuttings",
+          "section": "booth_setup",
+          "ownerSpreadsheet": "Peter",
+          "owner": "Peter",
+          "status": "pending",
+          "source": "spreadsheet:HORTEAST",
+          "priority": "high"
+        },
+        {
+          "id": "horteast-40",
+          "task": "Book Finished Product",
+          "section": "booth_setup",
+          "ownerSpreadsheet": "Peter",
+          "owner": "Peter",
+          "status": "pending",
+          "source": "spreadsheet:HORTEAST",
+          "priority": "high"
+        },
+        {
+          "id": "horteast-41",
+          "task": "Book electricity",
+          "section": "booth_setup",
+          "ownerSpreadsheet": "Elisabeth",
+          "owner": "Graphics",
+          "status": "completed",
+          "source": "spreadsheet:HORTEAST"
+        },
+        {
+          "id": "horteast-43",
+          "task": "Book tables/drapes/easle",
+          "section": "booth_setup",
+          "ownerSpreadsheet": null,
+          "owner": "Graphics",
+          "status": "completed",
+          "source": "spreadsheet:HORTEAST",
+          "info": "Booth comes with one 6\" dressed table and 2 chairs upon request"
+        },
+        {
+          "id": "horteast-45",
+          "task": "Carrier",
+          "section": "freight",
+          "ownerSpreadsheet": "Michael",
+          "owner": "Michael",
+          "status": "pending",
+          "source": "spreadsheet:HORTEAST",
+          "priority": "high"
+        },
+        {
+          "id": "horteast-46",
+          "task": "Delivery location",
+          "section": "freight",
+          "ownerSpreadsheet": "Elisabeth",
+          "owner": "Graphics",
+          "status": "pending",
+          "source": "spreadsheet:HORTEAST",
+          "priority": "high"
+        },
+        {
+          "id": "horteast-47",
+          "task": "Advance shipping opens (date)",
+          "section": "freight",
+          "ownerSpreadsheet": "Elisabeth",
+          "owner": "Graphics",
+          "status": "pending",
+          "source": "spreadsheet:HORTEAST",
+          "priority": "high"
+        },
+        {
+          "id": "horteast-48",
+          "task": "Advance shipping closes (date)",
+          "section": "freight",
+          "ownerSpreadsheet": "Elisabeth",
+          "owner": "Graphics",
+          "status": "pending",
+          "source": "spreadsheet:HORTEAST",
+          "priority": "high"
+        },
+        {
+          "id": "horteast-49",
+          "task": "Show Site Arrival date #1 (if JFT)",
+          "section": "freight",
+          "ownerSpreadsheet": "Elisabeth",
+          "owner": "Michael",
+          "status": "pending",
+          "source": "spreadsheet:HORTEAST",
+          "priority": "high"
+        },
+        {
+          "id": "horteast-50",
+          "task": "Show Site Arrival time #1 (if JFT)",
+          "section": "freight",
+          "ownerSpreadsheet": "Elisabeth",
+          "owner": "Michael",
+          "status": "pending",
+          "source": "spreadsheet:HORTEAST",
+          "priority": "high"
+        },
+        {
+          "id": "horteast-51",
+          "task": "Freight departure date",
+          "section": "freight",
+          "ownerSpreadsheet": "Michael",
+          "owner": "Michael",
+          "status": "pending",
+          "source": "spreadsheet:HORTEAST",
+          "priority": "critical"
+        },
+        {
+          "id": "horteast-52",
+          "task": "End of show pick up (if JFT)",
+          "section": "freight",
+          "ownerSpreadsheet": "Elisabeth",
+          "owner": "Michael",
+          "status": "pending",
+          "source": "spreadsheet:HORTEAST",
+          "priority": "high"
+        },
+        {
+          "id": "horteast-53",
+          "task": "Order drayage",
+          "section": "freight",
+          "ownerSpreadsheet": "Elisabeth",
+          "owner": "Graphics",
+          "status": "pending",
+          "source": "spreadsheet:HORTEAST",
+          "priority": "high"
+        },
+        {
+          "id": "horteast-55",
+          "task": "Contact books",
+          "section": "literature",
+          "ownerSpreadsheet": "Mailroom",
+          "owner": "Mailroom",
+          "status": "pending",
+          "source": "spreadsheet:HORTEAST"
+        },
+        {
+          "id": "horteast-56",
+          "task": "Guest passes distributed",
+          "section": "literature",
+          "ownerSpreadsheet": "Elisabeth/Reps",
+          "owner": "Debbie",
+          "status": "pending",
+          "source": "spreadsheet:HORTEAST"
+        },
+        {
+          "id": "horteast-57",
+          "task": "Lead retrieval/printer",
+          "section": "literature",
+          "ownerSpreadsheet": "Elisabeth",
+          "owner": "Graphics",
+          "status": "pending",
+          "source": "spreadsheet:HORTEAST"
+        },
+        {
+          "id": "horteast-58",
+          "task": "Transportation",
+          "section": "literature",
+          "ownerSpreadsheet": "Michael",
+          "owner": "Michael",
+          "status": "pending",
+          "source": "spreadsheet:HORTEAST"
+        },
+        {
+          "id": "horteast-59",
+          "task": "Pack literature",
+          "section": "literature",
+          "ownerSpreadsheet": "Mailroom",
+          "owner": "Mailroom",
+          "status": "pending",
+          "source": "spreadsheet:HORTEAST"
+        },
+        {
+          "id": "horteast-61",
+          "task": "Cell phone",
+          "section": "on_site",
+          "ownerSpreadsheet": "Personnel",
+          "owner": "On-site reps",
+          "status": "pending",
+          "source": "spreadsheet:HORTEAST"
+        },
+        {
+          "id": "horteast-62",
+          "task": "Set up hours",
+          "section": "on_site",
+          "ownerSpreadsheet": "Elisabeth",
+          "owner": "Graphics",
+          "status": "pending",
+          "source": "spreadsheet:HORTEAST",
+          "info": "Mon, Nov 23 - 8:30 am-5 pm"
+        },
+        {
+          "id": "horteast-63",
+          "task": "Show hours",
+          "section": "on_site",
+          "ownerSpreadsheet": "Elisabeth",
+          "owner": "Graphics",
+          "status": "pending",
+          "source": "spreadsheet:HORTEAST",
+          "info": "Tues, Nov 24 - 10 am-4 pm\nWed, Nov 25 - 10 am-2 pm"
+        },
+        {
+          "id": "horteast-64",
+          "task": "Take down hours",
+          "section": "on_site",
+          "ownerSpreadsheet": "Elisabeth",
+          "owner": "Graphics",
+          "status": "pending",
+          "source": "spreadsheet:HORTEAST",
+          "info": "Wed, Nov 25 - 2 pm-5 pm"
+        },
+        {
+          "id": "horteast-65",
+          "task": "Storage of empties",
+          "section": "on_site",
+          "ownerSpreadsheet": "Elisabeth",
+          "owner": "Graphics",
+          "status": "pending",
+          "source": "spreadsheet:HORTEAST"
+        },
+        {
+          "id": "horteast-66",
+          "task": "Notes",
+          "section": "on_site",
+          "ownerSpreadsheet": "Elisabeth",
+          "owner": "Graphics",
+          "status": "pending",
+          "source": "spreadsheet:HORTEAST",
+          "info": "Lunch will be provided for exhibitors"
+        },
+        {
+          "id": "horteast-68",
+          "task": "Number of leads",
+          "section": "post_show_review",
+          "ownerSpreadsheet": "Personnel",
+          "owner": "On-site reps",
+          "status": "pending",
+          "source": "spreadsheet:HORTEAST"
+        },
+        {
+          "id": "horteast-69",
+          "task": "Number of booths",
+          "section": "post_show_review",
+          "ownerSpreadsheet": "Peter",
+          "owner": "Peter",
+          "status": "pending",
+          "source": "spreadsheet:HORTEAST"
+        },
+        {
+          "id": "horteast-70",
+          "task": "Adequate staffing",
+          "section": "post_show_review",
+          "ownerSpreadsheet": "Peter",
+          "owner": "Peter",
+          "status": "pending",
+          "source": "spreadsheet:HORTEAST"
+        },
+        {
+          "id": "horteast-71",
+          "task": "Repairs",
+          "section": "post_show_review",
+          "ownerSpreadsheet": "Personnel",
+          "owner": "On-site reps",
+          "status": "pending",
+          "source": "spreadsheet:HORTEAST"
+        },
+        {
+          "id": "horteast-72",
+          "task": "Additional comments",
+          "section": "post_show_review",
+          "ownerSpreadsheet": "Personnel",
+          "owner": "On-site reps",
+          "status": "pending",
+          "source": "spreadsheet:HORTEAST"
+        },
+        {
+          "id": "horteast-73",
+          "task": "Confirm repeat attendance",
+          "section": "post_show_review",
+          "ownerSpreadsheet": "Peter",
+          "owner": "Peter",
+          "status": "pending",
+          "source": "spreadsheet:HORTEAST"
+        }
+      ]
+    },
+    {
+      "id": "mid-ohio-growers-meeting",
+      "name": "Mid-Ohio Growers Meeting",
+      "year": 2026,
+      "dates": {
+        "start": "2027-01-07",
+        "end": "2027-01-08"
+      },
+      "location": "Mt Hope Event Cneter\n8076 State Route 242\nMillersburg, OH 44654",
+      "boothSize": null,
+      "booth": null,
+      "exhibitorPortal": null,
+      "productFocus": "Plugs & Cuttings",
+      "status": "upcoming",
+      "tasks": [
+        {
+          "id": "mid-ohio-growers-meeting-18",
+          "task": "Register for Show",
+          "section": "show_purchase",
+          "ownerSpreadsheet": "Elisabeth",
+          "owner": "Graphics",
+          "status": "pending",
+          "source": "spreadsheet:Mid-Ohio",
+          "priority": "high"
+        },
+        {
+          "id": "mid-ohio-growers-meeting-19",
+          "task": "Down Payment Due",
+          "section": "show_purchase",
+          "ownerSpreadsheet": "Elisabeth",
+          "owner": "Graphics",
+          "status": "pending",
+          "source": "spreadsheet:Mid-Ohio",
+          "priority": "high"
+        },
+        {
+          "id": "mid-ohio-growers-meeting-20",
+          "task": "Final Payment Due",
+          "section": "show_purchase",
+          "ownerSpreadsheet": "Elisabeth",
+          "owner": "Graphics",
+          "status": "pending",
+          "source": "spreadsheet:Mid-Ohio",
+          "priority": "high"
+        },
+        {
+          "id": "mid-ohio-growers-meeting-21",
+          "task": "Booth Number(s)",
+          "section": "show_purchase",
+          "ownerSpreadsheet": "Elisabeth",
+          "owner": "Graphics",
+          "status": "pending",
+          "source": "spreadsheet:Mid-Ohio",
+          "priority": "high"
+        },
+        {
+          "id": "mid-ohio-growers-meeting-22",
+          "task": "Liability Insurance",
+          "section": "show_purchase",
+          "ownerSpreadsheet": "Elisabeth",
+          "owner": "Graphics",
+          "status": "pending",
+          "source": "spreadsheet:Mid-Ohio",
+          "priority": "critical"
+        },
+        {
+          "id": "mid-ohio-growers-meeting-24",
+          "task": "Who is going",
+          "section": "personnel",
+          "ownerSpreadsheet": "Peter",
+          "owner": "Peter",
+          "status": "pending",
+          "source": "spreadsheet:Mid-Ohio",
+          "priority": "high"
+        },
+        {
+          "id": "mid-ohio-growers-meeting-25",
+          "task": "Register personnel",
+          "section": "personnel",
+          "ownerSpreadsheet": "Elisabeth",
+          "owner": "Debbie",
+          "status": "pending",
+          "source": "spreadsheet:Mid-Ohio",
+          "priority": "high"
+        },
+        {
+          "id": "mid-ohio-growers-meeting-26",
+          "task": "Book hotel",
+          "section": "personnel",
+          "ownerSpreadsheet": "Elisabeth",
+          "owner": "Debbie",
+          "status": "pending",
+          "source": "spreadsheet:Mid-Ohio",
+          "priority": "high"
+        },
+        {
+          "id": "mid-ohio-growers-meeting-27",
+          "task": "Transit Hotels booked",
+          "section": "personnel",
+          "ownerSpreadsheet": "Elisabeth",
+          "owner": "Debbie",
+          "status": "pending",
+          "source": "spreadsheet:Mid-Ohio",
+          "priority": "high"
+        },
+        {
+          "id": "mid-ohio-growers-meeting-28",
+          "task": "Book airline tickets",
+          "section": "personnel",
+          "ownerSpreadsheet": "Elisabeth",
+          "owner": "Debbie",
+          "status": "pending",
+          "source": "spreadsheet:Mid-Ohio",
+          "priority": "high"
+        },
+        {
+          "id": "mid-ohio-growers-meeting-29",
+          "task": "Travel insurance",
+          "section": "personnel",
+          "ownerSpreadsheet": "Elisabeth",
+          "owner": "Debbie",
+          "status": "pending",
+          "source": "spreadsheet:Mid-Ohio",
+          "priority": "high"
+        },
+        {
+          "id": "mid-ohio-growers-meeting-30",
+          "task": "Reserve cars",
+          "section": "personnel",
+          "ownerSpreadsheet": "Elisabeth",
+          "owner": "Debbie",
+          "status": "pending",
+          "source": "spreadsheet:Mid-Ohio",
+          "priority": "high"
+        },
+        {
+          "id": "mid-ohio-growers-meeting-31",
+          "task": "GPS",
+          "section": "personnel",
+          "ownerSpreadsheet": "Elisabeth",
+          "owner": "Debbie",
+          "status": "pending",
+          "source": "spreadsheet:Mid-Ohio",
+          "priority": "high"
+        },
+        {
+          "id": "mid-ohio-growers-meeting-32",
+          "task": "Ground transport at destination",
+          "section": "personnel",
+          "ownerSpreadsheet": "Elisabeth",
+          "owner": "Debbie",
+          "status": "pending",
+          "source": "spreadsheet:Mid-Ohio",
+          "priority": "high"
+        },
+        {
+          "id": "mid-ohio-growers-meeting-33",
+          "task": "Petty cash",
+          "section": "personnel",
+          "ownerSpreadsheet": "Elisabeth",
+          "owner": "Debbie",
+          "status": "pending",
+          "source": "spreadsheet:Mid-Ohio",
+          "priority": "high"
+        },
+        {
+          "id": "mid-ohio-growers-meeting-34",
+          "task": "Credit cards",
+          "section": "personnel",
+          "ownerSpreadsheet": "Elisabeth",
+          "owner": "Debbie",
+          "status": "pending",
+          "source": "spreadsheet:Mid-Ohio",
+          "priority": "high"
+        },
+        {
+          "id": "mid-ohio-growers-meeting-36",
+          "task": "Design",
+          "section": "booth_setup",
+          "ownerSpreadsheet": "Artroom",
+          "owner": "Graphics",
+          "status": "pending",
+          "source": "spreadsheet:Mid-Ohio",
+          "priority": "high"
+        },
+        {
+          "id": "mid-ohio-growers-meeting-37",
+          "task": "Design Notes",
+          "section": "booth_setup",
+          "ownerSpreadsheet": "Artroom",
+          "owner": "Graphics",
+          "status": "pending",
+          "source": "spreadsheet:Mid-Ohio",
+          "priority": "high"
+        },
+        {
+          "id": "mid-ohio-growers-meeting-38",
+          "task": "Pack display",
+          "section": "booth_setup",
+          "ownerSpreadsheet": "Artroom",
+          "owner": "Graphics",
+          "status": "pending",
+          "source": "spreadsheet:Mid-Ohio",
+          "priority": "high"
+        },
+        {
+          "id": "mid-ohio-growers-meeting-39",
+          "task": "Book Plugs & Cuttings",
+          "section": "booth_setup",
+          "ownerSpreadsheet": "Peter",
+          "owner": "Peter",
+          "status": "pending",
+          "source": "spreadsheet:Mid-Ohio",
+          "priority": "high"
+        },
+        {
+          "id": "mid-ohio-growers-meeting-40",
+          "task": "Book Finished Product",
+          "section": "booth_setup",
+          "ownerSpreadsheet": "Peter",
+          "owner": "Peter",
+          "status": "pending",
+          "source": "spreadsheet:Mid-Ohio",
+          "priority": "high"
+        },
+        {
+          "id": "mid-ohio-growers-meeting-41",
+          "task": "Book electricity",
+          "section": "booth_setup",
+          "ownerSpreadsheet": "Artroom",
+          "owner": "Graphics",
+          "status": "pending",
+          "source": "spreadsheet:Mid-Ohio",
+          "priority": "high"
+        },
+        {
+          "id": "mid-ohio-growers-meeting-42",
+          "task": "Book carpet",
+          "section": "booth_setup",
+          "ownerSpreadsheet": "Artroom",
+          "owner": "Graphics",
+          "status": "pending",
+          "source": "spreadsheet:Mid-Ohio",
+          "priority": "high"
+        },
+        {
+          "id": "mid-ohio-growers-meeting-43",
+          "task": "Book tables/drapes/easle",
+          "section": "booth_setup",
+          "ownerSpreadsheet": "Artroom",
+          "owner": "Graphics",
+          "status": "pending",
+          "source": "spreadsheet:Mid-Ohio",
+          "priority": "high"
+        },
+        {
+          "id": "mid-ohio-growers-meeting-45",
+          "task": "Carrier",
+          "section": "freight",
+          "ownerSpreadsheet": "Michael",
+          "owner": "Michael",
+          "status": "pending",
+          "source": "spreadsheet:Mid-Ohio",
+          "priority": "high"
+        },
+        {
+          "id": "mid-ohio-growers-meeting-47",
+          "task": "Advance shipping opens (date)",
+          "section": "freight",
+          "ownerSpreadsheet": "Elisabeth",
+          "owner": "Graphics",
+          "status": "pending",
+          "source": "spreadsheet:Mid-Ohio",
+          "priority": "high"
+        },
+        {
+          "id": "mid-ohio-growers-meeting-48",
+          "task": "Advance shipping closes (date)",
+          "section": "freight",
+          "ownerSpreadsheet": "Elisabeth",
+          "owner": "Graphics",
+          "status": "pending",
+          "source": "spreadsheet:Mid-Ohio",
+          "priority": "high"
+        },
+        {
+          "id": "mid-ohio-growers-meeting-49",
+          "task": "Show Site Arrival date #1 (if JFT)",
+          "section": "freight",
+          "ownerSpreadsheet": "Elisabeth",
+          "owner": "Michael",
+          "status": "pending",
+          "source": "spreadsheet:Mid-Ohio",
+          "priority": "high"
+        },
+        {
+          "id": "mid-ohio-growers-meeting-50",
+          "task": "Show Site Arrival time #1 (if JFT)",
+          "section": "freight",
+          "ownerSpreadsheet": "Elisabeth",
+          "owner": "Michael",
+          "status": "pending",
+          "source": "spreadsheet:Mid-Ohio",
+          "priority": "high"
+        },
+        {
+          "id": "mid-ohio-growers-meeting-51",
+          "task": "Freight departure date",
+          "section": "freight",
+          "ownerSpreadsheet": "Michael",
+          "owner": "Michael",
+          "status": "pending",
+          "source": "spreadsheet:Mid-Ohio",
+          "priority": "critical"
+        },
+        {
+          "id": "mid-ohio-growers-meeting-52",
+          "task": "End of show pick up (if JFT)",
+          "section": "freight",
+          "ownerSpreadsheet": "Elisabeth",
+          "owner": "Michael",
+          "status": "pending",
+          "source": "spreadsheet:Mid-Ohio",
+          "priority": "high"
+        },
+        {
+          "id": "mid-ohio-growers-meeting-53",
+          "task": "Order drayage",
+          "section": "freight",
+          "ownerSpreadsheet": "Elisabeth",
+          "owner": "Graphics",
+          "status": "pending",
+          "source": "spreadsheet:Mid-Ohio",
+          "priority": "high"
+        },
+        {
+          "id": "mid-ohio-growers-meeting-55",
+          "task": "Contact books",
+          "section": "literature",
+          "ownerSpreadsheet": "Mailroom",
+          "owner": "Mailroom",
+          "status": "pending",
+          "source": "spreadsheet:Mid-Ohio"
+        },
+        {
+          "id": "mid-ohio-growers-meeting-56",
+          "task": "Guest passes distributed",
+          "section": "literature",
+          "ownerSpreadsheet": "Elisabeth/Reps",
+          "owner": "Debbie",
+          "status": "pending",
+          "source": "spreadsheet:Mid-Ohio"
+        },
+        {
+          "id": "mid-ohio-growers-meeting-57",
+          "task": "Lead retrieval/printer",
+          "section": "literature",
+          "ownerSpreadsheet": "Elisabeth",
+          "owner": "Graphics",
+          "status": "pending",
+          "source": "spreadsheet:Mid-Ohio"
+        },
+        {
+          "id": "mid-ohio-growers-meeting-58",
+          "task": "Transportation",
+          "section": "literature",
+          "ownerSpreadsheet": "Michael",
+          "owner": "Michael",
+          "status": "pending",
+          "source": "spreadsheet:Mid-Ohio"
+        },
+        {
+          "id": "mid-ohio-growers-meeting-59",
+          "task": "Pack literature",
+          "section": "literature",
+          "ownerSpreadsheet": "Mailroom",
+          "owner": "Mailroom",
+          "status": "pending",
+          "source": "spreadsheet:Mid-Ohio"
+        },
+        {
+          "id": "mid-ohio-growers-meeting-61",
+          "task": "Cell phone",
+          "section": "on_site",
+          "ownerSpreadsheet": "Personnel",
+          "owner": "On-site reps",
+          "status": "pending",
+          "source": "spreadsheet:Mid-Ohio"
+        },
+        {
+          "id": "mid-ohio-growers-meeting-62",
+          "task": "Set up hours",
+          "section": "on_site",
+          "ownerSpreadsheet": "Elisabeth",
+          "owner": "Graphics",
+          "status": "pending",
+          "source": "spreadsheet:Mid-Ohio"
+        },
+        {
+          "id": "mid-ohio-growers-meeting-63",
+          "task": "Show hours",
+          "section": "on_site",
+          "ownerSpreadsheet": "Elisabeth",
+          "owner": "Graphics",
+          "status": "pending",
+          "source": "spreadsheet:Mid-Ohio"
+        },
+        {
+          "id": "mid-ohio-growers-meeting-64",
+          "task": "Take down hours",
+          "section": "on_site",
+          "ownerSpreadsheet": "Elisabeth",
+          "owner": "Graphics",
+          "status": "pending",
+          "source": "spreadsheet:Mid-Ohio"
+        },
+        {
+          "id": "mid-ohio-growers-meeting-65",
+          "task": "Storage of empties",
+          "section": "on_site",
+          "ownerSpreadsheet": "Elisabeth",
+          "owner": "Graphics",
+          "status": "pending",
+          "source": "spreadsheet:Mid-Ohio"
+        },
+        {
+          "id": "mid-ohio-growers-meeting-66",
+          "task": "Parking",
+          "section": "on_site",
+          "ownerSpreadsheet": "Elisabeth",
+          "owner": "Graphics",
+          "status": "pending",
+          "source": "spreadsheet:Mid-Ohio"
+        },
+        {
+          "id": "mid-ohio-growers-meeting-68",
+          "task": "Number of leads",
+          "section": "post_show_review",
+          "ownerSpreadsheet": "Personnel",
+          "owner": "On-site reps",
+          "status": "pending",
+          "source": "spreadsheet:Mid-Ohio"
+        },
+        {
+          "id": "mid-ohio-growers-meeting-69",
+          "task": "Number of booths",
+          "section": "post_show_review",
+          "ownerSpreadsheet": "Peter",
+          "owner": "Peter",
+          "status": "pending",
+          "source": "spreadsheet:Mid-Ohio"
+        },
+        {
+          "id": "mid-ohio-growers-meeting-70",
+          "task": "Adequate staffing",
+          "section": "post_show_review",
+          "ownerSpreadsheet": "Peter",
+          "owner": "Peter",
+          "status": "pending",
+          "source": "spreadsheet:Mid-Ohio"
+        },
+        {
+          "id": "mid-ohio-growers-meeting-71",
+          "task": "Repairs",
+          "section": "post_show_review",
+          "ownerSpreadsheet": "Personnel",
+          "owner": "On-site reps",
+          "status": "pending",
+          "source": "spreadsheet:Mid-Ohio"
+        },
+        {
+          "id": "mid-ohio-growers-meeting-72",
+          "task": "Additional comments",
+          "section": "post_show_review",
+          "ownerSpreadsheet": "Personnel",
+          "owner": "On-site reps",
+          "status": "pending",
+          "source": "spreadsheet:Mid-Ohio"
+        },
+        {
+          "id": "mid-ohio-growers-meeting-73",
+          "task": "Confirm repeat attendance",
+          "section": "post_show_review",
+          "ownerSpreadsheet": "Peter",
+          "owner": "Peter",
+          "status": "pending",
+          "source": "spreadsheet:Mid-Ohio"
+        }
+      ]
+    },
+    {
+      "id": "gulf-states-expo",
+      "name": "Gulf States\n Expo",
+      "year": 2026,
+      "dates": {
+        "start": "2027-01-07",
+        "end": "2027-01-08"
+      },
+      "location": "Arthur R. Outlaw Mobile Convention Center\n1 South Water Street\nMobile, AL  36602",
+      "boothSize": "10x10",
+      "booth": null,
+      "exhibitorPortal": null,
+      "productFocus": "Plugs & Cuttings",
+      "status": "upcoming",
+      "tasks": [
+        {
+          "id": "gulf-states-expo-18",
+          "task": "Register for Show",
+          "section": "show_purchase",
+          "ownerSpreadsheet": "Elisabeth",
+          "owner": "Graphics",
+          "status": "pending",
+          "source": "spreadsheet:GULF",
+          "priority": "high"
+        },
+        {
+          "id": "gulf-states-expo-19",
+          "task": "Down Payment Due",
+          "section": "show_purchase",
+          "ownerSpreadsheet": "Elisabeth",
+          "owner": "Graphics",
+          "status": "pending",
+          "source": "spreadsheet:GULF",
+          "info": "50% due by July 30, 2026",
+          "priority": "high"
+        },
+        {
+          "id": "gulf-states-expo-20",
+          "task": "Final Payment Due",
+          "section": "show_purchase",
+          "ownerSpreadsheet": "Elisabeth",
+          "owner": "Graphics",
+          "status": "completed",
+          "source": "spreadsheet:GULF",
+          "info": "Remainder due by September 30",
+          "notes": "Paid in full 6/21/26"
+        },
+        {
+          "id": "gulf-states-expo-21",
+          "task": "Booth Number(s)",
+          "section": "show_purchase",
+          "ownerSpreadsheet": "Elisabeth",
+          "owner": "Graphics",
+          "status": "pending",
+          "source": "spreadsheet:GULF",
+          "info": "531",
+          "priority": "high"
+        },
+        {
+          "id": "gulf-states-expo-22",
+          "task": "Liability Insurance",
+          "section": "show_purchase",
+          "ownerSpreadsheet": "Elisabeth",
+          "owner": "Graphics",
+          "status": "pending",
+          "source": "spreadsheet:GULF",
+          "priority": "critical"
+        },
+        {
+          "id": "gulf-states-expo-24",
+          "task": "Who is going",
+          "section": "personnel",
+          "ownerSpreadsheet": "Peter",
+          "owner": "Peter",
+          "status": "pending",
+          "source": "spreadsheet:GULF",
+          "info": "Amanda, Paula",
+          "priority": "high"
+        },
+        {
+          "id": "gulf-states-expo-25",
+          "task": "Register personnel",
+          "section": "personnel",
+          "ownerSpreadsheet": "Elisabeth",
+          "owner": "Debbie",
+          "status": "pending",
+          "source": "spreadsheet:GULF",
+          "priority": "high"
+        },
+        {
+          "id": "gulf-states-expo-26",
+          "task": "Book hotel",
+          "section": "personnel",
+          "ownerSpreadsheet": "Elisabeth",
+          "owner": "Debbie",
+          "status": "pending",
+          "source": "spreadsheet:GULF",
+          "priority": "high"
+        },
+        {
+          "id": "gulf-states-expo-27",
+          "task": "Hotel in Portland",
+          "section": "personnel",
+          "ownerSpreadsheet": "Elisabeth",
+          "owner": "Debbie",
+          "status": "pending",
+          "source": "spreadsheet:GULF",
+          "priority": "high"
+        },
+        {
+          "id": "gulf-states-expo-28",
+          "task": "Book airline tickets",
+          "section": "personnel",
+          "ownerSpreadsheet": "Elisabeth",
+          "owner": "Debbie",
+          "status": "pending",
+          "source": "spreadsheet:GULF",
+          "priority": "high"
+        },
+        {
+          "id": "gulf-states-expo-29",
+          "task": "Travel insurance",
+          "section": "personnel",
+          "ownerSpreadsheet": "Elisabeth",
+          "owner": "Debbie",
+          "status": "pending",
+          "source": "spreadsheet:GULF",
+          "priority": "high"
+        },
+        {
+          "id": "gulf-states-expo-30",
+          "task": "Reserve cars",
+          "section": "personnel",
+          "ownerSpreadsheet": "Elisabeth",
+          "owner": "Debbie",
+          "status": "pending",
+          "source": "spreadsheet:GULF",
+          "priority": "high"
+        },
+        {
+          "id": "gulf-states-expo-31",
+          "task": "GPS",
+          "section": "personnel",
+          "ownerSpreadsheet": "Elisabeth",
+          "owner": "Debbie",
+          "status": "pending",
+          "source": "spreadsheet:GULF",
+          "priority": "high"
+        },
+        {
+          "id": "gulf-states-expo-32",
+          "task": "Ground transport at destination",
+          "section": "personnel",
+          "ownerSpreadsheet": "Elisabeth",
+          "owner": "Debbie",
+          "status": "pending",
+          "source": "spreadsheet:GULF",
+          "priority": "high"
+        },
+        {
+          "id": "gulf-states-expo-33",
+          "task": "Petty cash",
+          "section": "personnel",
+          "ownerSpreadsheet": "Elisabeth",
+          "owner": "Debbie",
+          "status": "pending",
+          "source": "spreadsheet:GULF",
+          "priority": "high"
+        },
+        {
+          "id": "gulf-states-expo-34",
+          "task": "Credit cards",
+          "section": "personnel",
+          "ownerSpreadsheet": "Elisabeth",
+          "owner": "Debbie",
+          "status": "pending",
+          "source": "spreadsheet:GULF",
+          "priority": "high"
+        },
+        {
+          "id": "gulf-states-expo-36",
+          "task": "Design",
+          "section": "booth_setup",
+          "ownerSpreadsheet": "Artroom",
+          "owner": "Graphics",
+          "status": "pending",
+          "source": "spreadsheet:GULF",
+          "notes": "Exhibitor Service Center: \npdarrow@jollyfarmer.com\nPassword: ZTXS4310",
+          "priority": "high"
+        },
+        {
+          "id": "gulf-states-expo-37",
+          "task": "Design Notes",
+          "section": "booth_setup",
+          "ownerSpreadsheet": "Artroom",
+          "owner": "Graphics",
+          "status": "pending",
+          "source": "spreadsheet:GULF",
+          "priority": "high"
+        },
+        {
+          "id": "gulf-states-expo-38",
+          "task": "Pack display",
+          "section": "booth_setup",
+          "ownerSpreadsheet": "Artroom",
+          "owner": "Graphics",
+          "status": "pending",
+          "source": "spreadsheet:GULF",
+          "priority": "high"
+        },
+        {
+          "id": "gulf-states-expo-39",
+          "task": "Book Plugs & Cuttings",
+          "section": "booth_setup",
+          "ownerSpreadsheet": "Peter",
+          "owner": "Peter",
+          "status": "pending",
+          "source": "spreadsheet:GULF",
+          "priority": "high"
+        },
+        {
+          "id": "gulf-states-expo-40",
+          "task": "Book Finished Product",
+          "section": "booth_setup",
+          "ownerSpreadsheet": "Peter",
+          "owner": "Peter",
+          "status": "pending",
+          "source": "spreadsheet:GULF",
+          "priority": "high"
+        },
+        {
+          "id": "gulf-states-expo-41",
+          "task": "Book electricity",
+          "section": "booth_setup",
+          "ownerSpreadsheet": "Artroom",
+          "owner": "Graphics",
+          "status": "pending",
+          "source": "spreadsheet:GULF",
+          "priority": "high"
+        },
+        {
+          "id": "gulf-states-expo-42",
+          "task": "Book carpet",
+          "section": "booth_setup",
+          "ownerSpreadsheet": "Artroom",
+          "owner": "Graphics",
+          "status": "pending",
+          "source": "spreadsheet:GULF",
+          "priority": "high"
+        },
+        {
+          "id": "gulf-states-expo-43",
+          "task": "Book tables/drapes/easle",
+          "section": "booth_setup",
+          "ownerSpreadsheet": "Artroom",
+          "owner": "Graphics",
+          "status": "pending",
+          "source": "spreadsheet:GULF",
+          "priority": "high"
+        },
+        {
+          "id": "gulf-states-expo-45",
+          "task": "Carrier",
+          "section": "freight",
+          "ownerSpreadsheet": "Michael",
+          "owner": "Michael",
+          "status": "pending",
+          "source": "spreadsheet:GULF",
+          "priority": "high"
+        },
+        {
+          "id": "gulf-states-expo-47",
+          "task": "Advance shipping opens (date)",
+          "section": "freight",
+          "ownerSpreadsheet": "Elisabeth",
+          "owner": "Graphics",
+          "status": "pending",
+          "source": "spreadsheet:GULF",
+          "priority": "high"
+        },
+        {
+          "id": "gulf-states-expo-48",
+          "task": "Advance shipping closes (date)",
+          "section": "freight",
+          "ownerSpreadsheet": "Elisabeth",
+          "owner": "Graphics",
+          "status": "pending",
+          "source": "spreadsheet:GULF",
+          "priority": "high"
+        },
+        {
+          "id": "gulf-states-expo-49",
+          "task": "Show Site Arrival date #1 (if JFT)",
+          "section": "freight",
+          "ownerSpreadsheet": "Elisabeth",
+          "owner": "Michael",
+          "status": "pending",
+          "source": "spreadsheet:GULF",
+          "priority": "high"
+        },
+        {
+          "id": "gulf-states-expo-50",
+          "task": "Show Site Arrival time #1 (if JFT)",
+          "section": "freight",
+          "ownerSpreadsheet": "Elisabeth",
+          "owner": "Michael",
+          "status": "pending",
+          "source": "spreadsheet:GULF",
+          "priority": "high"
+        },
+        {
+          "id": "gulf-states-expo-51",
+          "task": "Freight departure date",
+          "section": "freight",
+          "ownerSpreadsheet": "Michael",
+          "owner": "Michael",
+          "status": "pending",
+          "source": "spreadsheet:GULF",
+          "priority": "critical"
+        },
+        {
+          "id": "gulf-states-expo-52",
+          "task": "End of show pick up (if JFT)",
+          "section": "freight",
+          "ownerSpreadsheet": "Elisabeth",
+          "owner": "Michael",
+          "status": "pending",
+          "source": "spreadsheet:GULF",
+          "priority": "high"
+        },
+        {
+          "id": "gulf-states-expo-53",
+          "task": "Order drayage",
+          "section": "freight",
+          "ownerSpreadsheet": "Elisabeth",
+          "owner": "Graphics",
+          "status": "pending",
+          "source": "spreadsheet:GULF",
+          "priority": "high"
+        },
+        {
+          "id": "gulf-states-expo-55",
+          "task": "Contact books",
+          "section": "literature",
+          "ownerSpreadsheet": "Mailroom",
+          "owner": "Mailroom",
+          "status": "pending",
+          "source": "spreadsheet:GULF"
+        },
+        {
+          "id": "gulf-states-expo-56",
+          "task": "Guest passes distributed",
+          "section": "literature",
+          "ownerSpreadsheet": "Elisabeth/Reps",
+          "owner": "Debbie",
+          "status": "pending",
+          "source": "spreadsheet:GULF"
+        },
+        {
+          "id": "gulf-states-expo-57",
+          "task": "Lead retrieval/printer",
+          "section": "literature",
+          "ownerSpreadsheet": "Elisabeth",
+          "owner": "Graphics",
+          "status": "pending",
+          "source": "spreadsheet:GULF"
+        },
+        {
+          "id": "gulf-states-expo-58",
+          "task": "Transportation",
+          "section": "literature",
+          "ownerSpreadsheet": "Michael",
+          "owner": "Michael",
+          "status": "pending",
+          "source": "spreadsheet:GULF"
+        },
+        {
+          "id": "gulf-states-expo-59",
+          "task": "Pack literature",
+          "section": "literature",
+          "ownerSpreadsheet": "Mailroom",
+          "owner": "Mailroom",
+          "status": "pending",
+          "source": "spreadsheet:GULF"
+        },
+        {
+          "id": "gulf-states-expo-61",
+          "task": "Cell phone",
+          "section": "on_site",
+          "ownerSpreadsheet": "Personnel",
+          "owner": "On-site reps",
+          "status": "pending",
+          "source": "spreadsheet:GULF"
+        },
+        {
+          "id": "gulf-states-expo-62",
+          "task": "Set up hours",
+          "section": "on_site",
+          "ownerSpreadsheet": "Elisabeth",
+          "owner": "Graphics",
+          "status": "pending",
+          "source": "spreadsheet:GULF"
+        },
+        {
+          "id": "gulf-states-expo-63",
+          "task": "Show hours",
+          "section": "on_site",
+          "ownerSpreadsheet": "Elisabeth",
+          "owner": "Graphics",
+          "status": "pending",
+          "source": "spreadsheet:GULF"
+        },
+        {
+          "id": "gulf-states-expo-64",
+          "task": "Take down hours",
+          "section": "on_site",
+          "ownerSpreadsheet": "Elisabeth",
+          "owner": "Graphics",
+          "status": "pending",
+          "source": "spreadsheet:GULF"
+        },
+        {
+          "id": "gulf-states-expo-65",
+          "task": "Storage of empties",
+          "section": "on_site",
+          "ownerSpreadsheet": "Elisabeth",
+          "owner": "Graphics",
+          "status": "pending",
+          "source": "spreadsheet:GULF"
+        },
+        {
+          "id": "gulf-states-expo-66",
+          "task": "Parking",
+          "section": "on_site",
+          "ownerSpreadsheet": "Elisabeth",
+          "owner": "Graphics",
+          "status": "pending",
+          "source": "spreadsheet:GULF"
+        },
+        {
+          "id": "gulf-states-expo-68",
+          "task": "Number of leads",
+          "section": "post_show_review",
+          "ownerSpreadsheet": "Personnel",
+          "owner": "On-site reps",
+          "status": "pending",
+          "source": "spreadsheet:GULF"
+        },
+        {
+          "id": "gulf-states-expo-69",
+          "task": "Number of booths",
+          "section": "post_show_review",
+          "ownerSpreadsheet": "Peter",
+          "owner": "Peter",
+          "status": "pending",
+          "source": "spreadsheet:GULF"
+        },
+        {
+          "id": "gulf-states-expo-70",
+          "task": "Adequate staffing",
+          "section": "post_show_review",
+          "ownerSpreadsheet": "Peter",
+          "owner": "Peter",
+          "status": "pending",
+          "source": "spreadsheet:GULF"
+        },
+        {
+          "id": "gulf-states-expo-71",
+          "task": "Repairs",
+          "section": "post_show_review",
+          "ownerSpreadsheet": "Personnel",
+          "owner": "On-site reps",
+          "status": "pending",
+          "source": "spreadsheet:GULF"
+        },
+        {
+          "id": "gulf-states-expo-72",
+          "task": "Additional comments",
+          "section": "post_show_review",
+          "ownerSpreadsheet": "Personnel",
+          "owner": "On-site reps",
+          "status": "pending",
+          "source": "spreadsheet:GULF"
+        },
+        {
+          "id": "gulf-states-expo-73",
+          "task": "Confirm repeat attendance",
+          "section": "post_show_review",
+          "ownerSpreadsheet": "Peter",
+          "owner": "Peter",
+          "status": "pending",
+          "source": "spreadsheet:GULF"
+        },
+        {
+          "id": "gulf-states-expo-74",
+          "task": "Send photos of Booth to Ernest",
+          "section": "post_show_review",
+          "ownerSpreadsheet": "Personnel",
+          "owner": "On-site reps",
+          "status": "pending",
+          "source": "spreadsheet:GULF"
+        }
+      ]
+    },
+    {
+      "id": "mants",
+      "name": "MANTS",
+      "year": 2026,
+      "dates": {
+        "start": "2027-01-13",
+        "end": "2027-01-15"
+      },
+      "location": "Baltimore Convention Center\nOne West Pratt Street\nBaltimore, MD  21201",
+      "boothSize": "10x20",
+      "booth": null,
+      "exhibitorPortal": null,
+      "productFocus": "Plugs & Cuttings",
+      "status": "upcoming",
+      "tasks": [
+        {
+          "id": "mants-18",
+          "task": "Register for Show",
+          "section": "show_purchase",
+          "ownerSpreadsheet": "Elisabeth",
+          "owner": "Graphics",
+          "status": "completed",
+          "source": "spreadsheet:MANTS"
+        },
+        {
+          "id": "mants-19",
+          "task": "Down Payment Due",
+          "section": "show_purchase",
+          "ownerSpreadsheet": "Elisabeth",
+          "owner": "Graphics",
+          "status": "pending",
+          "source": "spreadsheet:MANTS",
+          "priority": "high"
+        },
+        {
+          "id": "mants-20",
+          "task": "Final Payment Due",
+          "section": "show_purchase",
+          "ownerSpreadsheet": "Elisabeth",
+          "owner": "Graphics",
+          "status": "completed",
+          "source": "spreadsheet:MANTS",
+          "info": "Total due by 7/30/26",
+          "notes": "Paid in full \n5/4/26"
+        },
+        {
+          "id": "mants-21",
+          "task": "Booth Number(s)",
+          "section": "show_purchase",
+          "ownerSpreadsheet": "Elisabeth",
+          "owner": "Graphics",
+          "status": "pending",
+          "source": "spreadsheet:MANTS",
+          "info": "2783",
+          "priority": "high"
+        },
+        {
+          "id": "mants-22",
+          "task": "Liability Insurance",
+          "section": "show_purchase",
+          "ownerSpreadsheet": "Elisabeth",
+          "owner": "Graphics",
+          "status": "pending",
+          "source": "spreadsheet:MANTS",
+          "priority": "critical"
+        },
+        {
+          "id": "mants-24",
+          "task": "Who is going",
+          "section": "personnel",
+          "ownerSpreadsheet": "Peter",
+          "owner": "Peter",
+          "status": "pending",
+          "source": "spreadsheet:MANTS",
+          "info": "Cindy, Maxime",
+          "priority": "high"
+        },
+        {
+          "id": "mants-25",
+          "task": "Register personnel",
+          "section": "personnel",
+          "ownerSpreadsheet": "Elisabeth",
+          "owner": "Debbie",
+          "status": "pending",
+          "source": "spreadsheet:MANTS",
+          "priority": "high"
+        },
+        {
+          "id": "mants-26",
+          "task": "Book hotel",
+          "section": "personnel",
+          "ownerSpreadsheet": "Elisabeth",
+          "owner": "Debbie",
+          "status": "pending",
+          "source": "spreadsheet:MANTS",
+          "priority": "high"
+        },
+        {
+          "id": "mants-27",
+          "task": "Hotel for return trip",
+          "section": "personnel",
+          "ownerSpreadsheet": "Elisabeth",
+          "owner": "Debbie",
+          "status": "pending",
+          "source": "spreadsheet:MANTS",
+          "priority": "high"
+        },
+        {
+          "id": "mants-28",
+          "task": "Book airline tickets",
+          "section": "personnel",
+          "ownerSpreadsheet": "Elisabeth",
+          "owner": "Debbie",
+          "status": "pending",
+          "source": "spreadsheet:MANTS",
+          "priority": "high"
+        },
+        {
+          "id": "mants-29",
+          "task": "Travel insurance",
+          "section": "personnel",
+          "ownerSpreadsheet": "Elisabeth",
+          "owner": "Debbie",
+          "status": "pending",
+          "source": "spreadsheet:MANTS",
+          "priority": "high"
+        },
+        {
+          "id": "mants-30",
+          "task": "Reserve cars",
+          "section": "personnel",
+          "ownerSpreadsheet": "Elisabeth",
+          "owner": "Debbie",
+          "status": "pending",
+          "source": "spreadsheet:MANTS",
+          "priority": "high"
+        },
+        {
+          "id": "mants-31",
+          "task": "GPS",
+          "section": "personnel",
+          "ownerSpreadsheet": "Elisabeth",
+          "owner": "Debbie",
+          "status": "pending",
+          "source": "spreadsheet:MANTS",
+          "priority": "high"
+        },
+        {
+          "id": "mants-32",
+          "task": "Ground transport at destination",
+          "section": "personnel",
+          "ownerSpreadsheet": "Elisabeth",
+          "owner": "Debbie",
+          "status": "pending",
+          "source": "spreadsheet:MANTS",
+          "priority": "high"
+        },
+        {
+          "id": "mants-33",
+          "task": "Petty cash",
+          "section": "personnel",
+          "ownerSpreadsheet": "Elisabeth",
+          "owner": "Debbie",
+          "status": "pending",
+          "source": "spreadsheet:MANTS",
+          "priority": "high"
+        },
+        {
+          "id": "mants-34",
+          "task": "Credit cards",
+          "section": "personnel",
+          "ownerSpreadsheet": "Elisabeth",
+          "owner": "Debbie",
+          "status": "pending",
+          "source": "spreadsheet:MANTS",
+          "priority": "high"
+        },
+        {
+          "id": "mants-36",
+          "task": "Design",
+          "section": "booth_setup",
+          "ownerSpreadsheet": "Artroom",
+          "owner": "Graphics",
+          "status": "pending",
+          "source": "spreadsheet:MANTS",
+          "priority": "high"
+        },
+        {
+          "id": "mants-37",
+          "task": "Design Notes",
+          "section": "booth_setup",
+          "ownerSpreadsheet": "Artroom",
+          "owner": "Graphics",
+          "status": "pending",
+          "source": "spreadsheet:MANTS",
+          "priority": "high"
+        },
+        {
+          "id": "mants-38",
+          "task": "Pack display",
+          "section": "booth_setup",
+          "ownerSpreadsheet": "Artroom",
+          "owner": "Graphics",
+          "status": "pending",
+          "source": "spreadsheet:MANTS",
+          "priority": "high"
+        },
+        {
+          "id": "mants-39",
+          "task": "Book Plugs & Cuttings",
+          "section": "booth_setup",
+          "ownerSpreadsheet": "Peter",
+          "owner": "Peter",
+          "status": "pending",
+          "source": "spreadsheet:MANTS",
+          "priority": "high"
+        },
+        {
+          "id": "mants-40",
+          "task": "Book Finished Product",
+          "section": "booth_setup",
+          "ownerSpreadsheet": "Peter",
+          "owner": "Peter",
+          "status": "pending",
+          "source": "spreadsheet:MANTS",
+          "priority": "high"
+        },
+        {
+          "id": "mants-41",
+          "task": "Book electricity",
+          "section": "booth_setup",
+          "ownerSpreadsheet": "Elisabeth",
+          "owner": "Graphics",
+          "status": "pending",
+          "source": "spreadsheet:MANTS",
+          "priority": "high"
+        },
+        {
+          "id": "mants-42",
+          "task": "Book carpet",
+          "section": "booth_setup",
+          "ownerSpreadsheet": "Elisabeth",
+          "owner": "Graphics",
+          "status": "pending",
+          "source": "spreadsheet:MANTS",
+          "priority": "high"
+        },
+        {
+          "id": "mants-43",
+          "task": "Book tables/drapes/easle",
+          "section": "booth_setup",
+          "ownerSpreadsheet": "Elisabeth",
+          "owner": "Graphics",
+          "status": "pending",
+          "source": "spreadsheet:MANTS",
+          "priority": "high"
+        },
+        {
+          "id": "mants-45",
+          "task": "Carrier",
+          "section": "freight",
+          "ownerSpreadsheet": "Michael",
+          "owner": "Michael",
+          "status": "pending",
+          "source": "spreadsheet:MANTS",
+          "priority": "high"
+        },
+        {
+          "id": "mants-46",
+          "task": "Delivery location",
+          "section": "freight",
+          "ownerSpreadsheet": "Elisabeth",
+          "owner": "Graphics",
+          "status": "pending",
+          "source": "spreadsheet:MANTS",
+          "priority": "high"
+        },
+        {
+          "id": "mants-47",
+          "task": "Advance Shipping Label",
+          "section": "freight",
+          "ownerSpreadsheet": "Elisabeth",
+          "owner": "Graphics",
+          "status": "pending",
+          "source": "spreadsheet:MANTS",
+          "priority": "high"
+        },
+        {
+          "id": "mants-48",
+          "task": "Advance shipping opens (date)",
+          "section": "freight",
+          "ownerSpreadsheet": "Elisabeth",
+          "owner": "Graphics",
+          "status": "pending",
+          "source": "spreadsheet:MANTS",
+          "priority": "high"
+        },
+        {
+          "id": "mants-49",
+          "task": "Advance shipping closes (date)",
+          "section": "freight",
+          "ownerSpreadsheet": "Elisabeth",
+          "owner": "Graphics",
+          "status": "pending",
+          "source": "spreadsheet:MANTS",
+          "priority": "high"
+        },
+        {
+          "id": "mants-50",
+          "task": "Show Site Arrival date #1 (if JFT)",
+          "section": "freight",
+          "ownerSpreadsheet": "Elisabeth",
+          "owner": "Michael",
+          "status": "pending",
+          "source": "spreadsheet:MANTS",
+          "priority": "high"
+        },
+        {
+          "id": "mants-51",
+          "task": "Show Site Arrival time #1 (if JFT)",
+          "section": "freight",
+          "ownerSpreadsheet": "Elisabeth",
+          "owner": "Michael",
+          "status": "pending",
+          "source": "spreadsheet:MANTS",
+          "priority": "high"
+        },
+        {
+          "id": "mants-52",
+          "task": "Freight departure date",
+          "section": "freight",
+          "ownerSpreadsheet": "Michael",
+          "owner": "Michael",
+          "status": "pending",
+          "source": "spreadsheet:MANTS",
+          "priority": "critical"
+        },
+        {
+          "id": "mants-53",
+          "task": "End of show pick up (if JFT)",
+          "section": "freight",
+          "ownerSpreadsheet": "Elisabeth",
+          "owner": "Michael",
+          "status": "pending",
+          "source": "spreadsheet:MANTS",
+          "priority": "high"
+        },
+        {
+          "id": "mants-54",
+          "task": "Order drayage",
+          "section": "freight",
+          "ownerSpreadsheet": "Elisabeth",
+          "owner": "Graphics",
+          "status": "pending",
+          "source": "spreadsheet:MANTS",
+          "priority": "high"
+        },
+        {
+          "id": "mants-57",
+          "task": "Contact books",
+          "section": "literature",
+          "ownerSpreadsheet": "Mailroom",
+          "owner": "Mailroom",
+          "status": "pending",
+          "source": "spreadsheet:MANTS"
+        },
+        {
+          "id": "mants-58",
+          "task": "Guest passes distributed",
+          "section": "literature",
+          "ownerSpreadsheet": "Elisabeth/Reps",
+          "owner": "Debbie",
+          "status": "pending",
+          "source": "spreadsheet:MANTS"
+        },
+        {
+          "id": "mants-59",
+          "task": "Lead retrieval/printer",
+          "section": "literature",
+          "ownerSpreadsheet": "Elisabeth",
+          "owner": "Graphics",
+          "status": "pending",
+          "source": "spreadsheet:MANTS"
+        },
+        {
+          "id": "mants-60",
+          "task": "Transportation",
+          "section": "literature",
+          "ownerSpreadsheet": "Michael",
+          "owner": "Michael",
+          "status": "pending",
+          "source": "spreadsheet:MANTS"
+        },
+        {
+          "id": "mants-61",
+          "task": "Pack literature",
+          "section": "literature",
+          "ownerSpreadsheet": "Mailroom",
+          "owner": "Mailroom",
+          "status": "pending",
+          "source": "spreadsheet:MANTS"
+        },
+        {
+          "id": "mants-63",
+          "task": "Cell phone",
+          "section": "on_site",
+          "ownerSpreadsheet": "Personnel",
+          "owner": "On-site reps",
+          "status": "pending",
+          "source": "spreadsheet:MANTS"
+        },
+        {
+          "id": "mants-64",
+          "task": "Set up hours",
+          "section": "on_site",
+          "ownerSpreadsheet": "Elisabeth",
+          "owner": "Graphics",
+          "status": "pending",
+          "source": "spreadsheet:MANTS"
+        },
+        {
+          "id": "mants-65",
+          "task": "Show hours",
+          "section": "on_site",
+          "ownerSpreadsheet": "Elisabeth",
+          "owner": "Graphics",
+          "status": "pending",
+          "source": "spreadsheet:MANTS",
+          "info": "Wed, Jan 13 - 9 am - 5 pm\nThurs, Jan 14 - 9 am - 5 pm\nFri, Jan 16 - 8 am - 1 pm"
+        },
+        {
+          "id": "mants-66",
+          "task": "Take down hours",
+          "section": "on_site",
+          "ownerSpreadsheet": "Elisabeth",
+          "owner": "Graphics",
+          "status": "pending",
+          "source": "spreadsheet:MANTS"
+        },
+        {
+          "id": "mants-67",
+          "task": "Storage of empties",
+          "section": "on_site",
+          "ownerSpreadsheet": "Elisabeth",
+          "owner": "Graphics",
+          "status": "pending",
+          "source": "spreadsheet:MANTS"
+        },
+        {
+          "id": "mants-68",
+          "task": "Parking",
+          "section": "on_site",
+          "ownerSpreadsheet": "Elisabeth",
+          "owner": "Graphics",
+          "status": "pending",
+          "source": "spreadsheet:MANTS"
+        },
+        {
+          "id": "mants-70",
+          "task": "Number of leads",
+          "section": "post_show_review",
+          "ownerSpreadsheet": "Personnel",
+          "owner": "On-site reps",
+          "status": "pending",
+          "source": "spreadsheet:MANTS"
+        },
+        {
+          "id": "mants-71",
+          "task": "Number of booths",
+          "section": "post_show_review",
+          "ownerSpreadsheet": "Peter",
+          "owner": "Peter",
+          "status": "pending",
+          "source": "spreadsheet:MANTS"
+        },
+        {
+          "id": "mants-72",
+          "task": "Adequate staffing",
+          "section": "post_show_review",
+          "ownerSpreadsheet": "Peter",
+          "owner": "Peter",
+          "status": "pending",
+          "source": "spreadsheet:MANTS"
+        },
+        {
+          "id": "mants-73",
+          "task": "Repairs",
+          "section": "post_show_review",
+          "ownerSpreadsheet": "Personnel",
+          "owner": "On-site reps",
+          "status": "pending",
+          "source": "spreadsheet:MANTS"
+        },
+        {
+          "id": "mants-74",
+          "task": "Additional comments",
+          "section": "post_show_review",
+          "ownerSpreadsheet": "Personnel",
+          "owner": "On-site reps",
+          "status": "pending",
+          "source": "spreadsheet:MANTS"
+        },
+        {
+          "id": "mants-75",
+          "task": "Confirm repeat attendance",
+          "section": "post_show_review",
+          "ownerSpreadsheet": "Peter",
+          "owner": "Peter",
+          "status": "pending",
+          "source": "spreadsheet:MANTS",
+          "info": "Yes"
+        }
+      ]
+    },
+    {
+      "id": "crop-expo",
+      "name": "Crop Expo",
+      "year": 2026,
+      "dates": {
+        "start": null,
+        "end": null
+      },
+      "location": "Spooky Nook Event Center\n75 Champ Blvd\nManheim, PA 17512",
+      "boothSize": "10x20",
+      "booth": null,
+      "exhibitorPortal": null,
+      "productFocus": "Plugs & Cuttings",
+      "status": "upcoming",
+      "tasks": [
+        {
+          "id": "crop-expo-18",
+          "task": "Register for Show",
+          "section": "show_purchase",
+          "ownerSpreadsheet": "Elisabeth",
+          "owner": "Graphics",
+          "status": "pending",
+          "source": "spreadsheet:Crop Expo",
+          "priority": "high"
+        },
+        {
+          "id": "crop-expo-19",
+          "task": "Down Payment Due",
+          "section": "show_purchase",
+          "ownerSpreadsheet": "Elisabeth",
+          "owner": "Graphics",
+          "status": "pending",
+          "source": "spreadsheet:Crop Expo",
+          "priority": "high"
+        },
+        {
+          "id": "crop-expo-20",
+          "task": "Final Payment Due",
+          "section": "show_purchase",
+          "ownerSpreadsheet": "Elisabeth",
+          "owner": "Graphics",
+          "status": "pending",
+          "source": "spreadsheet:Crop Expo",
+          "priority": "high"
+        },
+        {
+          "id": "crop-expo-21",
+          "task": "Booth Number(s)",
+          "section": "show_purchase",
+          "ownerSpreadsheet": "Elisabeth",
+          "owner": "Graphics",
+          "status": "pending",
+          "source": "spreadsheet:Crop Expo",
+          "priority": "high"
+        },
+        {
+          "id": "crop-expo-22",
+          "task": "Liability Insurance",
+          "section": "show_purchase",
+          "ownerSpreadsheet": "Elisabeth",
+          "owner": "Graphics",
+          "status": "pending",
+          "source": "spreadsheet:Crop Expo",
+          "priority": "critical"
+        },
+        {
+          "id": "crop-expo-24",
+          "task": "Who is going",
+          "section": "personnel",
+          "ownerSpreadsheet": "Peter",
+          "owner": "Peter",
+          "status": "pending",
+          "source": "spreadsheet:Crop Expo",
+          "priority": "high"
+        },
+        {
+          "id": "crop-expo-25",
+          "task": "Register personnel",
+          "section": "personnel",
+          "ownerSpreadsheet": "Elisabeth",
+          "owner": "Debbie",
+          "status": "pending",
+          "source": "spreadsheet:Crop Expo",
+          "priority": "high"
+        },
+        {
+          "id": "crop-expo-26",
+          "task": "Book hotel",
+          "section": "personnel",
+          "ownerSpreadsheet": "Elisabeth",
+          "owner": "Debbie",
+          "status": "pending",
+          "source": "spreadsheet:Crop Expo",
+          "priority": "high"
+        },
+        {
+          "id": "crop-expo-27",
+          "task": "Transit Hotels booked",
+          "section": "personnel",
+          "ownerSpreadsheet": "Elisabeth",
+          "owner": "Debbie",
+          "status": "pending",
+          "source": "spreadsheet:Crop Expo",
+          "priority": "high"
+        },
+        {
+          "id": "crop-expo-28",
+          "task": "Book airline tickets",
+          "section": "personnel",
+          "ownerSpreadsheet": "Elisabeth",
+          "owner": "Debbie",
+          "status": "pending",
+          "source": "spreadsheet:Crop Expo",
+          "priority": "high"
+        },
+        {
+          "id": "crop-expo-29",
+          "task": "Travel insurance",
+          "section": "personnel",
+          "ownerSpreadsheet": "Elisabeth",
+          "owner": "Debbie",
+          "status": "pending",
+          "source": "spreadsheet:Crop Expo",
+          "priority": "high"
+        },
+        {
+          "id": "crop-expo-30",
+          "task": "Reserve cars",
+          "section": "personnel",
+          "ownerSpreadsheet": "Elisabeth",
+          "owner": "Debbie",
+          "status": "pending",
+          "source": "spreadsheet:Crop Expo",
+          "priority": "high"
+        },
+        {
+          "id": "crop-expo-31",
+          "task": "GPS",
+          "section": "personnel",
+          "ownerSpreadsheet": "Elisabeth",
+          "owner": "Debbie",
+          "status": "pending",
+          "source": "spreadsheet:Crop Expo",
+          "priority": "high"
+        },
+        {
+          "id": "crop-expo-32",
+          "task": "Ground transport at destination",
+          "section": "personnel",
+          "ownerSpreadsheet": "Elisabeth",
+          "owner": "Debbie",
+          "status": "pending",
+          "source": "spreadsheet:Crop Expo",
+          "priority": "high"
+        },
+        {
+          "id": "crop-expo-33",
+          "task": "Petty cash",
+          "section": "personnel",
+          "ownerSpreadsheet": "Elisabeth",
+          "owner": "Debbie",
+          "status": "pending",
+          "source": "spreadsheet:Crop Expo",
+          "priority": "high"
+        },
+        {
+          "id": "crop-expo-34",
+          "task": "Credit cards",
+          "section": "personnel",
+          "ownerSpreadsheet": "Elisabeth",
+          "owner": "Debbie",
+          "status": "pending",
+          "source": "spreadsheet:Crop Expo",
+          "priority": "high"
+        },
+        {
+          "id": "crop-expo-36",
+          "task": "Design",
+          "section": "booth_setup",
+          "ownerSpreadsheet": "Artroom",
+          "owner": "Graphics",
+          "status": "pending",
+          "source": "spreadsheet:Crop Expo",
+          "priority": "high"
+        },
+        {
+          "id": "crop-expo-37",
+          "task": "Design Notes",
+          "section": "booth_setup",
+          "ownerSpreadsheet": "Artroom",
+          "owner": "Graphics",
+          "status": "pending",
+          "source": "spreadsheet:Crop Expo",
+          "priority": "high"
+        },
+        {
+          "id": "crop-expo-38",
+          "task": "Pack display",
+          "section": "booth_setup",
+          "ownerSpreadsheet": "Artroom",
+          "owner": "Graphics",
+          "status": "pending",
+          "source": "spreadsheet:Crop Expo",
+          "priority": "high"
+        },
+        {
+          "id": "crop-expo-39",
+          "task": "Book Plugs & Cuttings",
+          "section": "booth_setup",
+          "ownerSpreadsheet": "Peter",
+          "owner": "Peter",
+          "status": "pending",
+          "source": "spreadsheet:Crop Expo",
+          "priority": "high"
+        },
+        {
+          "id": "crop-expo-40",
+          "task": "Book Finished Product",
+          "section": "booth_setup",
+          "ownerSpreadsheet": "Peter",
+          "owner": "Peter",
+          "status": "pending",
+          "source": "spreadsheet:Crop Expo",
+          "priority": "high"
+        },
+        {
+          "id": "crop-expo-41",
+          "task": "Book electricity",
+          "section": "booth_setup",
+          "ownerSpreadsheet": "Artroom",
+          "owner": "Graphics",
+          "status": "pending",
+          "source": "spreadsheet:Crop Expo",
+          "priority": "high"
+        },
+        {
+          "id": "crop-expo-42",
+          "task": "Book carpet",
+          "section": "booth_setup",
+          "ownerSpreadsheet": "Artroom",
+          "owner": "Graphics",
+          "status": "pending",
+          "source": "spreadsheet:Crop Expo",
+          "priority": "high"
+        },
+        {
+          "id": "crop-expo-43",
+          "task": "Book tables/drapes/easle",
+          "section": "booth_setup",
+          "ownerSpreadsheet": "Artroom",
+          "owner": "Graphics",
+          "status": "pending",
+          "source": "spreadsheet:Crop Expo",
+          "priority": "high"
+        },
+        {
+          "id": "crop-expo-45",
+          "task": "Carrier",
+          "section": "freight",
+          "ownerSpreadsheet": "Michael",
+          "owner": "Michael",
+          "status": "pending",
+          "source": "spreadsheet:Crop Expo",
+          "priority": "high"
+        },
+        {
+          "id": "crop-expo-47",
+          "task": "Advance shipping opens (date)",
+          "section": "freight",
+          "ownerSpreadsheet": "Elisabeth",
+          "owner": "Graphics",
+          "status": "pending",
+          "source": "spreadsheet:Crop Expo",
+          "priority": "high"
+        },
+        {
+          "id": "crop-expo-48",
+          "task": "Advance shipping closes (date)",
+          "section": "freight",
+          "ownerSpreadsheet": "Elisabeth",
+          "owner": "Graphics",
+          "status": "pending",
+          "source": "spreadsheet:Crop Expo",
+          "priority": "high"
+        },
+        {
+          "id": "crop-expo-49",
+          "task": "Show Site Arrival date #1 (if JFT)",
+          "section": "freight",
+          "ownerSpreadsheet": "Elisabeth",
+          "owner": "Michael",
+          "status": "pending",
+          "source": "spreadsheet:Crop Expo",
+          "priority": "high"
+        },
+        {
+          "id": "crop-expo-50",
+          "task": "Show Site Arrival time #1 (if JFT)",
+          "section": "freight",
+          "ownerSpreadsheet": "Elisabeth",
+          "owner": "Michael",
+          "status": "pending",
+          "source": "spreadsheet:Crop Expo",
+          "priority": "high"
+        },
+        {
+          "id": "crop-expo-51",
+          "task": "Freight departure date",
+          "section": "freight",
+          "ownerSpreadsheet": "Michael",
+          "owner": "Michael",
+          "status": "pending",
+          "source": "spreadsheet:Crop Expo",
+          "priority": "critical"
+        },
+        {
+          "id": "crop-expo-52",
+          "task": "End of show pick up (if JFT)",
+          "section": "freight",
+          "ownerSpreadsheet": "Elisabeth",
+          "owner": "Michael",
+          "status": "pending",
+          "source": "spreadsheet:Crop Expo",
+          "priority": "high"
+        },
+        {
+          "id": "crop-expo-53",
+          "task": "Order drayage",
+          "section": "freight",
+          "ownerSpreadsheet": "Elisabeth",
+          "owner": "Graphics",
+          "status": "pending",
+          "source": "spreadsheet:Crop Expo",
+          "priority": "high"
+        },
+        {
+          "id": "crop-expo-55",
+          "task": "Contact books",
+          "section": "literature",
+          "ownerSpreadsheet": "Mailroom",
+          "owner": "Mailroom",
+          "status": "pending",
+          "source": "spreadsheet:Crop Expo"
+        },
+        {
+          "id": "crop-expo-56",
+          "task": "Guest passes distributed",
+          "section": "literature",
+          "ownerSpreadsheet": "Elisabeth/Reps",
+          "owner": "Debbie",
+          "status": "pending",
+          "source": "spreadsheet:Crop Expo"
+        },
+        {
+          "id": "crop-expo-57",
+          "task": "Lead retrieval/printer",
+          "section": "literature",
+          "ownerSpreadsheet": "Elisabeth",
+          "owner": "Graphics",
+          "status": "pending",
+          "source": "spreadsheet:Crop Expo"
+        },
+        {
+          "id": "crop-expo-58",
+          "task": "Transportation",
+          "section": "literature",
+          "ownerSpreadsheet": "Michael",
+          "owner": "Michael",
+          "status": "pending",
+          "source": "spreadsheet:Crop Expo"
+        },
+        {
+          "id": "crop-expo-59",
+          "task": "Pack literature",
+          "section": "literature",
+          "ownerSpreadsheet": "Mailroom",
+          "owner": "Mailroom",
+          "status": "pending",
+          "source": "spreadsheet:Crop Expo"
+        },
+        {
+          "id": "crop-expo-61",
+          "task": "Cell phone",
+          "section": "on_site",
+          "ownerSpreadsheet": "Personnel",
+          "owner": "On-site reps",
+          "status": "pending",
+          "source": "spreadsheet:Crop Expo"
+        },
+        {
+          "id": "crop-expo-62",
+          "task": "Set up hours",
+          "section": "on_site",
+          "ownerSpreadsheet": "Elisabeth",
+          "owner": "Graphics",
+          "status": "pending",
+          "source": "spreadsheet:Crop Expo"
+        },
+        {
+          "id": "crop-expo-63",
+          "task": "Show hours",
+          "section": "on_site",
+          "ownerSpreadsheet": "Elisabeth",
+          "owner": "Graphics",
+          "status": "pending",
+          "source": "spreadsheet:Crop Expo"
+        },
+        {
+          "id": "crop-expo-64",
+          "task": "Take down hours",
+          "section": "on_site",
+          "ownerSpreadsheet": "Elisabeth",
+          "owner": "Graphics",
+          "status": "pending",
+          "source": "spreadsheet:Crop Expo"
+        },
+        {
+          "id": "crop-expo-65",
+          "task": "Storage of empties",
+          "section": "on_site",
+          "ownerSpreadsheet": "Elisabeth",
+          "owner": "Graphics",
+          "status": "pending",
+          "source": "spreadsheet:Crop Expo"
+        },
+        {
+          "id": "crop-expo-66",
+          "task": "Parking",
+          "section": "on_site",
+          "ownerSpreadsheet": "Elisabeth",
+          "owner": "Graphics",
+          "status": "pending",
+          "source": "spreadsheet:Crop Expo"
+        },
+        {
+          "id": "crop-expo-68",
+          "task": "Number of leads",
+          "section": "post_show_review",
+          "ownerSpreadsheet": "Personnel",
+          "owner": "On-site reps",
+          "status": "pending",
+          "source": "spreadsheet:Crop Expo"
+        },
+        {
+          "id": "crop-expo-69",
+          "task": "Number of booths",
+          "section": "post_show_review",
+          "ownerSpreadsheet": "Peter",
+          "owner": "Peter",
+          "status": "pending",
+          "source": "spreadsheet:Crop Expo"
+        },
+        {
+          "id": "crop-expo-70",
+          "task": "Adequate staffing",
+          "section": "post_show_review",
+          "ownerSpreadsheet": "Peter",
+          "owner": "Peter",
+          "status": "pending",
+          "source": "spreadsheet:Crop Expo"
+        },
+        {
+          "id": "crop-expo-71",
+          "task": "Repairs",
+          "section": "post_show_review",
+          "ownerSpreadsheet": "Personnel",
+          "owner": "On-site reps",
+          "status": "pending",
+          "source": "spreadsheet:Crop Expo"
+        },
+        {
+          "id": "crop-expo-72",
+          "task": "Additional comments",
+          "section": "post_show_review",
+          "ownerSpreadsheet": "Personnel",
+          "owner": "On-site reps",
+          "status": "pending",
+          "source": "spreadsheet:Crop Expo"
+        },
+        {
+          "id": "crop-expo-73",
+          "task": "Confirm repeat attendance",
+          "section": "post_show_review",
+          "ownerSpreadsheet": "Peter",
+          "owner": "Peter",
+          "status": "pending",
+          "source": "spreadsheet:Crop Expo"
+        }
+      ]
+    }
+  ],
+  "importedTabs": [
+    "CULTIVATE",
+    "GCS",
+    "GCC & Expo",
+    "CGC",
+    "GRN IND AB",
+    "QUEBEC",
+    "HORTEAST",
+    "Mid-Ohio",
+    "GULF",
+    "MANTS",
+    "Crop Expo"
+  ]
+}

@@ -1,0 +1,12 @@
+.env
+.DS_Store
+web/node_modules/
+web/dist/
+inbox/.email-state.json
+inbox/email-ingest.log
+inbox/emails/*
+!inbox/emails/.gitkeep
+inbox/attachments/*
+!inbox/attachments/.gitkeep
+inbox/packages/**/*
+!inbox/packages/.gitkeep

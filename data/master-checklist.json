@@ -1,0 +1,70 @@
+{
+  "version": 1,
+  "categories": [
+    {
+      "id": "contracts",
+      "name": "Contracts & Admin",
+      "items": [
+        { "id": "booth-contract", "task": "Confirm booth contract signed & paid", "leadDays": 90, "priority": "critical" },
+        { "id": "coi", "task": "Submit Certificate of Insurance (COI)", "leadDays": 45, "priority": "critical" },
+        { "id": "exhibitor-profile", "task": "Update exhibitor profile / Map Your Show listing", "leadDays": 30, "priority": "high" },
+        { "id": "staff-registration", "task": "Register booth staff & badges (use comp badges first)", "leadDays": 14, "priority": "critical" },
+        { "id": "lead-retrieval", "task": "Order lead retrieval system", "leadDays": 21, "priority": "medium" }
+      ]
+    },
+    {
+      "id": "booth-services",
+      "name": "Booth Services & Utilities",
+      "items": [
+        { "id": "electric", "task": "Order electric / water / telecom booth services", "leadDays": 21, "priority": "high" },
+        { "id": "internet", "task": "Order wireless internet (pre-show rate)", "leadDays": 21, "priority": "medium" },
+        { "id": "av", "task": "Order AV / rigging / hanging signage if needed", "leadDays": 30, "priority": "medium" },
+        { "id": "carpet", "task": "Order booth carpet / furniture / display rentals", "leadDays": 21, "priority": "medium" },
+        { "id": "service-kit", "task": "Download exhibitor service kit (GSC / Shepard / Fern)", "leadDays": 60, "priority": "high" }
+      ]
+    },
+    {
+      "id": "logistics",
+      "name": "Freight & Logistics",
+      "items": [
+        { "id": "freight-policy", "task": "Review freight / drayage policy", "leadDays": 45, "priority": "high" },
+        { "id": "inbound-shipping", "task": "Schedule inbound booth materials shipping", "leadDays": 14, "priority": "critical" },
+        { "id": "outbound-shipping", "task": "Confirm post-show shipping / storage", "leadDays": 7, "priority": "high" },
+        { "id": "move-in-out", "task": "Review move-in / move-out / staging instructions", "leadDays": 7, "priority": "high" }
+      ]
+    },
+    {
+      "id": "travel",
+      "name": "Travel & Hotels",
+      "items": [
+        { "id": "hotel", "task": "Book hotel through official show block", "leadDays": 30, "priority": "high" },
+        { "id": "flights", "task": "Book flights / ground transport for team", "leadDays": 21, "priority": "medium" },
+        { "id": "team-schedule", "task": "Confirm staff schedule & booth coverage plan", "leadDays": 14, "priority": "high" }
+      ]
+    },
+    {
+      "id": "marketing",
+      "name": "Marketing & Sales Prep",
+      "items": [
+        { "id": "buyers-guide", "task": "Buyer's guide ad / directory listing", "leadDays": 60, "priority": "medium" },
+        { "id": "mailing-list", "task": "Order mailing labels / invite customers to booth", "leadDays": 30, "priority": "medium" },
+        { "id": "new-products", "task": "Submit new product info for media / show guide", "leadDays": 30, "priority": "medium" },
+        { "id": "booth-graphics", "task": "Finalize booth graphics, banners, literature", "leadDays": 21, "priority": "high" },
+        { "id": "samples-catalogs", "task": "Prepare product samples, catalogs, order forms", "leadDays": 7, "priority": "critical" },
+        { "id": "pre-show-outreach", "task": "Email / social pre-show outreach to customers", "leadDays": 14, "priority": "medium" },
+        { "id": "sponsorship", "task": "Sponsorship form & payment (if applicable)", "leadDays": 45, "priority": "low" }
+      ]
+    },
+    {
+      "id": "onsite",
+      "name": "On-Site Execution",
+      "items": [
+        { "id": "booth-setup", "task": "Complete booth setup before show opens", "leadDays": 0, "priority": "critical" },
+        { "id": "badge-pickup", "task": "Pick up exhibitor badges / verify all staff registered", "leadDays": 1, "priority": "critical" },
+        { "id": "equipment-check", "task": "Test lead retrieval, iPad demos, payment tools", "leadDays": 1, "priority": "high" },
+        { "id": "post-show-donation", "task": "Submit post-show donation form (if required)", "leadDays": 0, "priority": "low" },
+        { "id": "lead-followup", "task": "Export leads & schedule follow-up within 48 hours", "leadDays": -1, "priority": "critical" }
+      ]
+    }
+  ]
+}
