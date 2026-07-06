@@ -2,6 +2,7 @@
 .DS_Store
 web/node_modules/
 web/dist/
+*.xlsx
 inbox/.email-state.json
 inbox/email-ingest.log
 inbox/emails/*
