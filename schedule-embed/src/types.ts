@@ -304,10 +304,6 @@ export function formatWhenRange(start: string, end: string): string {
   return `${MONTHS_LONG[s.m - 1]} ${s.d} - ${MONTHS_LONG[e.m - 1]} ${e.d}`;
 }
 
-function pad2(n: number): string {
-  return String(n).padStart(2, "0");
-}
-
 function formatLongDate(iso: string, withYear: boolean): string {
   const { y, m, d } = parseYmd(iso);
   const base = `${MONTHS_LONG[m - 1]} ${d}`;
