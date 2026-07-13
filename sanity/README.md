@@ -25,7 +25,7 @@ Give an AI this context (or point it at this folder):
 ```
 Sanity project 9pylg5jc / dataset production
 Document type: tradeShow
-Stable ids: tradeShow.<slug>  (e.g. tradeShow.cultivate)
+Stable ids: tradeshow-<slug>  (e.g. tradeshow-cultivate)
 Fields: title, slug.current, start, end, city, booth, venue, address, url,
         imageUrl, accent, description, published
 Settings doc: scheduleSettings (title, year)
@@ -33,7 +33,7 @@ Settings doc: scheduleSettings (title, year)
 
 Example mutation prompt:
 
-> Update HortEast booth to 511 and venue to Moncton Coliseum in Sanity project 9pylg5jc.
+> Update HortEast booth to 511 and venue to Moncton Coliseum in Sanity project 9pylg5jc (id tradeshow-horteast).
 
 Seed / re-import from Git JSON:
 

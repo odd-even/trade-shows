@@ -45,7 +45,8 @@ async function main() {
   })
 
   for (const show of schedule.shows) {
-    const id = `tradeShow.${show.id}`
+    // Use dashes — dotted ids (tradeShow.foo) are not publicly queryable.
+    const id = `tradeshow-${show.id}`
     tx.createOrReplace({
       _id: id,
       _type: 'tradeShow',
