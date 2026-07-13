@@ -26,6 +26,20 @@ export const tradeShowType = defineType({
       initialValue: 'TRADE SHOW',
     }),
     defineField({
+      name: 'kind',
+      title: 'Kind',
+      type: 'string',
+      options: {
+        list: [
+          {title: 'Trade Show', value: 'tradeShow'},
+          {title: 'Discount', value: 'eod'},
+        ],
+        layout: 'radio',
+      },
+      initialValue: 'tradeShow',
+      validation: (rule) => rule.required(),
+    }),
+    defineField({
       name: 'start',
       title: 'Start date',
       type: 'date',
@@ -65,6 +79,12 @@ export const tradeShowType = defineType({
       type: 'url',
     }),
     defineField({
+      name: 'boothMap',
+      title: 'Booth map URL',
+      type: 'url',
+      description: 'Interactive floor plan / booth map. Shown in the popup when set.',
+    }),
+    defineField({
       name: 'imageUrl',
       title: 'Image URL',
       type: 'url',
@@ -97,6 +117,15 @@ export const tradeShowType = defineType({
       type: 'boolean',
       initialValue: true,
       description: 'Uncheck to hide from the public embed without deleting.',
+    }),
+    defineField({
+      name: 'repeatAnnually',
+      title: 'Repeat every year',
+      type: 'boolean',
+      initialValue: true,
+      hidden: ({document}) => document?.kind !== 'eod',
+      description:
+        'For discounts: only month/day matter. The embed expands instances ahead (12 months by default; Show more extends).',
     }),
     defineField({
       name: 'sortOrder',

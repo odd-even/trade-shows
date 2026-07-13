@@ -73,7 +73,7 @@ Replace the Elfsight module with our card grid. Content is edited in **Sanity** 
 ```html
 <!-- Jolly Farmer Trade Shows -->
 <script src="https://jf-trade-shows.vercel.app/embed.js" async></script>
-<div class="jf-trade-shows" data-jf-lazy></div>
+<div class="jf-trade-shows" data-jf-lazy data-jf-view="all"></div>
 ```
 
 Details: [`schedule-embed/README.md`](schedule-embed/README.md) · [`sanity/README.md`](sanity/README.md)

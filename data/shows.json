@@ -4259,15 +4259,15 @@
     {
       "id": "crop-expo",
       "name": "Crop Expo",
-      "year": 2026,
+      "year": 2027,
       "dates": {
-        "start": null,
-        "end": null
+        "start": "2027-01-27",
+        "end": "2027-01-28"
       },
-      "location": "Spooky Nook Event Center\n75 Champ Blvd\nManheim, PA 17512",
+      "location": "Spooky Nook Event Center\n75 Champ Blvd\nManheim, PA 17545",
       "boothSize": "10x20",
       "booth": null,
-      "exhibitorPortal": null,
+      "exhibitorPortal": "https://thefamilyfarmresource.com/wp-content/uploads/2026/06/Exhibitor-Registratio-for-2027.pdf",
       "productFocus": "Plugs & Cuttings",
       "status": "upcoming",
       "tasks": [

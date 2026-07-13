@@ -5,17 +5,24 @@ Elfsight-style card grid for jollyfarmer.com. Content lives in **Sanity** (manua
 ## WordPress embed
 
 ```html
-<!-- Jolly Farmer Trade Shows -->
+<!-- All events (tabs: All / Trade Shows / Discount) -->
 <script src="https://jf-trade-shows.vercel.app/embed.js" async></script>
-<div class="jf-trade-shows" data-jf-lazy></div>
+<div class="jf-trade-shows" data-jf-lazy data-jf-view="all"></div>
+```
+
+Start on a specific tab:
+
+```html
+<div class="jf-trade-shows" data-jf-lazy data-jf-view="trade-shows"></div>
+<div class="jf-trade-shows" data-jf-lazy data-jf-view="discount"></div>
 ```
 
 Optional iframe-only:
 
 ```html
 <iframe
-  src="https://jf-trade-shows.vercel.app/embed.html"
-  title="Jolly Farmer Trade Shows"
+  src="https://jf-trade-shows.vercel.app/embed.html?view=all"
+  title="Jolly Farmer Schedule"
   style="width:100%;border:0;min-height:720px"
   loading="lazy"
 ></iframe>
@@ -23,7 +30,7 @@ Optional iframe-only:
 
 ## Update the schedule
 
-### Manual (Sanity Studio)
+One source of truth for **Trade Shows** and **Discounts** (early order / early pay). Cards are tagged; the tab bar filters All / Trade Shows / Discount.
 
 1. Open Studio: https://jf-trade-shows.sanity.studio (or `cd sanity && npm run dev`)
 2. Edit a Trade Show → Publish

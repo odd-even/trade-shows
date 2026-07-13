@@ -1,9 +1,21 @@
-import { useEffect, useId, useState } from "react";
+import { useEffect, useId, useLayoutEffect, useMemo, useRef, useState } from "react";
 import {
+  calendarProviderLabel,
+  downloadIcs,
   formatWhenRange,
+  formatEodWhenRange,
   googleCalendarUrl,
+  kindLabel,
   mailtoInviteUrl,
   mapsDirectionsUrl,
+  office365CalendarUrl,
+  outlookCalendarUrl,
+  parseDiscountOffer,
+  preferredCalendarProviders,
+  publicEventShareUrl,
+  showKind,
+  yahooCalendarUrl,
+  type CalendarProvider,
   type ScheduleShow,
 } from "./types";
 
@@ -37,17 +49,66 @@ function PinIcon() {
   );
 }
 
+function calendarHref(provider: CalendarProvider, show: ScheduleShow): string | null {
+  switch (provider) {
+    case "google":
+      return googleCalendarUrl(show);
+    case "outlook":
+      return outlookCalendarUrl(show);
+    case "office365":
+      return office365CalendarUrl(show);
+    case "yahoo":
+      return yahooCalendarUrl(show);
+    case "apple":
+    case "ics":
+      return null;
+  }
+}
+
 export function EventPopup({ show, onClose }: { show: ScheduleShow; onClose: () => void }) {
   const titleId = useId();
+  const calendarMenuId = useId();
+  const calendarWrapRef = useRef<HTMLDivElement | null>(null);
+  const descRef = useRef<HTMLParagraphElement | null>(null);
   const [expanded, setExpanded] = useState(false);
+  const [needsToggle, setNeedsToggle] = useState(false);
   const [copied, setCopied] = useState(false);
+  const [calendarOpen, setCalendarOpen] = useState(false);
   const description = (show.description || "").trim();
-  const long = description.length > 220;
-  const pageUrl = typeof window !== "undefined" ? window.location.href.split("#")[0] : "";
+  const shareUrl = publicEventShareUrl(show.id);
+  const isDiscount = showKind(show) === "eod";
+  const discount = isDiscount ? parseDiscountOffer(show.title) : null;
+  const calendarProviders = useMemo(() => preferredCalendarProviders(), []);
+
+  useLayoutEffect(() => {
+    setExpanded(false);
+    setNeedsToggle(false);
+  }, [show.id]);
+
+  useLayoutEffect(() => {
+    if (expanded) return;
+    const el = descRef.current;
+    if (!el || !description) {
+      setNeedsToggle(false);
+      return;
+    }
+
+    const measure = () => {
+      setNeedsToggle(el.scrollHeight > el.clientHeight + 1);
+    };
+
+    measure();
+    const ro = new ResizeObserver(measure);
+    ro.observe(el);
+    return () => ro.disconnect();
+  }, [description, expanded, show.id]);
 
   useEffect(() => {
     const onKey = (e: KeyboardEvent) => {
-      if (e.key === "Escape") onClose();
+      if (e.key === "Escape") {
+        if (calendarOpen) setCalendarOpen(false);
+        else onClose();
+      }
     };
     document.addEventListener("keydown", onKey);
     const prev = document.body.style.overflow;
@@ -56,11 +117,20 @@ export function EventPopup({ show, onClose }: { show: ScheduleShow; onClose: () 
       document.removeEventListener("keydown", onKey);
       document.body.style.overflow = prev;
     };
-  }, [onClose]);
+  }, [onClose, calendarOpen]);
+
+  useEffect(() => {
+    if (!calendarOpen) return;
+    const onPointer = (e: MouseEvent) => {
+      if (!calendarWrapRef.current?.contains(e.target as Node)) setCalendarOpen(false);
+    };
+    document.addEventListener("mousedown", onPointer);
+    return () => document.removeEventListener("mousedown", onPointer);
+  }, [calendarOpen]);
 
   const copyLink = async () => {
     try {
-      await navigator.clipboard.writeText(`${pageUrl}#${show.id}`);
+      await navigator.clipboard.writeText(shareUrl);
       setCopied(true);
       window.setTimeout(() => setCopied(false), 1600);
     } catch {
@@ -82,12 +152,28 @@ export function EventPopup({ show, onClose }: { show: ScheduleShow; onClose: () 
         </button>
 
         <div className="jf-popup-header">
-          <h2 id={titleId} className="jf-popup-title">
-            {show.title}
-          </h2>
+          {discount ? (
+            <div className="jf-popup-discount-head">
+              <div className="jf-discount-layout jf-discount-layout-popup">
+                <div className="jf-discount-offer" aria-hidden="true">
+                  <span className="jf-discount-percent">{discount.percent}</span>
+                  <span className="jf-discount-off">DISCOUNT</span>
+                </div>
+                <div className="jf-discount-copy">
+                  <h2 id={titleId} className="jf-popup-title jf-discount-product">
+                    {discount.product || show.title}
+                  </h2>
+                </div>
+              </div>
+            </div>
+          ) : (
+            <h2 id={titleId} className="jf-popup-title">
+              {show.title}
+            </h2>
+          )}
           {show.url ? (
             <a className="jf-show-details" href={show.url} target="_blank" rel="noopener noreferrer">
-              Show details
+              {isDiscount ? "Order now" : "Show details"}
             </a>
           ) : null}
         </div>
@@ -97,14 +183,22 @@ export function EventPopup({ show, onClose }: { show: ScheduleShow; onClose: () 
         </div>
 
         <div className="jf-popup-tags">
+          <span className={`jf-popup-tag jf-popup-kind jf-kind-${showKind(show) === "eod" ? "eod" : "trade"}`}>
+            {kindLabel(showKind(show))}
+          </span>
+          {show.tag && show.tag.toUpperCase() !== "TRADE SHOW" ? (
+            <span className="jf-popup-tag">{show.tag}</span>
+          ) : null}
           <span className="jf-popup-tag">{show.city}</span>
           {show.booth ? <span className="jf-popup-tag">Booth {show.booth}</span> : null}
         </div>
 
         {description ? (
           <div className="jf-popup-desc">
-            <p className={expanded || !long ? "" : "jf-clamp"}>{description}</p>
-            {long ? (
+            <p ref={descRef} className={expanded ? "" : "jf-clamp"}>
+              {description}
+            </p>
+            {needsToggle ? (
               <button type="button" className="jf-read-more" onClick={() => setExpanded((v) => !v)}>
                 {expanded ? "Show Less" : "Show More"}
               </button>
@@ -117,16 +211,62 @@ export function EventPopup({ show, onClose }: { show: ScheduleShow; onClose: () 
             <ClockIcon />
             <span>When</span>
           </div>
-          <p className="jf-popup-row-body">{formatWhenRange(show.start, show.end)}</p>
-          <a className="jf-popup-link" href={googleCalendarUrl(show)} target="_blank" rel="noopener noreferrer">
-            Add to Calendar
-          </a>
+          <p className="jf-popup-row-body">
+            {isDiscount ? formatEodWhenRange(show) : formatWhenRange(show.start, show.end)}
+          </p>
+          <div className="jf-calendar-wrap" ref={calendarWrapRef}>
+            <button
+              type="button"
+              className="jf-popup-pill jf-calendar-toggle"
+              aria-expanded={calendarOpen}
+              aria-controls={calendarMenuId}
+              onClick={() => setCalendarOpen((v) => !v)}
+            >
+              Add to Calendar
+            </button>
+            {calendarOpen ? (
+              <div id={calendarMenuId} className="jf-calendar-menu" role="menu">
+                {calendarProviders.map((provider) => {
+                  const href = calendarHref(provider, show);
+                  if (href) {
+                    return (
+                      <a
+                        key={provider}
+                        className="jf-calendar-option"
+                        role="menuitem"
+                        href={href}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        onClick={() => setCalendarOpen(false)}
+                      >
+                        {calendarProviderLabel(provider)}
+                      </a>
+                    );
+                  }
+                  return (
+                    <button
+                      key={provider}
+                      type="button"
+                      className="jf-calendar-option"
+                      role="menuitem"
+                      onClick={() => {
+                        downloadIcs(show);
+                        setCalendarOpen(false);
+                      }}
+                    >
+                      {calendarProviderLabel(provider)}
+                    </button>
+                  );
+                })}
+              </div>
+            ) : null}
+          </div>
         </div>
 
         <div className="jf-popup-row">
           <div className="jf-popup-row-title">
-            <PinIcon />
-            <span>Where</span>
+            {isDiscount ? null : <PinIcon />}
+            <span>{isDiscount ? "Shop Online" : "Where"}</span>
           </div>
           <p className="jf-popup-row-body">
             {show.url ? (
@@ -138,9 +278,20 @@ export function EventPopup({ show, onClose }: { show: ScheduleShow; onClose: () 
             )}
           </p>
           {show.address && show.address !== show.venue ? <p className="jf-popup-address">{show.address}</p> : null}
-          <a className="jf-popup-link" href={mapsDirectionsUrl(show)} target="_blank" rel="noopener noreferrer">
-            Get Directions
-          </a>
+          {show.address || showKind(show) === "tradeShow" || show.boothMap ? (
+            <div className="jf-popup-actions">
+              {show.address || showKind(show) === "tradeShow" ? (
+                <a className="jf-popup-pill" href={mapsDirectionsUrl(show)} target="_blank" rel="noopener noreferrer">
+                  Get Directions
+                </a>
+              ) : null}
+              {show.boothMap ? (
+                <a className="jf-popup-pill" href={show.boothMap} target="_blank" rel="noopener noreferrer">
+                  Exhibitor Map
+                </a>
+              ) : null}
+            </div>
+          ) : null}
         </div>
 
         <div className="jf-popup-row">
@@ -151,7 +302,7 @@ export function EventPopup({ show, onClose }: { show: ScheduleShow; onClose: () 
             <button type="button" className="jf-share-btn" onClick={copyLink}>
               {copied ? "Copied" : "Copy link"}
             </button>
-            <a className="jf-share-btn" href={mailtoInviteUrl(show, `${pageUrl}#${show.id}`)}>
+            <a className="jf-share-btn" href={mailtoInviteUrl(show, shareUrl)}>
               Invite via email
             </a>
           </div>

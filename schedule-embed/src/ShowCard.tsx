@@ -1,5 +1,16 @@
 import { useEffect, useState, type CSSProperties } from "react";
-import { formatDateParts, type ScheduleShow } from "./types";
+import {
+  balanceWrapText,
+  eodCountdownLabel,
+  formatDateParts,
+  isEodCountdownActive,
+  isLiveNow,
+  isLiveOrThisWeek,
+  kindLabel,
+  parseDiscountOffer,
+  showKind,
+  type ScheduleShow,
+} from "./types";
 
 function PinIcon() {
   return (
@@ -102,6 +113,13 @@ export function ShowCard({ show, onOpen }: { show: ScheduleShow; onOpen: (show: 
   const start = formatDateParts(show.start);
   const end = formatDateParts(show.end);
   const sameDay = show.start === show.end;
+  const kind = showKind(show);
+  const isDiscount = kind === "eod";
+  const countdown = isDiscount ? eodCountdownLabel(show) : null;
+  const isLive = !isDiscount && isLiveNow(show);
+  const isHot = isDiscount ? isEodCountdownActive(show) : isLiveOrThisWeek(show);
+  const statusLabel = countdown || (isLive ? "Live" : null);
+  const discount = isDiscount ? parseDiscountOffer(show.title) : null;
   const [accent, setAccent] = useState(show.accent);
   const [accentRgb, setAccentRgb] = useState(() => hexToRgbChannels(show.accent));
 
@@ -118,10 +136,10 @@ export function ShowCard({ show, onOpen }: { show: ScheduleShow; onOpen: (show: 
   return (
     <button
       type="button"
-      className="jf-card"
+      className={`jf-card jf-card-${isDiscount ? "eod" : "trade"}${isHot ? " is-hot" : ""}`}
       style={style}
       onClick={() => onOpen(show)}
-      aria-label={`Event: ${show.title}`}
+      aria-label={`${kindLabel(kind)}: ${show.title}${statusLabel ? ` (${statusLabel})` : ""}`}
     >
       <div className="jf-card-media" aria-hidden="true">
         <img
@@ -129,8 +147,10 @@ export function ShowCard({ show, onOpen }: { show: ScheduleShow; onOpen: (show: 
           src={show.image}
           alt=""
           loading="lazy"
-          crossOrigin="anonymous"
+          crossOrigin={isDiscount ? undefined : "anonymous"}
           onLoad={(e) => {
+            // Discounts / locked accents keep the schedule color.
+            if (isDiscount || show.lockAccent) return;
             const extracted = accentFromImage(e.currentTarget);
             if (extracted) {
               setAccent(extracted.hex);
@@ -147,7 +167,14 @@ export function ShowCard({ show, onOpen }: { show: ScheduleShow; onOpen: (show: 
       <div className="jf-card-tint" aria-hidden="true" />
       <div className="jf-card-shade" aria-hidden="true" />
 
-      <div className="jf-date-badge" aria-label={`Event dates: ${start.month} ${start.day}${sameDay ? "" : ` - ${end.month} ${end.day}`}`}>
+      <span className={`jf-kind-badge jf-kind-${isDiscount ? "eod" : "trade"}${isHot ? " is-hot" : ""}`}>
+        {kindLabel(kind)}
+      </span>
+
+      <div
+        className="jf-date-badge"
+        aria-label={`Event dates: ${start.month} ${start.day}${sameDay ? "" : ` - ${end.month} ${end.day}`}`}
+      >
         <div className="jf-date-half jf-date-start">
           <span className="jf-date-month">{start.month}</span>
           <span className="jf-date-day">{start.day}</span>
@@ -164,15 +191,40 @@ export function ShowCard({ show, onOpen }: { show: ScheduleShow; onOpen: (show: 
       </div>
 
       <div className="jf-card-body">
-        <h3 className="jf-card-title">{show.title}</h3>
-        <div className="jf-card-meta">
-          <p className="jf-card-city">{show.city}</p>
-          {show.booth ? <span className="jf-meta-tag">Booth {show.booth}</span> : null}
-        </div>
-        <div className="jf-venue">
-          <PinIcon />
-          <span>{show.venue}</span>
-        </div>
+        {statusLabel ? (
+          <span className="jf-live-tag">
+            <span className="jf-live-dot" aria-hidden="true" />
+            {statusLabel}
+          </span>
+        ) : null}
+        {discount ? (
+          <div className="jf-discount-layout">
+            <div className="jf-discount-offer" aria-hidden="true">
+              <span className="jf-discount-percent">{discount.percent}</span>
+              <span className="jf-discount-off">DISCOUNT</span>
+            </div>
+            <div className="jf-discount-copy">
+              {discount.product ? (
+                <h3 className="jf-discount-product">{balanceWrapText(discount.product)}</h3>
+              ) : null}
+              <p className="jf-discount-deadline">{balanceWrapText(show.city)}</p>
+            </div>
+          </div>
+        ) : (
+          <>
+            <h3 className="jf-card-title">{show.title}</h3>
+            <div className="jf-card-meta">
+              <p className="jf-card-city">{show.city}</p>
+              {show.booth ? <span className="jf-meta-tag">Booth {show.booth}</span> : null}
+            </div>
+            {show.venue ? (
+              <div className="jf-venue">
+                <PinIcon />
+                <span>{show.venue}</span>
+              </div>
+            ) : null}
+          </>
+        )}
       </div>
     </button>
   );

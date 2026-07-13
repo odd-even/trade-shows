@@ -1,4 +1,4 @@
-import type {ScheduleData, ScheduleShow} from './types'
+import {expandScheduleShows, SCHEDULE_MAX_WINDOW_MONTHS, type ScheduleData, type ScheduleShow} from './types'
 
 const PROJECT_ID = import.meta.env.VITE_SANITY_PROJECT_ID as string | undefined
 const DATASET = (import.meta.env.VITE_SANITY_DATASET as string | undefined) || 'production'
@@ -16,6 +16,9 @@ interface SanityTradeShow {
   venue: string
   address?: string | null
   url?: string | null
+  boothMap?: string | null
+  kind?: 'tradeShow' | 'eod' | null
+  repeatAnnually?: boolean | null
   imageUrl?: string | null
   imageUrlFromAsset?: string | null
   accent?: string | null
@@ -30,8 +33,9 @@ interface SanitySettings {
 
 function mapShow(doc: SanityTradeShow): ScheduleShow {
   return {
-    id: doc.slug?.current || doc._id.replace(/^tradeShow\./, ''),
+    id: doc.slug?.current || doc._id.replace(/^tradeshow-/, '').replace(/^tradeShow\./, ''),
     title: doc.title,
+    kind: doc.kind === 'eod' ? 'eod' : 'tradeShow',
     tag: doc.tag || 'TRADE SHOW',
     start: doc.start,
     end: doc.end,
@@ -40,10 +44,12 @@ function mapShow(doc: SanityTradeShow): ScheduleShow {
     venue: doc.venue,
     address: doc.address || null,
     url: doc.url || null,
+    boothMap: doc.boothMap || null,
     image: doc.imageUrlFromAsset || doc.imageUrl || '',
     accent: doc.accent || '#152438',
     description: doc.description || null,
     published: doc.published !== false,
+    repeatAnnually: doc.kind === 'eod' ? doc.repeatAnnually !== false : Boolean(doc.repeatAnnually),
   }
 }
 
@@ -52,8 +58,8 @@ async function fetchSanitySchedule(): Promise<ScheduleData | null> {
 
   const showsQuery = encodeURIComponent(
     `*[_type == "tradeShow" && published != false] | order(start asc) {
-      _id, title, slug, tag, start, end, city, booth, venue, address, url,
-      imageUrl, "imageUrlFromAsset": image.asset->url, accent, description, published
+      _id, title, slug, kind, tag, start, end, city, booth, venue, address, url, boothMap,
+      repeatAnnually, imageUrl, "imageUrlFromAsset": image.asset->url, accent, description, published
     }`,
   )
   const settingsQuery = encodeURIComponent(
@@ -91,13 +97,45 @@ async function fetchJsonFallback(): Promise<ScheduleData> {
   return r.json()
 }
 
-/** Prefer live Sanity; fall back to bundled schedule.json. */
+/** Overlay boothMap / accent overrides from bundled JSON when Sanity omits them. */
+async function mergeScheduleOverrides(data: ScheduleData): Promise<ScheduleData> {
+  try {
+    const fallback = await fetchJsonFallback()
+    const byId = new Map(fallback.shows.map((s) => [s.id, s]))
+    return {
+      ...data,
+      shows: data.shows.map((show) => {
+        const local = byId.get(show.id)
+        if (!local) return show
+        return {
+          ...show,
+          boothMap: show.boothMap || local.boothMap || null,
+          accent: local.lockAccent ? local.accent : show.accent || local.accent,
+          lockAccent: Boolean(local.lockAccent || show.lockAccent),
+          // Prefer optimized local assets from schedule.json
+          image: local.image?.startsWith('/') ? local.image : show.image || local.image,
+        }
+      }),
+    }
+  } catch {
+    return data
+  }
+}
+
+/** Prefer live Sanity; fall back to bundled schedule.json. Expands annual discounts. */
 export async function loadSchedule(): Promise<ScheduleData> {
+  let data: ScheduleData
   try {
     const fromSanity = await fetchSanitySchedule()
-    if (fromSanity && fromSanity.shows.length > 0) return fromSanity
+    if (fromSanity && fromSanity.shows.length > 0) data = fromSanity
+    else data = await fetchJsonFallback()
   } catch (err) {
     console.warn('Sanity schedule unavailable, using schedule.json', err)
+    data = await fetchJsonFallback()
   }
-  return fetchJsonFallback()
+  data = await mergeScheduleOverrides(data)
+  return {
+    ...data,
+    shows: expandScheduleShows(data.shows, undefined, SCHEDULE_MAX_WINDOW_MONTHS),
+  }
 }

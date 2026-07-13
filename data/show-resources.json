@@ -1,6 +1,6 @@
 {
   "lastUpdated": "2026-07-07",
-  "note": "Curated exhibitor links — verify GES/Shepard event codes each year when manuals publish.",
+  "note": "Curated exhibitor links \u2014 verify GES/Shepard event codes each year when manuals publish.",
   "shows": {
     "cultivate": {
       "website": "https://www.cultivateevent.org/",
@@ -9,7 +9,7 @@
       "exhibitorInfo": "https://www.cultivateevent.org/exhibitors",
       "shippingLabels": "https://www.fernoneview.com/",
       "showDecorator": "https://www.fernoneview.com/",
-      "notes": "Fern OneView — shipping labels in service kit. Advance warehouse Jun 9–Jul 3, 2026. JF truck to show."
+      "notes": "Fern OneView \u2014 shipping labels in service kit. Advance warehouse Jun 9\u2013Jul 3, 2026. JF truck to show."
     },
     "gcs": {
       "website": "https://gardencentershow.com/",
@@ -17,7 +17,7 @@
       "boothMap": "https://exhibitors.gardencentershow.com/gsc25/public/exhibitors.aspx",
       "exhibitorManual": "https://greatamericanmediaservices.com/wp-content/uploads/2025/05/2025-Garden-Center-Show-Exhibitor-Manual.pdf",
       "exhibitorInfo": "https://gardencentershow.com/why-exhibit/",
-      "notes": "Garden Center Show (Rosemont). 2026 portal may update from gsc25 — check gardencentershow.com."
+      "notes": "Garden Center Show (Rosemont). 2026 portal may update from gsc25 \u2014 check gardencentershow.com."
     },
     "gcc-expo": {
       "website": "https://www.gardencenterconference.com/",
@@ -25,28 +25,31 @@
       "boothMap": "https://www.gardencenterconference.com/page/floorplan/",
       "exhibitorInfo": "https://www.gardencenterconference.com/page/pricing/",
       "hotel": "https://www.gardencenterconference.com/page/hotel/",
-      "notes": "Immersive Garden Center tabletop expo at Loews Vanderbilt Hotel, Nashville (Aug 18–20, 2026). No GES advance warehouse."
+      "notes": "Immersive Garden Center tabletop expo at Loews Vanderbilt Hotel, Nashville (Aug 18\u201320, 2026). No GES advance warehouse."
     },
     "cgc": {
       "website": "https://www.canadiangreenhouseconference.com/",
       "exhibitorPortal": "https://www.canadiangreenhouseconference.com/exhibitor-resources",
+      "boothMap": "https://www.canadiangreenhouseconference.com/_files/ugd/3f1778_2f8cfd30a3304ce39a705df801031794.pdf",
       "gesOrdering": "https://ordering.ges.com/CA-00068792",
       "gesFindShow": "https://ordering.ges.com/",
       "shippingLabels": "https://ordering.ges.com/CA-00068792",
       "venueServices": "https://fallsconventions.com/exhibit#exhibitor-services",
-      "notes": "GES Expresso — advance warehouse Bolton ON. Confirm 2026 GES event code when manual updates."
+      "notes": "GES Expresso \u2014 advance warehouse Bolton ON. Confirm 2026 GES event code when manual updates."
     },
     "green-industry": {
       "website": "https://www.greenindustryshow.com/",
       "exhibitorPortal": "https://www.greenindustryshow.com/?page_id=1804",
+      "boothMap": "https://www.greenindustryshow.com/?page_id=31",
       "exhibitorManual": "https://www.greenindustryshow.com/wp-content/uploads/2026/04/Prelim-Exh-Pkg-2026.pdf",
       "showDecorator": "https://www.goodkey.com/",
       "shippingLabels": "https://www.goodkey.com/",
-      "notes": "Goodkey Show Services kit forthcoming. Advance shipping via Goodkey — watch exhibitor documents page."
+      "notes": "Goodkey Show Services kit forthcoming. Advance shipping via Goodkey \u2014 watch exhibitor documents page."
     },
     "quebec-vert": {
       "website": "https://expoquebecvert.com/en/",
       "exhibitorPortal": "https://expoquebecvert.com/en/exhibitors/become-an-exhibitor/",
+      "boothMap": "https://qvexpo2026.expofp.com/",
       "exhibitorInfo": "https://expoquebecvert.com/en/2026-edition/commercial-expo/",
       "contact": "https://expoquebecvert.com/en/contact-us/",
       "notes": "Exhibitor kit / GES links sent after booth booking. Check freight section when manual arrives."
@@ -64,11 +67,12 @@
       "exhibitorPortal": "https://midohiogrowers.com/2016-brochure/",
       "exhibitorManual": "https://midohiogrowers.com/wp-content/uploads/2025/11/2026-Growers-Meeting-Program.pdf",
       "venue": "https://mthopeshows.com/events/mid-ohio-growers-meeting-2/",
-      "notes": "Vendor trade show — contact midohiogrowersmtg@gmail.com or 330-275-7566 for shipping."
+      "notes": "Vendor trade show \u2014 contact midohiogrowersmtg@gmail.com or 330-275-7566 for shipping."
     },
     "gulf-states-expo": {
       "website": "https://www.gshe.org/",
       "exhibitorPortal": "https://www.gshe.org/2026/exhibit_staff_registration.cfm",
+      "boothMap": "https://www.gshe.org/2027/exhibit_map.cfm",
       "exhibitorManual": "http://www.gshe.org/2025/documents/GSHE_2025_Exhibitor_Services_Kit.pdf",
       "venueServices": "https://www.mobilecivicctr.com/mobile-convention-center/exhibit-at-an-event/exhibitor-services",
       "notes": "2027 kit TBA. Mobile Convention Center exhibitor services for electric/water/internet."
@@ -81,13 +85,16 @@
       "shippingLabels": "https://exhibitorpro.shepardes.com/",
       "shepardKit": "https://apps.shepardes.com/olk/intro.asp",
       "shippingHelp": "https://shepardes.com/faq/shipping-material-handling/where-can-i-find-shipping-labels-for-the-event/",
-      "boothMap": "https://2026mants.smallworldlabs.com/exhibitors",
-      "notes": "Shepard ExhibitorPro — advance warehouse dates in Quick Facts. Labels under Services."
+      "boothMap": "https://2027mants.smallworldlabs.com/exhibitors",
+      "notes": "Shepard ExhibitorPro \u2014 advance warehouse dates in Quick Facts. Labels under Services."
     },
     "crop-expo": {
       "website": "https://thefamilyfarmresource.com/crop-growing-expo/",
+      "exhibitorPortal": "https://thefamilyfarmresource.com/wp-content/uploads/2026/06/Exhibitor-Registratio-for-2027.pdf",
+      "boothMap": "https://thefamilyfarmresource.com/wp-content/uploads/2026/06/2027-Floor-Plan.pdf",
+      "exhibitorInfo": "https://thefamilyfarmresource.com/wp-content/uploads/2026/06/Letter-to-returning-exhibitors.pdf",
       "venue": "https://www.spookynooksports.com/manheim/meetings-events/events/tradeshows",
-      "notes": "Crop Growing Expo at Spooky Nook Manheim PA. Contact organizers for exhibitor kit when next show announced."
+      "notes": "Crop Expo Jan 27\u201328, 2027 at Spooky Nook Manheim. Spreadsheet booth size 10x20; booth # TBA. Returning exhibitors reclaim space through Jul 31, 2026."
     }
   }
 }

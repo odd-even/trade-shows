@@ -53,6 +53,7 @@ async function main() {
       title: show.title,
       slug: {_type: 'slug', current: show.id},
       tag: show.tag || 'TRADE SHOW',
+      kind: show.kind === 'eod' ? 'eod' : 'tradeShow',
       start: show.start,
       end: show.end,
       city: show.city,
@@ -60,10 +61,12 @@ async function main() {
       venue: show.venue,
       address: show.address || null,
       url: show.url || null,
+      boothMap: show.boothMap || null,
       imageUrl: show.image,
       accent: show.accent || '#152438',
       description: show.description || null,
       published: show.published !== false,
+      repeatAnnually: show.kind === 'eod' ? show.repeatAnnually !== false : false,
     })
   }
 
