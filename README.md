@@ -26,8 +26,10 @@ Drag messages into `inbox/emails/`, then say: *"Review inbox and update shows.js
 
 ### 3. Open the command center
 
-**Live link (share with team):** after GitHub Pages deploy →  
-`https://<your-org>.github.io/trade-shows/`
+**Live link (share with team):**  
+**https://odd-even.github.io/trade-shows/**
+
+Repo: https://github.com/odd-even/trade-shows
 
 **Local web app:**
 
@@ -57,6 +59,24 @@ cd web && npm run build
 | **Mailroom** | Contact books, literature |
 
 Each task in `data/shows.json` has both `ownerSpreadsheet` (original) and `owner` (current).
+
+## Public website schedule (WordPress embed)
+
+Replace the Elfsight module with our card grid. Content is edited in **Sanity** (manual or AI); the widget is hosted on **Vercel** under Darrow Design.
+
+| | |
+|--|--|
+| **Sanity Studio** | https://jf-trade-shows.sanity.studio |
+| **Project ID** | `9pylg5jc` (not CoinFund) |
+| **Embed app** | [`schedule-embed/`](schedule-embed/) |
+
+```html
+<!-- Jolly Farmer Trade Shows -->
+<script src="https://jf-trade-shows.vercel.app/embed.js" async></script>
+<div class="jf-trade-shows" data-jf-lazy></div>
+```
+
+Details: [`schedule-embed/README.md`](schedule-embed/README.md) · [`sanity/README.md`](sanity/README.md)
 
 ## 2026 show schedule (from spreadsheet)
 

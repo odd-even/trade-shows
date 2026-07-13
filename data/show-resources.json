@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-30",
+  "lastUpdated": "2026-07-07",
   "note": "Curated exhibitor links — verify GES/Shepard event codes each year when manuals publish.",
   "shows": {
     "cultivate": {
@@ -21,9 +21,11 @@
     },
     "gcc-expo": {
       "website": "https://www.gardencenterconference.com/",
-      "exhibitorPortal": "https://www.gardencenterconference.com/page/why-exhibit-sponsor/",
+      "exhibitorPortal": "https://www.gardencenterconference.com/sponsors/opportunities/",
+      "boothMap": "https://www.gardencenterconference.com/page/floorplan/",
       "exhibitorInfo": "https://www.gardencenterconference.com/page/pricing/",
-      "notes": "Immersive Garden Center tabletop expo — contact GIE sales for booth map. No GES advance warehouse."
+      "hotel": "https://www.gardencenterconference.com/page/hotel/",
+      "notes": "Immersive Garden Center tabletop expo at Loews Vanderbilt Hotel, Nashville (Aug 18–20, 2026). No GES advance warehouse."
     },
     "cgc": {
       "website": "https://www.canadiangreenhouseconference.com/",

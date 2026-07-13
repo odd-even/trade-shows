@@ -2,6 +2,14 @@
 .DS_Store
 web/node_modules/
 web/dist/
+schedule-embed/node_modules/
+schedule-embed/dist/
+schedule-embed/.env
+schedule-embed/.env.local
+sanity/node_modules/
+sanity/dist/
+sanity/.env
+sanity/.env.local
 *.xlsx
 inbox/.email-state.json
 inbox/email-ingest.log
@@ -11,3 +19,4 @@ inbox/attachments/*
 !inbox/attachments/.gitkeep
 inbox/packages/**/*
 !inbox/packages/.gitkeep
+sanity/.sanity/

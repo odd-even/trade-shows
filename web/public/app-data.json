@@ -401,12 +401,17 @@
           "kind": "exhibitorPortal"
         },
         {
+          "label": "Booth map",
+          "url": "https://www.gardencenterconference.com/page/floorplan/",
+          "kind": "boothMap"
+        },
+        {
           "label": "Exhibitor info",
           "url": "https://www.gardencenterconference.com/page/pricing/",
           "kind": "exhibitorInfo"
         }
       ],
-      "resourceNotes": "Immersive Garden Center tabletop expo \u2014 contact GIE sales for booth map. No GES advance warehouse."
+      "resourceNotes": "Immersive Garden Center tabletop expo at Gaylord Opryland, Nashville. No GES advance warehouse."
     },
     {
       "id": "cgc",

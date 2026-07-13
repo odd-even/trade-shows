@@ -27,7 +27,17 @@ export const OWNER_COLORS: Record<string, string> = {
   Peter: "#04BB84",
   Mailroom: "#CEFF87",
   "On-site reps": "#0894FF",
+  Unassigned: "#9CA3AF",
 };
+
+export function ownerPillTextColor(hex: string): string {
+  const h = hex.replace("#", "");
+  const r = parseInt(h.slice(0, 2), 16);
+  const g = parseInt(h.slice(2, 4), 16);
+  const b = parseInt(h.slice(4, 6), 16);
+  const luminance = (0.2126 * r + 0.7152 * g + 0.0722 * b) / 255;
+  return luminance > 0.58 ? "#141414" : "#FFFFFF";
+}
 
 export const SECTION_LABELS: Record<string, string> = {
   show_purchase: "Show purchase",
@@ -81,8 +91,28 @@ export function taskDueDate(task: CanvasTask, dueDates: TaskDueDatesMap): string
   return taskBuiltInDate(task);
 }
 
+export const UNASSIGNED_FILTER = "unassigned";
+export const UNASSIGNED_OWNER = "—";
+
+export function isUnassignedOwner(owner: string | null | undefined): boolean {
+  if (!owner) return true;
+  const trimmed = owner.trim();
+  return trimmed === "" || trimmed === "—" || trimmed === "-" || trimmed.toLowerCase() === "unassigned";
+}
+
 export function taskOwner(task: CanvasTask, ownerOverrides: TaskOwnerOverridesMap): string {
   return ownerOverrides[task.id] ?? task.owner;
+}
+
+export function matchesOwnerFilter(
+  task: CanvasTask,
+  ownerFilter: string,
+  ownerOverrides: TaskOwnerOverridesMap
+): boolean {
+  const owner = taskOwner(task, ownerOverrides);
+  if (ownerFilter === "all") return true;
+  if (ownerFilter === UNASSIGNED_FILTER) return isUnassignedOwner(owner);
+  return owner === ownerFilter;
 }
 
 export function isTaskCompleted(completed: CompletedMap, id: string): boolean {
@@ -165,13 +195,19 @@ export function countOpenByOwner(
   ownerOverrides: TaskOwnerOverridesMap
 ): Record<string, number> {
   const counts: Record<string, number> = {};
+  let unassigned = 0;
   for (const show of shows) {
     for (const t of show.tasks) {
       if (isTaskCompleted(completed, t.id)) continue;
       const owner = taskOwner(t, ownerOverrides);
+      if (isUnassignedOwner(owner)) {
+        unassigned += 1;
+        continue;
+      }
       counts[owner] = (counts[owner] ?? 0) + 1;
     }
   }
+  counts[UNASSIGNED_FILTER] = unassigned;
   return counts;
 }
 

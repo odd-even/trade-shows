@@ -21,6 +21,11 @@ import {
   dueDateCountdownLabel,
   taskDetailPreview,
   countOpenByOwner,
+  matchesOwnerFilter,
+  UNASSIGNED_FILTER,
+  UNASSIGNED_OWNER,
+  isUnassignedOwner,
+  ownerPillTextColor,
   loadJson,
   saveJson,
 } from "./utils";
@@ -59,12 +64,161 @@ function Pill({
   );
 }
 
+function OwnerFilterBar({
+  owners,
+  ownerOpenCounts,
+  totalOpen,
+  ownerFilter,
+  setOwnerFilter,
+  showCompleted,
+  setShowCompleted,
+}: {
+  owners: string[];
+  ownerOpenCounts: Record<string, number>;
+  totalOpen: number;
+  ownerFilter: string;
+  setOwnerFilter: (v: string) => void;
+  showCompleted: boolean;
+  setShowCompleted: (v: boolean) => void;
+}) {
+  const unassignedCount = ownerOpenCounts[UNASSIGNED_FILTER] ?? 0;
+  return (
+    <>
+      <div className="pill-row">
+        <Pill label="All" color={OWNER_COLORS.All} count={totalOpen} active={ownerFilter === "all"} onClick={() => setOwnerFilter("all")} />
+        <Pill
+          label="Unassigned"
+          color={OWNER_COLORS.Unassigned}
+          count={unassignedCount}
+          active={ownerFilter === UNASSIGNED_FILTER}
+          onClick={() => setOwnerFilter(UNASSIGNED_FILTER)}
+        />
+        {owners.map((o) => (
+          <Pill
+            key={o}
+            label={o}
+            color={OWNER_COLORS[o] ?? "#888"}
+            count={ownerOpenCounts[o] ?? 0}
+            active={ownerFilter === o}
+            onClick={() => setOwnerFilter(o)}
+          />
+        ))}
+      </div>
+      <label className="checkbox">
+        <input type="checkbox" checked={showCompleted} onChange={(e) => setShowCompleted(e.target.checked)} />
+        Show completed tasks
+      </label>
+    </>
+  );
+}
+
 function Stat({ label, value, tone }: { label: string; value: string; tone?: string }) {
   return (
     <div className={`stat stat-${tone ?? "default"}`}>
       <div className="stat-label">{label}</div>
       <div className="stat-value">{value}</div>
     </div>
+  );
+}
+
+function TaskOwnerSelect({
+  task,
+  owners,
+  ownerOverrides,
+  onAssign,
+}: {
+  task: CanvasTask;
+  owners: string[];
+  ownerOverrides: TaskOwnerOverridesMap;
+  onAssign: (taskId: string, owner: string) => void;
+}) {
+  const current = taskOwner(task, ownerOverrides);
+  const selectValue = isUnassignedOwner(current) ? UNASSIGNED_OWNER : current;
+  const paletteKey = isUnassignedOwner(current) ? "Unassigned" : current;
+  const bg = OWNER_COLORS[paletteKey] ?? OWNER_COLORS.Unassigned;
+  const text = ownerPillTextColor(bg);
+  const chevron = encodeURIComponent(
+    `<svg xmlns='http://www.w3.org/2000/svg' width='10' height='6' viewBox='0 0 10 6'><path d='M1 1l4 4 4-4' stroke='${text}' stroke-width='1.5' fill='none' stroke-linecap='round'/></svg>`
+  );
+
+  return (
+    <select
+      className="owner-select"
+      value={selectValue}
+      title="Assign owner"
+      onChange={(e) => onAssign(task.id, e.target.value)}
+      style={{
+        backgroundColor: bg,
+        borderColor: bg,
+        color: text,
+        backgroundImage: `url("data:image/svg+xml,${chevron}")`,
+      }}
+    >
+      <option value={UNASSIGNED_OWNER}>Unassigned</option>
+      {owners.map((o) => (
+        <option key={o} value={o}>
+          {o}
+        </option>
+      ))}
+    </select>
+  );
+}
+
+function TaskChecklistRow({
+  task,
+  done,
+  owners,
+  ownerOverrides,
+  dueDates,
+  onToggle,
+  onAssign,
+  onDueDate,
+}: {
+  task: CanvasTask;
+  done: boolean;
+  owners: string[];
+  ownerOverrides: TaskOwnerOverridesMap;
+  dueDates: TaskDueDatesMap;
+  onToggle: () => void;
+  onAssign: (taskId: string, owner: string) => void;
+  onDueDate: (taskId: string, date: string | null) => void;
+}) {
+  const date = taskDueDate(task, dueDates);
+  const detail = taskDetailPreview(task, dueDates);
+  const n = task.task.toLowerCase();
+  const isCritical = n.includes("advance shipping closes") || n === "freight departure date";
+
+  return (
+    <li className={`task-row ${done ? "done" : ""}`}>
+      <div className="task-row-main">
+        <input type="checkbox" className="task-row-check" checked={done} onChange={onToggle} aria-label={`Mark ${task.task} complete`} />
+        <span className={`task-row-name ${isCritical ? "task-critical" : ""} ${done ? "struck" : ""}`}>{task.task}</span>
+        <div className="task-row-controls">
+          <TaskOwnerSelect task={task} owners={owners} ownerOverrides={ownerOverrides} onAssign={onAssign} />
+          <input
+            type="date"
+            className={`task-row-date ${date ? "has-value" : ""}`}
+            value={date ?? ""}
+            onChange={(e) => onDueDate(task.id, e.target.value || null)}
+            title="Set due date"
+          />
+          {date && (
+            <span
+              className={`countdown ${
+                daysFromToday(date) !== null && daysFromToday(date)! < 0
+                  ? "danger"
+                  : daysFromToday(date)! <= 7
+                    ? "warn"
+                    : ""
+              }`}
+            >
+              {dueDateCountdownLabel(date)}
+            </span>
+          )}
+        </div>
+      </div>
+      {detail && <div className="task-row-detail">{detail}</div>}
+    </li>
   );
 }
 
@@ -272,7 +426,7 @@ export default function App() {
     [shows, completed]
   );
 
-  const matchesOwner = (t: CanvasTask) => ownerFilter === "all" || taskOwner(t, ownerOverrides) === ownerFilter;
+  const matchesOwner = (t: CanvasTask) => matchesOwnerFilter(t, ownerFilter, ownerOverrides);
   const visibleShows = shows.filter((s) => showFilter === "all" || s.id === showFilter);
 
   const toggleComplete = (id: string) => {
@@ -386,6 +540,56 @@ export default function App() {
             <ShowResources show={activeShow} />
           </section>
           <ShippingBanner show={activeShow} tasks={activeShow.tasks.filter(matchesOwner)} dueDates={dueDates} />
+
+          <section className="card">
+            <h2>Filter by person</h2>
+            <OwnerFilterBar
+              owners={data.owners}
+              ownerOpenCounts={ownerOpenCounts}
+              totalOpen={totalOpen}
+              ownerFilter={ownerFilter}
+              setOwnerFilter={setOwnerFilter}
+              showCompleted={showCompleted}
+              setShowCompleted={setShowCompleted}
+            />
+          </section>
+
+          {visibleShows.map((show) => {
+            const tasks = show.tasks.filter(matchesOwner).filter((t) => showCompleted || !isTaskCompleted(completed, t.id));
+            if (tasks.length === 0) return null;
+            const sections = [...new Set(tasks.map((t) => t.section))];
+            return (
+              <section key={show.id} className="card">
+                <h2>
+                  {show.name} — action items
+                  <span className="muted-inline">{formatDateRange(show.dates.start, show.dates.end)} · {show.location}</span>
+                </h2>
+                {sections.map((section) => (
+                  <div key={section} className="section">
+                    <h3>{SECTION_LABELS[section] ?? section}</h3>
+                    <ul className="task-list">
+                      {tasks
+                        .filter((t) => t.section === section)
+                        .map((t) => (
+                          <TaskChecklistRow
+                            key={t.id}
+                            task={t}
+                            done={isTaskCompleted(completed, t.id)}
+                            owners={data.owners}
+                            ownerOverrides={ownerOverrides}
+                            dueDates={dueDates}
+                            onToggle={() => toggleComplete(t.id)}
+                            onAssign={setTaskOwnerOverride}
+                            onDueDate={setTaskDueDate}
+                          />
+                        ))}
+                    </ul>
+                  </div>
+                ))}
+              </section>
+            );
+          })}
+
           <section className="card">
             <h2>
               {activeShow.name} — calendar
@@ -433,28 +637,23 @@ export default function App() {
         </div>
       </section>
 
+      {!activeShow && (
       <section className="card">
         <h2>Filter by person</h2>
-        <div className="pill-row">
-          <Pill label="All" color={OWNER_COLORS.All} count={totalOpen} active={ownerFilter === "all"} onClick={() => setOwnerFilter("all")} />
-          {data.owners.map((o) => (
-            <Pill
-              key={o}
-              label={o}
-              color={OWNER_COLORS[o] ?? "#888"}
-              count={ownerOpenCounts[o] ?? 0}
-              active={ownerFilter === o}
-              onClick={() => setOwnerFilter(o)}
-            />
-          ))}
-        </div>
-        <label className="checkbox">
-          <input type="checkbox" checked={showCompleted} onChange={(e) => setShowCompleted(e.target.checked)} />
-          Show completed tasks
-        </label>
+        <OwnerFilterBar
+          owners={data.owners}
+          ownerOpenCounts={ownerOpenCounts}
+          totalOpen={totalOpen}
+          ownerFilter={ownerFilter}
+          setOwnerFilter={setOwnerFilter}
+          showCompleted={showCompleted}
+          setShowCompleted={setShowCompleted}
+        />
       </section>
+      )}
 
-      {visibleShows.map((show) => {
+      {!activeShow &&
+        visibleShows.map((show) => {
         const tasks = show.tasks.filter(matchesOwner).filter((t) => showCompleted || !isTaskCompleted(completed, t.id));
         if (tasks.length === 0) return null;
         const sections = [...new Set(tasks.map((t) => t.section))];
@@ -470,51 +669,19 @@ export default function App() {
                 <ul className="task-list">
                   {tasks
                     .filter((t) => t.section === section)
-                    .map((t) => {
-                      const date = taskDueDate(t, dueDates);
-                      const done = isTaskCompleted(completed, t.id);
-                      const isShipClose = t.task.toLowerCase().includes("advance shipping closes");
-                      const isFreight = t.task.toLowerCase() === "freight departure date";
-                      return (
-                        <li key={t.id} className={`task ${done ? "done" : ""}`}>
-                          <label className="task-check">
-                            <input type="checkbox" checked={done} onChange={() => toggleComplete(t.id)} />
-                            <span className={isShipClose || isFreight ? "task-critical" : ""}>{t.task}</span>
-                          </label>
-                          <div className="task-meta">
-                            <select
-                              value={taskOwner(t, ownerOverrides)}
-                              onChange={(e) => setTaskOwnerOverride(t.id, e.target.value)}
-                            >
-                              {data.owners.map((o) => (
-                                <option key={o} value={o}>
-                                  {o}
-                                </option>
-                              ))}
-                            </select>
-                            <input
-                              type="date"
-                              value={date ?? ""}
-                              onChange={(e) => setTaskDueDate(t.id, e.target.value || null)}
-                            />
-                            {date && (
-                              <span
-                                className={
-                                  daysFromToday(date) !== null && daysFromToday(date)! < 0
-                                    ? "countdown danger"
-                                    : daysFromToday(date)! <= 7
-                                      ? "countdown warn"
-                                      : "countdown"
-                                }
-                              >
-                                {dueDateCountdownLabel(date)}
-                              </span>
-                            )}
-                          </div>
-                          {taskDetailPreview(t, dueDates) && <p className="task-detail">{taskDetailPreview(t, dueDates)}</p>}
-                        </li>
-                      );
-                    })}
+                    .map((t) => (
+                      <TaskChecklistRow
+                        key={t.id}
+                        task={t}
+                        done={isTaskCompleted(completed, t.id)}
+                        owners={data.owners}
+                        ownerOverrides={ownerOverrides}
+                        dueDates={dueDates}
+                        onToggle={() => toggleComplete(t.id)}
+                        onAssign={setTaskOwnerOverride}
+                        onDueDate={setTaskDueDate}
+                      />
+                    ))}
                 </ul>
               </div>
             ))}
