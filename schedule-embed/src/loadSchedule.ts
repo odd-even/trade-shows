@@ -97,25 +97,43 @@ async function fetchJsonFallback(): Promise<ScheduleData> {
   return r.json()
 }
 
-/** Overlay boothMap / accent overrides from bundled JSON when Sanity omits them. */
+/** Overlay local JSON fields onto Sanity, and include local-only shows. */
 async function mergeScheduleOverrides(data: ScheduleData): Promise<ScheduleData> {
   try {
     const fallback = await fetchJsonFallback()
     const byId = new Map(fallback.shows.map((s) => [s.id, s]))
+    const seen = new Set<string>()
+
+    const merged: ScheduleShow[] = data.shows.map((show) => {
+      seen.add(show.id)
+      const local = byId.get(show.id)
+      if (!local) return show
+      return {
+        ...show,
+        boothMap: show.boothMap || local.boothMap || null,
+        booth: show.booth || local.booth || null,
+        accent: local.lockAccent ? local.accent : show.accent || local.accent,
+        lockAccent: Boolean(local.lockAccent || show.lockAccent),
+        // Prefer optimized local assets from schedule.json
+        image: local.image?.startsWith("/") ? local.image : show.image || local.image,
+        description: local.description || show.description,
+        url: show.url || local.url || null,
+        address: show.address || local.address || null,
+      }
+    })
+
+    // schedule.json is ahead of Sanity for new shows (e.g. Crop Expo)
+    for (const local of fallback.shows) {
+      if (seen.has(local.id) || local.published === false) continue
+      merged.push(local)
+      seen.add(local.id)
+    }
+
     return {
       ...data,
-      shows: data.shows.map((show) => {
-        const local = byId.get(show.id)
-        if (!local) return show
-        return {
-          ...show,
-          boothMap: show.boothMap || local.boothMap || null,
-          accent: local.lockAccent ? local.accent : show.accent || local.accent,
-          lockAccent: Boolean(local.lockAccent || show.lockAccent),
-          // Prefer optimized local assets from schedule.json
-          image: local.image?.startsWith('/') ? local.image : show.image || local.image,
-        }
-      }),
+      title: data.title || fallback.title,
+      year: data.year || fallback.year,
+      shows: merged,
     }
   } catch {
     return data
