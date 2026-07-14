@@ -48,7 +48,32 @@ function initialView(): ScheduleView {
   return parseScheduleView(params.get("view"));
 }
 
+function modalParam(): string | null {
+  if (typeof window === "undefined") return null;
+  const id = new URLSearchParams(window.location.search).get("modal");
+  return id && id.trim() ? id.trim() : null;
+}
+
+function isEmbedded(): boolean {
+  return typeof window !== "undefined" && window.parent !== window;
+}
+
+function findShowById(shows: ScheduleShow[], id: string): ScheduleShow | null {
+  return (
+    shows.find((s) => s.id === id && s.published !== false) ||
+    shows.find((s) => s.id.replace(/-\d{4}$/, "") === id.replace(/-\d{4}$/, "") && s.published !== false) ||
+    null
+  );
+}
+
+function requestParentModal(open: boolean, id?: string) {
+  if (!isEmbedded()) return;
+  window.parent.postMessage({ type: "jf-trade-shows-modal", open, id: id || undefined }, "*");
+}
+
 export default function App() {
+  const shellModalId = useMemo(() => modalParam(), []);
+  const embedded = useMemo(() => isEmbedded(), []);
   const [data, setData] = useState<ScheduleData | null>(null);
   const [error, setError] = useState<string | null>(null);
   const [active, setActive] = useState<ScheduleShow | null>(null);
@@ -69,27 +94,38 @@ export default function App() {
     };
   }, []);
 
+  // Parent-hosted overlay shell: show only the event popup.
   useEffect(() => {
-    if (!data) return;
+    if (!shellModalId || !data) return;
+    const match = findShowById(data.shows, shellModalId);
+    if (match) setActive(match);
+  }, [shellModalId, data]);
+
+  // Deep link hash (standalone or request parent overlay when embedded).
+  useEffect(() => {
+    if (!data || shellModalId) return;
     const hash = window.location.hash.replace(/^#/, "");
     if (!hash) return;
     const match = data.shows.find(
       (s) => s.id === hash && s.published !== false && isWithinScheduleWindow(s, undefined, windowMonths),
     );
-    if (match) setActive(match);
-  }, [data, windowMonths]);
+    if (!match) return;
+    if (embedded) requestParentModal(true, match.id);
+    else setActive(match);
+  }, [data, windowMonths, shellModalId, embedded]);
 
   useEffect(() => {
+    if (shellModalId) return;
     const url = new URL(window.location.href);
     if (view === "all") url.searchParams.delete("view");
     else url.searchParams.set("view", view);
     const next = url.pathname + url.search + url.hash;
     window.history.replaceState(null, "", next);
-  }, [view]);
+  }, [view, shellModalId]);
 
   useEffect(() => {
+    if (shellModalId) return;
     const postHeight = () => {
-      if (active) return;
       const height = Math.ceil(document.documentElement.scrollHeight);
       window.parent.postMessage({ type: "jf-trade-shows-resize", height }, "*");
     };
@@ -101,15 +137,7 @@ export default function App() {
       ro.disconnect();
       window.removeEventListener("load", postHeight);
     };
-  }, [data, active, view, windowMonths]);
-
-  useEffect(() => {
-    if (window.parent === window) return;
-    window.parent.postMessage({ type: "jf-trade-shows-modal", open: Boolean(active) }, "*");
-    return () => {
-      window.parent.postMessage({ type: "jf-trade-shows-modal", open: false }, "*");
-    };
-  }, [active]);
+  }, [data, view, windowMonths, shellModalId]);
 
   const groups = useMemo(() => {
     if (!data) return [];
@@ -123,12 +151,42 @@ export default function App() {
 
   const canShowLess = windowMonths > SCHEDULE_WINDOW_MONTHS;
 
+  const openShow = (show: ScheduleShow) => {
+    if (embedded && !shellModalId) {
+      requestParentModal(true, show.id);
+      return;
+    }
+    setActive(show);
+  };
+
+  const closeShow = () => {
+    setActive(null);
+    if (shellModalId) {
+      requestParentModal(false);
+      return;
+    }
+    if (window.location.hash) {
+      history.replaceState(null, "", window.location.pathname + window.location.search);
+    }
+  };
+
   if (error) {
     return <div className="jf-schedule jf-error">Unable to load schedule.</div>;
   }
 
   if (!data) {
-    return <div className="jf-schedule jf-loading" aria-busy="true" />;
+    return <div className={`jf-schedule jf-loading${shellModalId ? " jf-modal-shell" : ""}`} aria-busy="true" />;
+  }
+
+  if (shellModalId) {
+    if (!active) {
+      return <div className="jf-schedule jf-loading jf-modal-shell" aria-busy="true" />;
+    }
+    return (
+      <div className="jf-modal-shell">
+        <EventPopup show={active} onClose={closeShow} />
+      </div>
+    );
   }
 
   return (
@@ -156,7 +214,7 @@ export default function App() {
             <header className="jf-year">{group.year}</header>
             <div className="jf-grid">
               {group.shows.map((show) => (
-                <ShowCard key={show.id} show={show} onOpen={setActive} />
+                <ShowCard key={show.id} show={show} onOpen={openShow} />
               ))}
             </div>
           </section>
@@ -196,17 +254,7 @@ export default function App() {
         </div>
       ) : null}
 
-      {active ? (
-        <EventPopup
-          show={active}
-          onClose={() => {
-            setActive(null);
-            if (window.location.hash) {
-              history.replaceState(null, "", window.location.pathname + window.location.search);
-            }
-          }}
-        />
-      ) : null}
+      {!embedded && active ? <EventPopup show={active} onClose={closeShow} /> : null}
     </div>
   );
 }

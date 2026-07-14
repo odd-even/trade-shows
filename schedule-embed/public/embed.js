@@ -18,6 +18,12 @@
   var IFRAME_BASE =
     "width:100%;max-width:none;border:0;display:block;background:transparent;overflow:hidden;min-height:420px;";
 
+  var IFRAME_OVERLAY =
+    "position:fixed !important;top:0 !important;right:0 !important;bottom:0 !important;left:0 !important;" +
+    "width:100vw !important;height:100vh !important;max-width:none !important;border:0 !important;" +
+    "display:block !important;background:transparent !important;overflow:hidden !important;" +
+    "z-index:2147483647 !important;margin:0 !important;padding:0 !important;";
+
   function mount(el) {
     if (el.getAttribute("data-jf-mounted") === "1") return;
     el.setAttribute("data-jf-mounted", "1");
@@ -41,72 +47,82 @@
     el.innerHTML = "";
     el.appendChild(iframe);
 
+    var overlay = null;
     var modalOpen = false;
     var saved = {
-      cssText: IFRAME_BASE,
-      height: "",
       bodyOverflow: "",
       htmlOverflow: "",
-      elMinHeight: "",
       scrollX: 0,
       scrollY: 0,
     };
 
-    function setModal(open) {
-      if (open === modalOpen) return;
-      modalOpen = open;
+    function isTrustedSource(source) {
+      if (source === iframe.contentWindow) return true;
+      if (overlay && source === overlay.contentWindow) return true;
+      return false;
+    }
 
-      if (open) {
-        saved.cssText = iframe.style.cssText || IFRAME_BASE;
-        saved.height = iframe.style.height;
+    function closeOverlay() {
+      if (overlay && overlay.parentNode) overlay.parentNode.removeChild(overlay);
+      overlay = null;
+      modalOpen = false;
+      document.body.style.overflow = saved.bodyOverflow || "";
+      document.documentElement.style.overflow = saved.htmlOverflow || "";
+      window.scrollTo(saved.scrollX, saved.scrollY);
+    }
+
+    function openOverlay(id) {
+      if (!id) return;
+
+      if (!modalOpen) {
         saved.bodyOverflow = document.body.style.overflow;
         saved.htmlOverflow = document.documentElement.style.overflow;
-        saved.elMinHeight = el.style.minHeight;
         saved.scrollX = window.scrollX || window.pageXOffset || 0;
         saved.scrollY = window.scrollY || window.pageYOffset || 0;
-
-        // Keep original page height — fixed iframe leaves document flow otherwise
-        var layoutHeight =
-          Math.ceil(iframe.getBoundingClientRect().height) ||
-          parseInt(iframe.style.height, 10) ||
-          Math.ceil(el.getBoundingClientRect().height) ||
-          420;
-        el.style.minHeight = layoutHeight + "px";
-
-        // Reparent to body so theme transforms / stacking contexts can't trap it
-        // under header/footer
-        document.body.appendChild(iframe);
-        iframe.style.cssText =
-          "position:fixed !important;top:0 !important;right:0 !important;bottom:0 !important;left:0 !important;" +
-          "width:100vw !important;height:100vh !important;max-width:none !important;border:0 !important;" +
-          "display:block !important;background:transparent !important;overflow:hidden !important;" +
-          "z-index:2147483647 !important;margin:0 !important;padding:0 !important;";
-
         document.body.style.overflow = "hidden";
         document.documentElement.style.overflow = "hidden";
-      } else {
-        el.appendChild(iframe);
-        iframe.style.cssText = saved.cssText || IFRAME_BASE;
-        if (saved.height) iframe.style.height = saved.height;
-        el.style.minHeight = saved.elMinHeight || "";
-        document.body.style.overflow = saved.bodyOverflow || "";
-        document.documentElement.style.overflow = saved.htmlOverflow || "";
-        window.scrollTo(saved.scrollX, saved.scrollY);
       }
+
+      var overlaySrc = ORIGIN + "/embed.html?modal=" + encodeURIComponent(id);
+      if (overlay) {
+        if (overlay.getAttribute("data-jf-modal-id") === id) {
+          modalOpen = true;
+          return;
+        }
+        overlay.setAttribute("data-jf-modal-id", id);
+        overlay.src = overlaySrc;
+        modalOpen = true;
+        return;
+      }
+
+      overlay = document.createElement("iframe");
+      overlay.src = overlaySrc;
+      overlay.title = "Event details";
+      overlay.allow = "clipboard-write";
+      overlay.setAttribute("data-jf-modal-id", id);
+      overlay.setAttribute("scrolling", "no");
+      overlay.style.cssText = IFRAME_OVERLAY;
+      document.body.appendChild(overlay);
+      modalOpen = true;
+    }
+
+    function setModal(open, id) {
+      if (open) openOverlay(id || "");
+      else closeOverlay();
     }
 
     function onMessage(event) {
       if (!event || !event.data) return;
       if (ORIGIN && event.origin && event.origin !== ORIGIN) return;
-      if (event.source !== iframe.contentWindow) return;
+      if (!isTrustedSource(event.source)) return;
 
       if (event.data.type === "jf-trade-shows-modal") {
-        setModal(Boolean(event.data.open));
+        setModal(Boolean(event.data.open), event.data.id || "");
         return;
       }
 
       if (event.data.type === "jf-trade-shows-resize") {
-        if (modalOpen) return;
+        if (event.source !== iframe.contentWindow) return;
         var height = Number(event.data.height);
         if (!height || height < 100) return;
         iframe.style.height = height + "px";
