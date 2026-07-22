@@ -9,15 +9,24 @@ Never miss an exhibitor deadline again. This project gives you:
 
 ## Get started
 
-### 1. Spreadsheet (already imported)
+### 1. Spreadsheet (live SharePoint → import)
 
-File: `source/Trade Show Master 2026.xlsx`
+Live workbook (Sales Team SharePoint): shared with the team in Microsoft 365.
 
-Re-import after spreadsheet edits:
+Pull the latest file (device-code login once with your JF account), then import:
 
 ```bash
-python3 -m pip install openpyxl
+python3 -m pip install -r requirements.txt
+python3 scripts/pull_master_sheet.py --import
+# or pull + refresh command-center data:
+python3 scripts/pull_master_sheet.py --import --generate
+```
+
+Offline / already-downloaded fallback:
+
+```bash
 python3 scripts/import_spreadsheet.py
+# or: python3 scripts/import_spreadsheet.py path/to/Trade\ Show\ Master\ 2026.xlsx
 ```
 
 ### 2. Drop emails from Apple Mail
@@ -27,9 +36,9 @@ Drag messages into `inbox/emails/`, then say: *"Review inbox and update shows.js
 ### 3. Open the command center
 
 **Live link (share with team):**  
-**https://odd-even.github.io/trade-shows/**
+**https://jolly-farmer.github.io/trade-shows/**
 
-Repo: https://github.com/odd-even/trade-shows
+Repo: https://github.com/Jolly-Farmer/trade-shows
 
 **Local web app:**
 
@@ -69,6 +78,7 @@ Replace the Elfsight module with our card grid. Content is edited in **Sanity** 
 | **Sanity Studio** | https://jf-trade-shows.sanity.studio |
 | **Project ID** | `9pylg5jc` (not CoinFund) |
 | **Embed app** | [`schedule-embed/`](schedule-embed/) |
+| **Card images** | Sanity CDN (`cdn.sanity.io`) — migrate with `cd sanity && npm run upload-images` |
 
 ```html
 <!-- Jolly Farmer Trade Shows -->
